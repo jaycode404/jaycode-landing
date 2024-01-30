@@ -5,7 +5,7 @@ export default function Habilidades() {
   return (
     <section
       id="habilidades"
-      className="flex h-screen  items-center text-white gap-[5rem] sobremi"
+      className="flex h-screen  items-center text-white gap-[5rem] habilidades"
     >
       <div>
         <Typography variant="h1" className="text-7xl text-left mb-10">
@@ -14,6 +14,7 @@ export default function Habilidades() {
         <Typography variant="lead" className="w-[80%] parrafo">
           Desarrollador Full Stack con habilidades sólidas en
           <span className="JavaScript"> JavaScript</span>,
+          <span className="React"> React</span>,
           <span className="HTML"> HTML</span>,<span className="CSS"> CSS</span>,
           <span className="Tailwind text-gradient"> Tailwind</span>,
           <span className="MySQL"> MySQL</span> y
@@ -23,7 +24,6 @@ export default function Habilidades() {
           tecnológicos.
         </Typography>
       </div>
-      <Slider />
     </section>
   );
 }

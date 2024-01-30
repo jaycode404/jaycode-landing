@@ -1,5 +1,6 @@
 import {
   Card,
+  Textarea,
   Input,
   Checkbox,
   Button,
@@ -49,11 +50,13 @@ export function ContactForm() {
           >
             Mensaje
           </Typography>
-          <Input
-            type="text"
+          <Textarea
+            type="text-area"
+            maxLength={100}
             size="lg"
             placeholder="Me gustaría colaborar..."
-            className="placeholder-white !border-t-blue-gray-200 focus:!border-t-gray-900 text-white"
+            className="placeholder-white
+            bg-transparent !border-t-blue-gray-200 no-focus:!border-t-gray-900 text-white"
             labelProps={{
               className: "before:content-none after:content-none",
             }}

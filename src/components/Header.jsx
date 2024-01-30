@@ -1,7 +1,7 @@
 import React from "react";
 import { NavbarSimple } from "./Navbar";
 import { Typography } from "@material-tailwind/react";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Header() {
   return (
     <div className=" w-full h-screen">
@@ -14,6 +14,7 @@ export default function Header() {
           <Typography variant="lead">
             "Llevo ideas al código, y desafíos a soluciones."
           </Typography>
+          
         </div>
         <div>
           <img

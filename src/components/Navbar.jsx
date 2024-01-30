@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  Navbar,
-  Typography,
-} from "@material-tailwind/react";
-
+import { Navbar, Typography } from "@material-tailwind/react";
 
 function NavList() {
   return (
@@ -66,8 +62,8 @@ function NavList() {
 
 export function NavbarSimple() {
   return (
-    <Navbar className="fixed nav-top mx-auto max-w-[80%] px-6 py-3 mt-5">
-      <div className="flex items-center justify-between text-blue-gray-900 w-[100%]">
+    <Navbar className="fixed nav-top mx-auto max-w-[80%] px-6 py-3 mt-5 bg-blue-100">
+      <div className="flex items-center justify-between text-blue-gray-900 w-[100%] ">
         <Typography
           as="a"
           href="/"

@@ -7,7 +7,7 @@ html {
 }
 body {
   overflow-x: hidden;
-  
+  background-color: #1e293b;
 }
 
 .divPad {
@@ -20,7 +20,7 @@ body {
 
 .diagonal::after {
   content: "";
-  background-image: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+  background-image: linear-gradient(45deg, #3a6eb4, #1db8fd, #45fcbc);
   position: absolute;
   z-index: -1;
   inset: 0;
@@ -67,7 +67,42 @@ shadowBlue {
 
 .sobremi::after {
   content: "";
+  background-image: linear-gradient(45deg, #134ea9, #19a8a9, #00d4ff);
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  transform: skewY(-5deg);
+  bottom: -50px;
+  left: -300px;
+  height: 30rem;
+  width: 200%;
+  backdrop-filter: blur(50px);
+}
+.habilidades {
+  position: relative;
+}
+
+.habilidades::after {
+  content: "";
   background-image: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  transform: skewY(-5deg);
+  bottom: -50px;
+  left: -300px;
+  height: 30rem;
+  width: 200%;
+  backdrop-filter: blur(50px);
+}
+
+.proyectos {
+  position: relative;
+}
+
+.proyectos::after {
+  content: "";
+  background-image: linear-gradient(45deg, #b43a4b, #fdba1d, #fc45ae);
   position: absolute;
   z-index: -1;
   inset: 0;
@@ -117,6 +152,9 @@ shadowBlue {
 }
 .Node {
   color: #a3e635;
+}
+.React {
+  color: #67e8f9;
 }
 
 .nav-top {
