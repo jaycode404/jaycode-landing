@@ -3,7 +3,7 @@ import { Typography } from "@material-tailwind/react";
 
 export default function ProyectosGrid() {
   const imagenStyle = {
-    filter: "blur(5px)",
+    filter: "blur(10px)",
   };
 
   return (

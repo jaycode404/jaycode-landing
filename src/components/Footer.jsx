@@ -11,7 +11,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <div className="text-white h-[20rem] w-[100%]">
+    <div className="text-white h-[20rem] w-[100%] py-4">
       <div className="flex flex-col gap-10 px-[20rem] justify-center">
         <div className="col-span-1 row-span-12 rounded-xl">
           <Typography className="flex flex-col items-center" variant="h6">

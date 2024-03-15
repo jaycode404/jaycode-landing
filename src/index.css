@@ -231,7 +231,6 @@ shadowBlue {
 }
 
 .frame-section {
-  
   padding: 6rem 2rem 2rem 2rem;
   /* margin: 8rem 0 0 0; */
   padding: 6rem 14rem;
@@ -331,7 +330,6 @@ shadowBlue {
   padding: 1rem 1rem;
 }
 .mac-shadow {
-  
   filter: drop-shadow(0 10px 20px rgba(18, 194, 233, 0.5));
 }
 
@@ -351,6 +349,6 @@ shadowBlue {
 /* Aplica un fondo negro a cada segundo elemento con la clase section-bg */
 /* Aplica un fondo negro a cada segundo elemento con la clase section-bg */
 /* Aplica un fondo negro a los hijos impares de elementos con la clase section-bg */
-.section-bg  > :nth-child(odd) {
+.section-bg > :nth-child(even) {
   background-color: #f7f7ff;
 }
