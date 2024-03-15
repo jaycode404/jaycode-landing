@@ -7,19 +7,30 @@ import Section from "./components/SobreMi";
 import Proyectos from "./components/Proyectos";
 import Habilidades from "./components/Habilidades";
 import Contacto from "./components/Contacto";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import BentoGrid from "./components/Grid";
+import { NavList, NavbarSimple } from "./components/Navbar";
+import Footer from "./components/Footer";
 function App() {
   return (
-    <div className="flex flex-col h-auto gap-10 items-center justify-center my-0 diagonal">
+    <div className="h-auto">
+      <NavbarSimple />
       <GeneralProvider>
-        <div className="flex flex-col gap-10 w-[75%]">
-        
-          <Header />
-          
-          <Section />
+        <div className="w-[70%] mx-auto gap-10 ">
+          <div>
+            {/* <div className="absolute inset-0 flex justify-center items-center overflow-hidden">
+              <div className="h-[40rem] w-[60rem] rounded-full bg-blue-500 absolute bottom-[-60%] left-[-20%] filter blur-[100px] z-[-1]"></div>
+              <div className="h-[40rem] w-[60rem] rounded-full bg-purple-500 absolute bottom-[-60%] right-[-20%] filter blur-[100px] z-[-1]"></div>
+            </div> */}
+
+            <Header />
+          </div>
           <Proyectos />
           <Habilidades />
+          <Section />
           <Contacto />
+        </div>
+        <div className="bg-black">
+          <Footer />
         </div>
       </GeneralProvider>
     </div>

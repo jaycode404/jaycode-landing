@@ -1,81 +1,70 @@
 import React from "react";
 import { Navbar, Typography } from "@material-tailwind/react";
 
-function NavList() {
+export function NavList({ flex, gap }) {
+  console.log("flex:", flex);
+  console.log("gap:", gap);
+
   return (
-    <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-medium"
-      >
-        <a
-          href="#sobremi"
-          className="flex items-center hover:text-blue-500 transition-colors"
-        >
-          Sobre Mí
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-medium"
-      >
+    <div
+      className={` flex ${flex} ${gap ? `gap-${gap}` : "gap-0"}`}
+      style={{ width: "auto" }}
+    >
+      <div className=" ">
         <a
           href="#proyectos"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex nav-link  items-center transition-colors hover:bg-black hover:text-white font-medium p-4"
         >
           Proyectos
         </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-medium"
-      >
+      </div>
+      <div className=" ">
         <a
           href="#habilidades"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex nav-link  items-center transition-colors hover:bg-black hover:text-white font-medium p-4"
         >
           Habilidades
         </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-medium"
-      >
+      </div>
+      <div className=" ">
+        <a
+          href="#sobremi"
+          className="flex nav-link  items-center transition-colors hover:bg-black hover:text-white font-medium p-4"
+        >
+          Sobre Mi
+        </a>
+      </div>
+      <div className=" ">
         <a
           href="#contacto"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex nav-link  items-center transition-colors hover:bg-black hover:text-white font-medium p-4"
         >
           Contacto
         </a>
-      </Typography>
-    </ul>
+      </div>
+      
+    </div>
   );
 }
 
-export function NavbarSimple() {
+export function NavbarSimple({ flex, gap }) {
   return (
-    <Navbar className="fixed nav-top mx-auto max-w-[80%] px-6 py-3 mt-5 bg-blue-100">
-      <div className="flex items-center justify-between text-blue-gray-900 w-[100%] ">
+    <div className="fixed w-[100%] z-30 px-[14rem] bg-gray-100 ">
+      <div className=" flex items-center text-black justify-between ">
         <Typography
           as="a"
           href="/"
           variant="h6"
-          className="mr-4 cursor-pointer py-1.5"
+          className="cursor-pointer  nav-link transition-colors hover:bg-black hover:text-white"
+
         >
-          Jaycode
+          <span className="span-code">{"<"}</span> Jaycode{" "}
+          <span className="span-code">{"/>"}</span>
         </Typography>
         <div className="hidden lg:block">
-          <NavList />
+          <NavList flex={flex} gap={gap} />
         </div>
       </div>
-    </Navbar>
+    </div>
   );
 }

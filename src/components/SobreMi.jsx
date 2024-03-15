@@ -5,13 +5,13 @@ export default function Section() {
   return (
     <section
       id="sobremi"
-      className="flex h-screen mt-[10rem text-white gap-5 sobremi items-center"
+      className="flex frame-section text-black "
     >
-      <div>
-        <Typography variant="h1" className="text-7xl text-left">
+      <div className="margin-section-info">
+        <Typography variant="h1" className="text-7xl text-left section-title">
           Sobre mí<span className="dot">.</span>
         </Typography>
-        <Typography variant="lead" className="w-[80%] ">
+        <Typography variant="p" className="w-[90%]">
           Programador web full-stack con gusto por la creación y resolución de
           problemas mediante el código. Busco integrarme a un equipo donde pueda
           reforzar mis habilidades, aportar valor y ampliar mi conocimiento en

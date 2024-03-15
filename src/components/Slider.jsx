@@ -17,7 +17,7 @@ export function Slider() {
               <span
                 key={i}
                 className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
-                  activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
+                  activeIndex === i ? "w-8 bg-black" : "w-4 bg-orange-300"
                 }`}
                 onClick={() => setActiveIndex(i)}
               />
