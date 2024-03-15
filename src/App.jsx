@@ -15,15 +15,8 @@ function App() {
     <div className="h-auto">
       <NavbarSimple />
       <GeneralProvider>
-        <div className="w-[70%] mx-auto gap-10 ">
-          <div>
-            {/* <div className="absolute inset-0 flex justify-center items-center overflow-hidden">
-              <div className="h-[40rem] w-[60rem] rounded-full bg-blue-500 absolute bottom-[-60%] left-[-20%] filter blur-[100px] z-[-1]"></div>
-              <div className="h-[40rem] w-[60rem] rounded-full bg-purple-500 absolute bottom-[-60%] right-[-20%] filter blur-[100px] z-[-1]"></div>
-            </div> */}
-
-            <Header />
-          </div>
+        <div className=" mx-auto gap-10 section-bg">
+          <Header />
           <Proyectos />
           <Habilidades />
           <Section />

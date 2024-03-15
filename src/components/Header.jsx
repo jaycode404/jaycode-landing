@@ -29,8 +29,8 @@ export default function Header() {
   }, []);
 
   return (
-    <div id="header" className="relative">
-      <div className="grid grid-cols-2 text-black items-center h-screen">
+    <div id="header" className="relative frame-section">
+      <div className="grid grid-cols-2 text-black items-center ">
         <div className="h-[15rem] w-[15rem] imagen-bg place-self-center"></div>
         <div className="flex flex-col gap-2 ">
           <Typography variant="h1" className="text-8xl ">

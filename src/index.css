@@ -231,9 +231,10 @@ shadowBlue {
 }
 
 .frame-section {
-  height: 100vh;
+  
   padding: 6rem 2rem 2rem 2rem;
   /* margin: 8rem 0 0 0; */
+  padding: 6rem 14rem;
 }
 
 .margin-section-info {
@@ -253,7 +254,7 @@ shadowBlue {
   overflow: hidden;
   height: 10rem;
   width: 14rem;
-  z-index: -4;
+  z-index: -1;
   background-color: #2f2f2f;
 }
 
@@ -330,6 +331,7 @@ shadowBlue {
   padding: 1rem 1rem;
 }
 .mac-shadow {
+  
   filter: drop-shadow(0 10px 20px rgba(18, 194, 233, 0.5));
 }
 
@@ -344,4 +346,11 @@ shadowBlue {
 }
 .section-title {
   margin-bottom: 1rem;
+}
+
+/* Aplica un fondo negro a cada segundo elemento con la clase section-bg */
+/* Aplica un fondo negro a cada segundo elemento con la clase section-bg */
+/* Aplica un fondo negro a los hijos impares de elementos con la clase section-bg */
+.section-bg  > :nth-child(odd) {
+  background-color: #f7f7ff;
 }
