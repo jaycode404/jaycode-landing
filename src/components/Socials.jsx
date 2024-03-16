@@ -7,7 +7,7 @@ export default function Socials({ size, gap, invert, header }) {
     <div className={`flex gap-${gap} `}>
       <a href="https://github.com/jaycode404" target="_blank">
         <img
-          src="/src/logos/github.png"
+          src="public/assets/github.png"
           alt=""
           style={{ width: `${size}rem` }}
           className={`${invert} ? ${invert} : ''`}
@@ -16,7 +16,7 @@ export default function Socials({ size, gap, invert, header }) {
 
       <a href="https://www.linkedin.com/in/jacob-flores-code/" target="_blank">
         <img
-          src="/src/logos/linkedin.png"
+          src="public/assets/linkedin.png"
           alt=""
           style={{ width: `${size}rem` }}
           className={`${invert} ? ${invert} : ''`}
@@ -25,7 +25,7 @@ export default function Socials({ size, gap, invert, header }) {
 
       <a href="mailto:jaycode404@gmail.com" target="_blank">
         <img
-          src="/src/logos/email.png"
+          src="public/assets/email.png"
           alt=""
           style={{ width: `${size}rem` }}
           className={`${invert} ? ${invert} : ''`}
@@ -35,7 +35,7 @@ export default function Socials({ size, gap, invert, header }) {
       { header && (
         <a href="mailto:jaycode404@gmail.com" target="_blank">
           <img
-            src="/src/logos/cv.png"
+            src="public/assets/cv.png"
             alt=""
             style={{ width: `${size}rem` }}
             className={invert ? invert : ""}
