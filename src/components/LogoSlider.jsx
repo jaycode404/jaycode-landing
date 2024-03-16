@@ -4,7 +4,7 @@ export default function LogoSlider() {
   return (
     <div className="relative">
       <img
-        src="https://bespoke-kashata-1a54d2.netlify.app/macintosh.png"
+        src="https://bespoke-kashata-1a54d2.netlify.app/assets/macintosh.png"
         alt=""
         className="mr-4 mac-shadow "
       />
