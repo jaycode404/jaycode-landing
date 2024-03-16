@@ -12,30 +12,30 @@ export default function LogoSlider() {
         <div className="logos-container bg-gray-300">
           <div className="logos">
             <div className="logo-slide">
-              <img src="public/assets/react-3.svg" alt="" />
-              <img src="public/assets/js-logo.png" alt="" />
-              <img src="public/assets/tail-logo.png" alt="" />
-              <img src="public/assets/html-logo.png" alt="" />
-              <img src="public/assets/css-logo.png" alt="" />
+              <img src="https://bespoke-kashata-1a54d2.netlify.app/assets/react-3.svg" alt="" />
+              <img src="https://bespoke-kashata-1a54d2.netlify.app/assets/js-logo.png" alt="" />
+              <img src="https://bespoke-kashata-1a54d2.netlify.app/assets/tail-logo.png" alt="" />
+              <img src="https://bespoke-kashata-1a54d2.netlify.app/assets/html-logo.png" alt="" />
+              <img src="https://bespoke-kashata-1a54d2.netlify.app/assets/css-logo.png" alt="" />
               <img
-                src="public/assets/mysql-logo.png"
+                src="https://bespoke-kashata-1a54d2.netlify.app/assets/mysql-logo.png"
                 alt=""
                 className="social-invert"
               />
-              <img src="public/assets/nodejs-logo.png" alt="" />
+              <img src="https://bespoke-kashata-1a54d2.netlify.app/assets/nodejs-logo.png" alt="" />
             </div>
             <div className="logo-slide">
-              <img src="public/assets/react-3.svg" alt="" />
-              <img src="public/assets/js-logo.png" alt="" />
-              <img src="public/assets/tail-logo.png" alt="" />
-              <img src="public/assets/html-logo.png" alt="" />
-              <img src="public/assets/css-logo.png" alt="" />
+              <img src="https://bespoke-kashata-1a54d2.netlify.app/assets/react-3.svg" alt="" />
+              <img src="https://bespoke-kashata-1a54d2.netlify.app/assets/js-logo.png" alt="" />
+              <img src="https://bespoke-kashata-1a54d2.netlify.app/assets/tail-logo.png" alt="" />
+              <img src="https://bespoke-kashata-1a54d2.netlify.app/assets/html-logo.png" alt="" />
+              <img src="https://bespoke-kashata-1a54d2.netlify.app/assets/css-logo.png" alt="" />
               <img
-                src="public/assets/mysql-logo.png"
+                src="https://bespoke-kashata-1a54d2.netlify.app/assets/mysql-logo.png"
                 alt=""
                 className="social-invert"
               />
-              <img src="public/assets/nodejs-logo.png" alt="" />
+              <img src="https://bespoke-kashata-1a54d2.netlify.app/assets/nodejs-logo.png" alt="" />
             </div>
           </div>
         </div>
