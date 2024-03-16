@@ -56,7 +56,7 @@ shadowBlue {
   transform: scale(0.5);
 }
 .imagen-bg {
-  background-image: url("/src/assets/foto.png"), url("/src/assets/graph-1.png");
+  background-image: url("/public/assets/foto.png"), url("/public/assets/graph-1.png");
   background-size: cover;
   background-repeat:no-repeat;
   inset: 0;
