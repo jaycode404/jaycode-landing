@@ -12,7 +12,7 @@ export default function ProyectosGrid() {
         <div
           className="bg-cover bg-center absolute inset-0 rounded-xl"
           style={{
-            backgroundImage: "url('/public/assets/graph.png')",
+            backgroundImage: "url('https://bespoke-kashata-1a54d2.netlify.app/assets/graph.png')",
             ...imagenStyle,
           }}
         ></div>
@@ -22,7 +22,7 @@ export default function ProyectosGrid() {
         <div
           className="bg-cover bg-center absolute inset-0 rounded-xl"
           style={{
-            backgroundImage: "url('/public/assets/bmo.png')",
+            backgroundImage: "url('https://bespoke-kashata-1a54d2.netlify.app/assets/bmo.png')",
             ...imagenStyle,
           }}
         ></div>
@@ -32,7 +32,7 @@ export default function ProyectosGrid() {
         <div
           className="bg-cover bg-center absolute inset-0 rounded-xl"
           style={{
-            backgroundImage: "url('/public/assets/foto.png')",
+            backgroundImage: "url('https://bespoke-kashata-1a54d2.netlify.app/assets/foto.png')",
             ...imagenStyle,
           }}
         ></div>
@@ -42,7 +42,7 @@ export default function ProyectosGrid() {
         <div
           className="bg-cover bg-center absolute inset-0 rounded-xl"
           style={{
-            backgroundImage: "url('/public/assets/cuadricula.jpg')",
+            backgroundImage: "url('https://bespoke-kashata-1a54d2.netlify.app/assets/cuadricula.jpg')",
             ...imagenStyle,
           }}
         ></div>
