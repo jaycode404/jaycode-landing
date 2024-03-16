@@ -28,7 +28,7 @@ body {
 }
 
 .span-code {
-  color: #2dd4bf;
+  color: #37b5ff;
 }
 .divPad {
   padding: 2rem;
@@ -56,8 +56,10 @@ shadowBlue {
   transform: scale(0.5);
 }
 .imagen-bg {
-  background-image: url("/src/assets/foto.png");
+  background-image: url("/src/assets/foto.png"), url("/src/assets/graph-1.png");
   background-size: cover;
+  background-repeat:no-repeat;
+  inset: 0;
 }
 
 .imagen:hover {
@@ -79,7 +81,7 @@ shadowBlue {
 }
 
 .dot {
-  color: #f64f59;
+  color: #37b5ff;
 }
 
 .sobremi {
@@ -315,7 +317,13 @@ shadowBlue {
 }
 .input-style {
   border-radius: 5px;
-  border: 1px solid gray;
+  border: 2px solid gray;
+  background: transparent;
+  padding: 0.4rem;
+}
+.textarea-style {
+  border-radius: 5px;
+  border: 2px solid gray;
   background: transparent;
   padding: 0.4rem;
 }
@@ -351,4 +359,5 @@ shadowBlue {
 /* Aplica un fondo negro a los hijos impares de elementos con la clase section-bg */
 .section-bg > :nth-child(even) {
   background-color: #f7f7ff;
+  box-shadow: 0 0 10px 1px rgba(34, 34, 34, 0.2);
 }

@@ -48,8 +48,9 @@ export function ContactForm() {
             >
               Mensaje
             </Typography>
-            <Textarea
-              className="w-full"
+            <textarea
+              
+              className="w-full textarea-style"
               type="text-area"
               maxLength={100}
               placeholder="Me gustaría colaborar..."
