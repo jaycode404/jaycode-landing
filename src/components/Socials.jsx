@@ -7,7 +7,7 @@ export default function Socials({ size, gap, invert, header }) {
     <div className={`flex gap-${gap} `}>
       <a href="https://github.com/jaycode404" target="_blank">
         <img
-          src="public/assets/github.png"
+          src="https://bespoke-kashata-1a54d2.netlify.app/assets/github.png"
           alt=""
           style={{ width: `${size}rem` }}
           className={`${invert} ? ${invert} : ''`}
@@ -16,7 +16,7 @@ export default function Socials({ size, gap, invert, header }) {
 
       <a href="https://www.linkedin.com/in/jacob-flores-code/" target="_blank">
         <img
-          src="public/assets/linkedin.png"
+          src="https://bespoke-kashata-1a54d2.netlify.app/assets/linkedin.png"
           alt=""
           style={{ width: `${size}rem` }}
           className={`${invert} ? ${invert} : ''`}
@@ -25,17 +25,17 @@ export default function Socials({ size, gap, invert, header }) {
 
       <a href="mailto:jaycode404@gmail.com" target="_blank">
         <img
-          src="public/assets/email.png"
+          src="https://bespoke-kashata-1a54d2.netlify.app/assets/email.png"
           alt=""
           style={{ width: `${size}rem` }}
           className={`${invert} ? ${invert} : ''`}
         />
       </a>
 
-      { header && (
+      {header && (
         <a href="mailto:jaycode404@gmail.com" target="_blank">
           <img
-            src="public/assets/cv.png"
+            src="https://bespoke-kashata-1a54d2.netlify.app/assets/cv.png"
             alt=""
             style={{ width: `${size}rem` }}
             className={invert ? invert : ""}
