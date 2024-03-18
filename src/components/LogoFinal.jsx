@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 
 export default function LogoSlider() {
   return (
@@ -8,8 +8,8 @@ export default function LogoSlider() {
         alt=""
         className="mr-4 mac-shadow "
       />
-      <div className="absolute top-6 item flex items-center right-[5.2rem] md:right-[4rem] md:top-6 md:scale-[80%]">
-        <div className="logos-container bg-gray-300 ">
+      <div className="absolute top-6 item flex items-center right-[5.2rem] md:right-[4rem] md:top-6">
+        <div className="logos-container bg-gray-300 scale-[80%] lg:scale-[100%]">
           <div className="logos ">
             <div className="logo-slide">
               <img
@@ -78,4 +78,4 @@ export default function LogoSlider() {
       </div>
     </div>
   );
-}
+} */
