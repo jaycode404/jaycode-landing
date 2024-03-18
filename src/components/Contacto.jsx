@@ -10,10 +10,7 @@ export default function Contacto() {
       id="contacto"
       className="text-black frame-section grid lg:grid-cols-2 lg:gap-6 md:gap-0"
     >
-      <div className="order-last">
-        <ContactForm />
-      </div>
-      <div className="mt-4 text-center">
+      <div className="mt-4 text-center sm:order-last">
         <Typography
           variant="h1"
           className="text-6xl margin-section-info  section-title "
@@ -29,6 +26,9 @@ export default function Contacto() {
         <div className="lg:p-4 ">
           <Socials gap={6} size={2.5} />
         </div>
+      </div>
+      <div className="">
+        <ContactForm />
       </div>
     </section>
   );

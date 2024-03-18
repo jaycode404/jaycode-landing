@@ -3,7 +3,7 @@ import { Typography } from "@material-tailwind/react";
 import { Gallery } from "./Gallery";
 export default function Section() {
   return (
-    <section id="sobremi" className="frame-section text-black grid lg:grid-cols-2 gap-4">
+    <section id="sobremi" className="frame-section text-black grid md:grid-cols-2 gap-4">
       <div className="margin-section-info text-center">
         <Typography variant="h1" className="text-6xl lg:text-left section-title">
           Sobre mí<span className="dot">.</span>

@@ -8,13 +8,13 @@ export default function Habilidades() {
       id="habilidades"
       className="grid md:grid-cols-2 gap-4 frame-section text-black md:gap-0  md:items-center"
     >
-      <div className="order-last">
+      <div className="">
         <LogoSlider />
       </div>
-      <div className="margin-section-info text-center">
+      <div className="margin-section-info  ">
         <Typography
           variant="h2"
-          className="text-6xl lg:text-left  lg:margin-section-info  mb-10 section-title md:"
+          className="text-6xl lg:text-left  lg:margin-section-info  mb-10 section-title "
         >
           Habilidades<span className="dot">.</span>
         </Typography>

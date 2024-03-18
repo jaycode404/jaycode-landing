@@ -232,12 +232,20 @@ shadowBlue {
   overflow-x: auto; /* Permite el desplazamiento horizontal */
   overflow-y: hidden; /* Oculta el desplazamiento vertical */
 }
-
-.frame-section {
-  padding: 6rem 14rem;
+@media screen and (min-width: 1200px) {
+  .frame-section {
+    padding: 4rem 1rem;
+    margin: 0 14rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .frame-section {
+    padding: 6rem 6rem;
+    margin: 0 14rem;
+  }
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (max-width: 770px) {
   .frame-section {
     padding: 4rem 2rem;
   }
@@ -254,6 +262,13 @@ shadowBlue {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .margin-section-info {
+    order: -1;
+    text-align: center;
+    
+  }
+}
 .margin-section-info {
   margin: 0 0 0 1rem;
 }
