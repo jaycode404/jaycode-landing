@@ -11,32 +11,32 @@ export function ContactForm() {
     <Card
       color="transparent"
       shadow={true}
-      className="p-4 w-[90%] items-center"
+      className="p-4 max-w-[100%]  items-center mx-2 shadow-xl"
     >
-      <form className="w-[100%]">
-        <div className="flex flex-col gap-4">
-          <div className="flex gap-1">
-            <div className="flex flex-col gap-6">
+      <form className="w-[100%] ">
+        <div className="flex flex-col gap-2 ">
+          <div className="lg:flex md:gap-2">
+            <div className="flex flex-col">
               <Typography
                 variant="h6"
                 color="blue-gray"
-                className="-mb-3 text-black"
+                className="text-black "
               >
                 Tu nombre
               </Typography>
-              <input placeholder="Arnold" className="max-w-[80%] input-style" />
+              <input placeholder="Arnold" className="md:w-[100%] w-[80%] input-style" />
             </div>
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap">
               <Typography
                 variant="h6"
                 color="blue-gray"
-                className="-mb-3 text-black"
+                className=" text-black"
               >
                 Tu email
               </Typography>
               <input
                 placeholder="arnold@gmail.com"
-                className="max-w-[80%] input-style"
+                className="md:w-[100%] w-[80%] input-style"
               />
             </div>
           </div>

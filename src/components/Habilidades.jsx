@@ -6,19 +6,19 @@ export default function Habilidades() {
   return (
     <section
       id="habilidades"
-      className="grid grid-flow-col gap-1 frame-section text-black "
+      className="grid md:grid-cols-2 gap-4 frame-section text-black md:gap-0  md:items-center"
     >
-      <div className=" h-[25rem] w-[25rem]">
+      <div className="order-last">
         <LogoSlider />
       </div>
-      <div>
+      <div className="margin-section-info text-center">
         <Typography
-          variant="h1"
-          className="text-7xl text-left margin-section-info mb-10 section-title"
+          variant="h2"
+          className="text-6xl lg:text-left  lg:margin-section-info  mb-10 section-title md:"
         >
           Habilidades<span className="dot">.</span>
         </Typography>
-        <Typography variant="p" className="w-[90%] margin-section-info">
+        <Typography variant="p" className="w-[90%] lg:margin-section-info ">
           Desarrollador Full Stack con habilidades sólidas en
           <span className="JavaScript"> JavaScript</span>,
           <span className="React"> React</span>,

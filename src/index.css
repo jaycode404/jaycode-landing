@@ -56,9 +56,10 @@ shadowBlue {
   transform: scale(0.5);
 }
 .imagen-bg {
-  background-image: url("/public/assets/foto.png"), url("/public/assets/graph-1.png");
+  background-image: url("/public/assets/foto.png"),
+    url("/public/assets/graph-1.png");
   background-size: cover;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   inset: 0;
 }
 
@@ -233,9 +234,24 @@ shadowBlue {
 }
 
 .frame-section {
-  padding: 6rem 2rem 2rem 2rem;
-  /* margin: 8rem 0 0 0; */
   padding: 6rem 14rem;
+}
+
+@media screen and (min-width: 720px) {
+  .frame-section {
+    padding: 4rem 2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .frame-section {
+    /* width: 70rem; */
+    padding: 4rem 0rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .nav-mobile a {
+    padding: 0.5rem;
+  }
 }
 
 .margin-section-info {
@@ -301,7 +317,7 @@ shadowBlue {
 .logos {
   display: flex;
   width: 400rem;
-  padding: 60px 0;
+  padding: 40px 0;
   overflow: hidden;
   position: relative;
 }

@@ -12,17 +12,17 @@ import { NavList, NavbarSimple } from "./components/Navbar";
 import Footer from "./components/Footer";
 function App() {
   return (
-    <div className="h-auto">
+    <div className="h-auto ">
       <NavbarSimple />
       <GeneralProvider>
-        <div className=" mx-auto gap-10 section-bg">
+        <div className="mx-auto gap-10 section-bg">
           <Header />
           <Proyectos />
           <Habilidades />
           <Section />
           <Contacto />
         </div>
-        <div className="bg-black">
+        <div className="bg-black ">
           <Footer />
         </div>
       </GeneralProvider>

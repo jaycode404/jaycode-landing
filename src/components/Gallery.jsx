@@ -1,7 +1,7 @@
 export function Gallery() {
   return (
-    <div className="max-w-[25rem] h-[20rem] grid grid-cols-2 gap-4 md:grid-cols-4">
-      <div className="grid gap-4">
+    <div className="md:max-w-[22rem] h-[auto] grid grid-cols-2 gap-2 md:grid-cols-4 px-4">
+      <div className="grid">
         <div>
           <img
             className="imagen-gallery"

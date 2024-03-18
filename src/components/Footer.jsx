@@ -11,10 +11,10 @@ export default function Footer() {
   }, []);
 
   return (
-    <div className="text-white h-[20rem] w-[100%] py-4">
-      <div className="flex flex-col gap-10 px-[20rem] justify-center">
-        <div className="col-span-1 row-span-12 rounded-xl">
-          <Typography className="flex flex-col items-center" variant="h6">
+    <div className=" text-white lg:h-[20rem] w-[100%] py-4">
+      <div className="flex flex-col gap-10 md:gap-6 lg:px-[20rem] md:px-[10rem] items-center">
+        <div className="col-span-1 row-span-12 rounded-xl  self-center">
+          <Typography className=" " variant="h6">
             Desarrollo Web Jaycode
           </Typography>
         </div>

@@ -4,7 +4,7 @@ export default function Socials({ size, gap, invert, header }) {
   console.log(size);
   console.log(gap);
   return (
-    <div className={`flex gap-${gap} `}>
+    <div className={`flex gap-${gap} justify-center mt-2`}>
       <a href="https://github.com/jaycode404" target="_blank">
         <img
           src="https://bespoke-kashata-1a54d2.netlify.app/assets/github.png"
