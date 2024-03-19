@@ -21,7 +21,7 @@ export default function Header() {
       if (headerDiv) {
         setHeaderId("header");
       } else {
-        console.error("No se encontró ningún div con el ID especificado.");
+        
       }
     };
 

@@ -7,7 +7,7 @@ export function Slider() {
   const nombre = useContext(GeneralContext);
   return (
     <GeneralProvider>
-      {console.log(nombre)}
+      
       <Carousel
         className="flex rounded-xl w-[45rem] h-[36rem] "
         transition={{ type: "tween", duration: ".5" }}

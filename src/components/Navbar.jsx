@@ -2,8 +2,7 @@ import React from "react";
 import { Navbar, Typography } from "@material-tailwind/react";
 
 export function NavList({ flex, gap }) {
-  console.log("flex:", flex);
-  console.log("gap:", gap);
+  
 
   return (
     <div
