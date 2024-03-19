@@ -8,11 +8,11 @@ export default function Proyectos() {
       <div className="margin-section-info">
         <Typography
           variant="h1"
-          className="text-6xl text-left "
+          className="text-6xl lg:text-left "
         >
           Proyectos<span className="dot">.</span>
         </Typography>
-        <Typography variant="lead" className="w-[80%] ">
+        <Typography variant="lead" className="w-[90%]">
           Aquí menos palabras, más trabajo:
         </Typography>
       </div>

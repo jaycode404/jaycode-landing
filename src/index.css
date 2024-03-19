@@ -232,6 +232,8 @@ shadowBlue {
   overflow-x: auto; /* Permite el desplazamiento horizontal */
   overflow-y: hidden; /* Oculta el desplazamiento vertical */
 }
+
+
 @media screen and (min-width: 1200px) {
   .frame-section {
     padding: 4rem 1rem;
@@ -391,4 +393,14 @@ shadowBlue {
 .section-bg > :nth-child(even) {
   background-color: #f7f7ff;
   box-shadow: 0 0 10px 1px rgba(34, 34, 34, 0.2);
+}
+
+.text-size {
+  font-size: medium;
+}  
+
+@media screen and (max-width: 500px) {
+  .text-size {
+    font-size: small;
+  }  
 }

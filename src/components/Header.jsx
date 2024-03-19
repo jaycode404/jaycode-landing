@@ -29,7 +29,7 @@ export default function Header() {
   }, []);
 
   return (
-    <div id="header" className="relative ">
+    <div id="header" className="relative pt-8">
       <div className="frame-section max-w-[100%] md:gap-8 lg:grid lg:grid-cols-2 md:grid-cols-1  text-black md:items-center ">
         <div className="h-[15rem] w-[15rem] imagen-bg place-self-center md:m-auto m-auto"></div>
         <div className="flex flex-col gap-2 md:items-center items-center">
@@ -39,12 +39,9 @@ export default function Header() {
 
           <Typography
             variant="p"
-            className="lg:text-left text-wrap text-black md:px-2 md:text-center max-w-[80%] "
+            className="lg:text-left text-wrap text-black md:px-2 text-center max-w-[80%] "
           >
-            Soy un desarrollador web fullstack con experiencia en tecnologías
-            como React, JavaScript y Node. Transformo ideas en código y resuelvo
-            desafíos de manera efectiva. Mi enfoque pragmático y experiencia
-            respaldada me permite abordar proyectos de manera integral.
+            Landing page de introducción a mi perfil profesional, donde expongo mi trabajo e información sintetizada respecto a mí.
           </Typography>
           <div className=" md:scale-[120%]">
             <Socials

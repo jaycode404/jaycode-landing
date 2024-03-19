@@ -43,13 +43,13 @@ export function NavList({ flex, gap }) {
 
 export function NavbarSimple({ flex, gap }) {
   return (
-    <div className="fixed z-10 bg-gray-100 md:w-[100%] lg:px-[12rem] nav-mobile w-full text-[12px] items-center">
+    <div className="fixed z-10 bg-gray-100 md:w-[100%] lg:px-[12rem] nav-mobile w-full text-size items-center">
       <div className="flex justify-between text-black md:px-4">
         <Typography
           as="a"
           href="/"
           variant="h6"
-          className="cursor-pointer nav-link transition-colors hover:bg-black hover:text-white text-[12px]"
+          className="cursor-pointer nav-link transition-colors hover:bg-black hover:text-white text-size"
         >
           <span className="span-code lg:text-xl">{"<"}</span> Jaycode{" "}
           <span className="span-code">{"/>"}</span>
