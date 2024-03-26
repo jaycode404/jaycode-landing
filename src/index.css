@@ -129,6 +129,16 @@ body {
     z-index: -1;
     background-color: #75be95;
   }
+  /* CONTACTO---------------------------- */
+  .card-form {
+    /* p-4 max-w-[100%]  items-center mx-2 shadow-xl */
+    padding: 1rem;
+    width: 95%;
+    margin: auto;
+  }
+  .contact-form {
+    width: 100%;
+  }
 }
 /* xs */
 @media (min-width: 475px) {
@@ -235,6 +245,16 @@ body {
     z-index: -1;
     background-color: #75be95;
   }
+  /* CONTACTO---------------------------- */
+  .card-form {
+    /* p-4 max-w-[100%]  items-center mx-2 shadow-xl */
+    padding: 1rem;
+    width: 80%;
+    margin: auto;
+  }
+  .contact-form {
+    width: 100%;
+  }
 }
 
 /* sm */
@@ -336,6 +356,16 @@ body {
     top: 3rem;
     scale: 120%;
     z-index: -1;
+  }
+  /* CONTACTO---------------------------- */
+  .card-form {
+    /* p-4 max-w-[100%]  items-center mx-2 shadow-xl */
+    padding: 1rem;
+    width: 80%;
+    margin: auto;
+  }
+  .contact-form {
+    width: 100%;
   }
 }
 
@@ -811,7 +841,7 @@ shadowBlue {
   transition: transform 0.3s ease-in-out;
 }
 .imagen-gallery:hover {
-  transform: scale(1.2);
+  transform: scale(1.01);
 }
 .dot {
   color: #37b5ff;

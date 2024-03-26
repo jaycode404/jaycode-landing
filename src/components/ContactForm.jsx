@@ -11,9 +11,9 @@ export function ContactForm() {
     <Card
       color="transparent"
       shadow={true}
-      className="p-4 max-w-[100%]  items-center mx-2 shadow-xl"
+      className="card-form"
     >
-      <form className="w-[100%] ">
+      <form className="contact-form">
         <div className="flex flex-col gap-2 ">
           <div className="lg:flex md:gap-2">
             <div className="flex flex-col">
