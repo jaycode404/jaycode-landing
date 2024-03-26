@@ -22,7 +22,114 @@ body {
   background-color: rgb(229, 231, 235);
   /* background: linear-gradient(to top, #001f3f, #001a35, #001226, #000c1c); */
 }
+@media (min-width: 210px) {
+  /* GENERAL---------------------------- */
+  .container {
+    display: grid;
+    grid-template-rows: 1;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    gap: 1rem;
+  }
+  .section-title {
+    font-size: 40px;
+    margin-bottom: 0.5rem;
+  }
+  /* HEADERR-------------------- */
+  .navbar-container {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background-color: #f3f4f6;
+    font-size: 10px;
+  }
+  .nav-logo {
+    font-size: 10px;
+  }
+  .navbar-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-list {
+    /* `flex ${flex} ${gap ? `gap-${gap}` : "gap-0"} `}
+      style={{ width: "auto" } */
+    display: flex;
+    gap: 0;
+    width: auto;
+    height: auto;
+    margin-right: 1rem;
+  }
+  .nav-link {
+    /* flex nav-link items-center transition-colors hover:bg-black hover:text-white */
+    place-items: center;
+    padding: 0.3rem 0.3rem;
+  }
+  .header-container {
+    padding-top: 2rem;
+    display: grid;
+    margin-bottom: 2rem;
+  }
+  .hero-title {
+    font-size: 50px;
+  }
+  .hero-img {
+    height: 10rem;
+    width: 10rem;
+    background-image: url("/public/assets/foto.png"),
+      url("/public/assets/graph-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    inset: 0;
+    place-self: center;
+  }
 
+  .parrafo {
+    font-size: 12px;
+    line-height: 25 /*  */ px;
+  }
+
+  .info-box {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    width: 85%;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: medium;
+  }
+  /* MACINTOSH-------------------------- */
+  .logo-slide-main {
+    position: relative;
+    scale: 90%;
+  }
+  .logo-slide-container {
+    /* absolute top-6 item flex items-center right-[5.2rem] md:right-[4.9rem] md:top-6" */
+    position: absolute;
+    display: flex; /* try dis block */
+    margin-top: 1rem;
+    place-self: center;
+    right: 3rem;
+    top: -0.3rem;
+    scale: 75%;
+    z-index: -1;
+  }
+  .logos-container {
+    position: relative;
+    overflow: hidden;
+    height: 10rem;
+    width: 14rem;
+    z-index: -1;
+    background-color: #75be95;
+  }
+}
 /* xs */
 @media (min-width: 475px) {
   /* GENERAL---------------------------- */
