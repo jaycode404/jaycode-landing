@@ -23,9 +23,7 @@ export default function Contacto() {
             colaborar.
           </Typography>
         </div>
-        <div className="lg:p-4 ">
-          <Socials gap={6} size={2.5} />
-        </div>
+          <Socials size={2.8} gap={5}/>
       </div>
       <div className="">
         <ContactForm />

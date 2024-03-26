@@ -43,13 +43,11 @@ export default function Header() {
           >
             Landing page de introducción a mi perfil profesional, donde expongo mi trabajo e información sintetizada respecto a mí.
           </Typography>
-          <div className=" md:scale-[120%]">
             <Socials
-              size={2}
+              size={2.8}
               gap={10}
               header={`${headerId ? "true" : "false"}`}
             />
-          </div>
         </div>
       </div>
     </header>

@@ -50,20 +50,39 @@ body {
     z-index: 10;
     background-color: #f3f4f6;
     font-size: 12px;
-    place-content: center;
+  }
+  .nav-logo {
+    font-size: 10px;
   }
   .navbar-div {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+  .nav-list {
+    /* `flex ${flex} ${gap ? `gap-${gap}` : "gap-0"} `}
+      style={{ width: "auto" } */
+    display: flex;
+    gap: 0;
+    width: auto;
+    height: auto;
+  }
+  .nav-link {
+    /* flex nav-link items-center transition-colors hover:bg-black hover:text-white */
+    place-items: center;
+    padding: 1rem 1rem;
   }
   .header-container {
     padding-top: 4rem;
     display: grid;
     margin-bottom: 2rem;
   }
+  .hero-title {
+    font-size: 79px;
+  }
   .hero-img {
-    height: 12rem;
-    width: 12rem;
+    height: 18rem;
+    width: 18rem;
     background-image: url("/public/assets/foto.png"),
       url("/public/assets/graph-1.png");
     background-size: cover;
@@ -71,15 +90,10 @@ body {
     inset: 0;
     place-self: center;
   }
-  .nav-link {
-    /* flex nav-link items-center transition-colors hover:bg-black hover:text-white */
-    padding: 1rem 1rem;
-  }
-  .nav-link:hover {
-    /* flex nav-link items-center transition-colors hover:bg-black hover:text-white */
-    background-color: black;
-    color: white;
-    padding: 1rem 1rem;
+
+  .parrafo {
+    font-size: 20px;
+    line-height: 25 /*  */ px;
   }
 
   .info-box {
@@ -112,7 +126,7 @@ body {
     height: 10rem;
     width: 14rem;
     z-index: -1;
-    background-color: #2f2f2f;
+    background-color: #75be95;
   }
 }
 
@@ -141,15 +155,26 @@ body {
     position: fixed;
     z-index: 10;
     background-color: #f3f4f6;
-    font-size: 18px;
+    font-size: 12px;
     place-content: center;
   }
   .navbar-div {
     display: flex;
     justify-content: space-between;
   }
+  .nav-list {
+    /* `flex ${flex} ${gap ? `gap-${gap}` : "gap-0"} `}
+      style={{ width: "auto" } */
+    display: flex;
+  }
+  .nav-link {
+    /* flex nav-link items-center transition-colors hover:bg-black hover:text-white */
+    place-items: center;
+    padding: 1rem 2rem;
+  }
+
   .nav-logo {
-    font-size: 19px;
+    font-size: 11px;
   }
   .nav-logo:hover {
     cursor: pointer;
@@ -159,9 +184,12 @@ body {
     display: grid;
     margin-bottom: 2rem;
   }
+  .hero-title {
+    font-size: 100px;
+  }
   .hero-img {
-    height: 12rem;
-    width: 12rem;
+    height: 19rem;
+    width: 19rem;
     background-image: url("/public/assets/foto.png"),
       url("/public/assets/graph-1.png");
     background-size: cover;
@@ -180,7 +208,7 @@ body {
     gap: 0.5rem;
   }
   .parrafo {
-    font-size: 18px;
+    font-size: 22px;
     line-height: 25 /*  */ px;
   }
   /* MACINTOSH-------------------------- */
@@ -237,7 +265,7 @@ body {
     justify-content: space-between;
   }
   .nav-logo {
-    font-size: 19px;
+    font-size: 17px;
   }
   .nav-logo:hover {
     cursor: pointer;
@@ -247,9 +275,12 @@ body {
     display: grid;
     margin-bottom: 2rem;
   }
+  .hero-title {
+    font-size: 110px;
+  }
   .hero-img {
-    height: 12rem;
-    width: 12rem;
+    height: 22rem;
+    width: 22rem;
     background-image: url("/public/assets/foto.png"),
       url("/public/assets/graph-1.png");
     background-size: cover;
@@ -268,7 +299,7 @@ body {
     gap: 0.5rem;
   }
   .parrafo {
-    font-size: 18px;
+    font-size: 23px;
     line-height: 25 /*  */ px;
   }
   /* MACINTOSH-------------------------- */
@@ -337,7 +368,7 @@ body {
     width: 85%;
   }
   .nav-logo {
-    font-size: 19px;
+    font-size: 17px;
   }
   .nav-logo:hover {
     cursor: pointer;
@@ -347,9 +378,12 @@ body {
     display: grid;
     margin-bottom: 2rem;
   }
+  .hero-title {
+    font-size: 120px;
+  }
   .hero-img {
-    height: 12rem;
-    width: 12rem;
+    height: 24rem;
+    width: 24rem;
     background-image: url("/public/assets/foto.png"),
       url("/public/assets/graph-1.png");
     background-size: cover;
@@ -369,7 +403,7 @@ body {
   }
   .parrafo {
     width: 90%;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 25 /*  */ px;
   }
   /* MACINTOSH-------------------------- */
@@ -424,11 +458,11 @@ body {
   }
 
   .section-title {
-    font-size: 60px;
+    font-size: 70px;
     margin-bottom: 0.5rem;
   }
   .last {
-   order: 2; 
+    order: 2;
   }
   /* HEADERR-------------------- */
   .navbar-container {
@@ -436,7 +470,7 @@ body {
     position: fixed;
     z-index: 10;
     background-color: #f3f4f6;
-    font-size: 18px;
+    font-size: 21px;
     place-content: center;
   }
   .navbar-div {
@@ -456,9 +490,12 @@ body {
     display: grid;
     margin-bottom: 2rem;
   }
+  .hero-title {
+    font-size: 100px;
+  }
   .hero-img {
-    height: 12rem;
-    width: 12rem;
+    height: 23rem;
+    width: 23rem;
     background-image: url("/public/assets/foto.png"),
       url("/public/assets/graph-1.png");
     background-size: cover;
@@ -469,16 +506,17 @@ body {
 
   .info-box {
     display: flex;
-    justify-self: center;
-    align-items: center;
-    text-align: center;
+    justify-self: baseline;
+    align-items: baseline;
+    text-align: left;
     width: 85%;
     flex-direction: column;
     gap: 2rem;
+    padding-left: 4rem;
   }
   .parrafo {
     width: 90%;
-    font-size: 20px;
+    font-size: 23px;
     line-height: 25 /*  */ px;
   }
   /* MACINTOSH-------------------------- */
@@ -530,6 +568,7 @@ body {
     padding-top: 3rem;
     padding-bottom: 3rem;
     gap: 1rem;
+    align-items: center;
   }
 
   .section-title {
@@ -537,7 +576,7 @@ body {
     margin-bottom: 0.5rem;
   }
   .last {
-   order: 2; 
+    order: 2;
   }
   /* HEADERR-------------------- */
   .navbar-container {
@@ -549,13 +588,20 @@ body {
     place-content: center;
   }
   .navbar-div {
-    display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin: 0 auto;
-    max-width: 1536px;
   }
+  .nav-list {
+    /* `flex ${flex} ${gap ? `gap-${gap}` : "gap-0"} `}
+      style={{ width: "auto" } */
+    display: flex;
+    gap: 0;
+    width: auto;
+    height: auto;
+  }
+
   .nav-logo {
-    font-size: 24px;
+    font-size: 22px;
   }
   .nav-logo:hover {
     cursor: pointer;
@@ -587,6 +633,7 @@ body {
     width: 85%;
     flex-direction: column;
     gap: 2rem;
+    padding-left: 4rem;
   }
   .parrafo {
     width: 90%;
@@ -892,3 +939,8 @@ shadowBlue {
   z-index: -3;
   left: 10rem;
 } */
+.nav-link:hover {
+  /* flex nav-link items-center transition-colors hover:bg-black hover:text-white */
+  background-color: black;
+  color: white;
+}

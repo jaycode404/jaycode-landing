@@ -1,13 +1,12 @@
 import React from "react";
 import { Navbar, Typography } from "@material-tailwind/react";
 
-export function NavList({ flex, gap }) {
+export function NavList() {
   
 
   return (
     <div
-      className={`flex ${flex} ${gap ? `gap-${gap}` : "gap-0"} `}
-      style={{ width: "auto" }}
+      className="nav-list"
     >
       <a
         href="#proyectos"
