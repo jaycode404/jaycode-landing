@@ -11,28 +11,28 @@ export function NavList({ flex, gap }) {
     >
       <a
         href="#proyectos"
-        className="flex nav-link items-center transition-colors hover:bg-black hover:text-white"
+        className="nav-link"
       >
         Proyectos
       </a>
 
       <a
         href="#habilidades"
-        className="flex nav-link items-center transition-colors hover:bg-black hover:text-white  "
+        className="nav-link  "
       >
         Habilidades
       </a>
 
       <a
         href="#sobremi"
-        className="flex nav-link items-center transition-colors hover:bg-black hover:text-white  p-2"
+        className="nav-link"
       >
         Sobre Mi
       </a>
 
       <a
         href="#contacto"
-        className="flex nav-link items-center transition-colors hover:bg-black hover:text-white  "
+        className="nav-link  "
       >
         Contacto
       </a>
@@ -42,13 +42,13 @@ export function NavList({ flex, gap }) {
 
 export function NavbarSimple({ flex, gap }) {
   return (
-    <div className="fixed z-10 bg-gray-100 md:w-[100%] lg:px-[12rem] nav-mobile w-full text-size items-center">
-      <div className="flex justify-between text-black md:px-4">
+    <div className="navbar-container">
+      <div className="navbar-div">
         <Typography
           as="a"
           href="/"
           variant="h6"
-          className="cursor-pointer nav-link transition-colors hover:bg-black hover:text-white text-size"
+          className="nav-logo nav-link"
         >
           <span className="span-code lg:text-xl">{"<"}</span> Jaycode{" "}
           <span className="span-code">{"/>"}</span>

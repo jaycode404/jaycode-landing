@@ -6,19 +6,17 @@ export default function Habilidades() {
   return (
     <section
       id="habilidades"
-      className="grid md:grid-cols-2 gap-4 frame-section text-black md:gap-0  md:items-center"
+      className="container"
     >
-      <div className="">
-        <LogoSlider />
-      </div>
-      <div className="margin-section-info  ">
+      
+      <div className="info-box last">
         <Typography
           variant="h2"
-          className="text-6xl lg:text-left  lg:margin-section-info  mb-10 section-title "
+          className="section-title "
         >
           Habilidades<span className="dot">.</span>
         </Typography>
-        <Typography variant="p" className="w-[90%] lg:margin-section-info ">
+        <Typography variant="p" className="parrafo">
           Desarrollador Full Stack con habilidades sólidas en
           <span className="JavaScript"> JavaScript</span>,
           <span className="React"> React</span>,
@@ -30,6 +28,9 @@ export default function Habilidades() {
           continua y el aprendizaje constante para afrontar nuevos desafíos
           tecnológicos.
         </Typography>
+      </div>
+      <div >
+        <LogoSlider />
       </div>
     </section>
   );

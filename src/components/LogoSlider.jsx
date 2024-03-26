@@ -2,14 +2,14 @@ import React from "react";
 
 export default function LogoSlider() {
   return (
-    <div className="relative md:scale-[90%]">
+    <div className="logo-slide-main">
       <img
         src="https://bespoke-kashata-1a54d2.netlify.app/assets/macintosh.png"
         alt=""
-        className="mr-4 mac-shadow "
+        className="mac mac-shadow"
       />
-      <div className="absolute top-6 item flex items-center right-[5.2rem] md:right-[4.9rem] md:top-6">
-        <div className="logos-container bg-gray-300 scale-[80%] lg:scale-[100%]">
+      <div className="logo-slide-container">
+        <div className="logos-container">
           <div className="logos ">
             <div className="logo-slide">
               <img

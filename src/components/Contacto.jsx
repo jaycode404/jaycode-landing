@@ -8,18 +8,18 @@ export default function Contacto() {
   return (
     <section
       id="contacto"
-      className="text-black frame-section grid lg:grid-cols-2 lg:gap-6 md:gap-0"
+      className="container"
     >
-      <div className="mt-4 text-center sm:order-last">
+      <div className="info-box last">
         <Typography
           variant="h1"
-          className="text-6xl margin-section-info  section-title "
+          className=" section-title text-gradient"
         >
           Contacto<span className="dot">.</span>
         </Typography>
         <div>
-          <Typography variant="p" className="pl-5 px-4">
-            ¡Contactame! Estaré leyendo tu propuesta en breve y será un placer
+          <Typography variant="p" className="parrafo">
+            ¡Contactame! Estaré leyendo<br></br> tu propuesta en breve y será un placer
             colaborar.
           </Typography>
         </div>

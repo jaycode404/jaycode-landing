@@ -1,7 +1,7 @@
 export function Gallery() {
   return (
-    <div className="md:max-w-[22rem] h-[auto] grid grid-cols-2 gap-2 md:grid-cols-4 px-4">
-      <div className="grid">
+    <div className="md:max-w-[80%] h-[auto] grid grid-cols-2 lg:grid-cols-3 gap-2 px-2 m-auto ">
+      <div className="grid ">
         <div>
           <img
             className="imagen-gallery"
@@ -43,45 +43,6 @@ export function Gallery() {
           <img
             className="imagen-gallery"
             src="https://docs.material-tailwind.com/img/team-3.jpg"
-            alt="gallery-photo"
-          />
-        </div>
-      </div>
-      <div className="grid gap-4">
-        <div>
-          <img
-            className="imagen-gallery"
-            src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-            alt="gallery-photo"
-          />
-        </div>
-        <div>
-          <img
-            className="imagen-gallery"
-            src="https://docs.material-tailwind.com/img/team-3.jpg"
-            alt="gallery-photo"
-          />
-        </div>
-        <div>
-          <img
-            className="imagen-gallery"
-            src="https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-            alt="gallery-photo"
-          />
-        </div>
-      </div>
-      <div className="grid gap-4">
-        <div>
-          <img
-            className="imagen-gallery"
-            src="https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-            alt="gallery-photo"
-          />
-        </div>
-        <div>
-          <img
-            className="imagen-gallery"
-            src="https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80"
             alt="gallery-photo"
           />
         </div>

@@ -18,7 +18,7 @@ export default function ProyectoBox(props) {
           ...imagenStyle,
         }}
       ></div>
-      <Typography className="relative z-10">{title}</Typography>
+      <Typography className="relative ">{title}</Typography>
     </div>
   );
 }

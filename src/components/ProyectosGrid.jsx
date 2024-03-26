@@ -35,7 +35,7 @@ export default function ProyectosGrid() {
             ...imagenStyle,
           }}
         ></div>
-        <Typography className="relative z-10">{proyectos.title}</Typography>
+        <Typography className="relative z-1">{proyectos.title}</Typography>
       </div>
       <div className="col-span-1 row-span-8 rounded-xl box p-2 border-4 border-black relative">
         <div
@@ -46,7 +46,7 @@ export default function ProyectosGrid() {
             ...imagenStyle,
           }}
         ></div>
-        <Typography className="relative z-10">Nombre de un Proyecto</Typography>
+        <Typography className="relative z-1">Nombre de un Proyecto</Typography>
       </div>
       <div className="col-span-1 row-span-12 rounded-xl box p-2 border-4 border-black relative">
         <div
@@ -57,7 +57,7 @@ export default function ProyectosGrid() {
             ...imagenStyle,
           }}
         ></div>
-        <Typography className="relative z-10">Nombre de un Proyecto</Typography>
+        <Typography className="relative z-1">Nombre de un Proyecto</Typography>
       </div>
       <div className="col-span-1 row-span-8 rounded-xl box p-2 border-4 border-black relative">
         <div
@@ -68,7 +68,7 @@ export default function ProyectosGrid() {
             ...imagenStyle,
           }}
         ></div>
-        <Typography className="relative z-10">Nombre de un Proyecto</Typography>
+        <Typography className="relative z-1">Nombre de un Proyecto</Typography>
       </div>
       <div className="col-span-1 row-span-8 rounded-xl box p-2 border-4 border-black relative">
         <div
@@ -78,7 +78,7 @@ export default function ProyectosGrid() {
             ...imagenStyle,
           }}
         ></div>
-        <Typography className="relative z-10">Nombre de un Proyecto</Typography>
+        <Typography className="relative z-1">Nombre de un Proyecto</Typography>
       </div>
     </div>
   );

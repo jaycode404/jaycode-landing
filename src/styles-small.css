@@ -1,0 +1,375 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* color base #F5F5F5*/
+/* color azul #37B5FF*/
+/* color lavanda  #B65BFE */
+/* color negro #222222 */
+
+@media screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    overflow-x: hidden;
+    background-color: #22d3ee;
+    /* background-color: rgb(229, 231, 235); */
+    /* background: linear-gradient(to top, #001f3f, #001a35, #001226, #000c1c); */
+  }
+  .navbar-bg {
+    background-color: rgb(229, 231, 235);
+  }
+
+  .span-code {
+    color: #37b5ff;
+  }
+  .divPad {
+    padding: 2rem;
+  }
+
+  .text-gradient {
+    background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-fill-color: transparent;
+  }
+
+  .parrafo {
+    width: 60%;
+    text-align: left;
+  }
+
+  shadowBlue {
+    box-shadow: 0 40px 80px rgba(18, 194, 233, 0.1);
+  }
+
+  .imagen-bg-shape {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(0.5);
+  }
+  .imagen-bg {
+    background-image: url("/public/assets/foto.png"),
+      url("/public/assets/graph-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    inset: 0;
+  }
+
+  .imagen:hover {
+    transform: scale(0.55);
+  }
+  /* estilos.css */
+  .imagen-gallery {
+    filter: drop-shadow(0px 0px 5px rgba(18, 194, 233, 0.8));
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center center;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .imagen-gallery:hover {
+    transform: scale(1.2);
+  }
+
+  .dot {
+    color: #37b5ff;
+  }
+
+  .sobremi {
+    position: relative;
+  }
+
+  .habilidades {
+    position: relative;
+  }
+
+  .proyectos {
+    position: relative;
+  }
+
+  .contacto {
+    position: relative;
+  }
+
+  .HTML {
+    color: #e08132;
+  }
+  .CSS {
+    color: #38bdf8;
+  }
+  .Tailwind {
+    display: inline-block;
+    background: linear-gradient(to left, #a5f3fc, #2dd4bf, #22d3ee);
+    color: transparent;
+    background-clip: text;
+  }
+
+  .JavaScript {
+    color: #dcc810;
+  }
+  .MySQL {
+    color: #ee6e05;
+  }
+  .Node {
+    color: #a3e635;
+  }
+  .React {
+    color: #67e8f9;
+  }
+
+  .boton-light:hover {
+    filter: drop-shadow(0px 0px 40px rgba(18, 194, 233, 0.8));
+
+    transition: transform 0.1s ease-in-out;
+    transform: scale(1.02);
+  }
+
+  .light-md-blue {
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    border-radius: 50%;
+    background-color: #37b5ff; /* Color verde-azul */
+    filter: blur(100px); /* Desenfoque */
+    z-index: -1; /* Ajusta el valor según sea necesario */
+  }
+  .light-md-lavanda {
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    border-radius: 50%;
+    background-color: #b65bfe; /* Color verde-azul */
+    filter: blur(100px); /* Desenfoque */
+    z-index: -10; /* Ajusta el valor según sea necesario */
+    overflow-y: hidden;
+  }
+
+  .light-xl-green {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    background-color: #2dd4bf; /* Color verde-azul */
+    filter: blur(500px); /* Desenfoque */
+    z-index: -10; /* Ajusta el valor según sea necesario */
+  }
+
+  .imagen-bg-shape {
+    background-image: url("./assets/triangle.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  .bg-header {
+    position: relative; /* Asegura que los elementos internos respeten la posición del ::before */
+    overflow: hidden; /* Evita que el contenido se desborde */
+  }
+
+  .bg-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/cuadricula.jpg");
+    background-size: cover;
+    opacity: 0.1;
+    z-index: -1;
+    filter: blur(6px); /* Aplica un desenfoque a la imagen de fondo */
+  }
+
+  .graph-styled {
+    position: absolute;
+    z-index: -3;
+    left: 10rem;
+  }
+
+  .bg-gradient {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh; /* Puedes ajustar la altura según sea necesario */
+    background-image: linear-gradient(
+        to bottom,
+        rgba(56, 163, 165, 0.2),
+        rgba(87, 204, 153, 0.2)
+      ),
+      url("tu-imagen.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .bg-gradient::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to top,
+      rgba(56, 163, 165, 0.2),
+      rgba(87, 204, 153, 0.2)
+    );
+    backdrop-filter: blur(
+      20px
+    ); /* Ajusta el valor de desenfoque según lo desees */
+  }
+
+  .header-container {
+    max-height: 100vh; /* Limita la altura del contenedor al tamaño de la ventana */
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    overflow-y: hidden; /* Oculta el desplazamiento vertical */
+  }
+
+  .frame-section {
+    padding: 4rem 1rem;
+    margin: 0 14rem;
+  }
+
+  .nav-mobile a {
+    padding: 0.5rem;
+  }
+
+  .margin-section-info {
+    order: -1;
+    text-align: center;
+  }
+
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  .logos-container {
+    position: relative;
+    overflow: hidden;
+    height: 10rem;
+    width: 14rem;
+    z-index: -1;
+    background-color: #2f2f2f;
+  }
+
+  .logos-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 120px; /* Ancho de los gradientes */
+    background-image: linear-gradient(
+      to left,
+      rgba(103, 232, 249, 0),
+      /* Transparente */ #67e8f9 /* Color #67E8F9 */
+    );
+
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+  .logos-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 120px; /* Ancho de los gradientes */
+    background-image: linear-gradient(
+      to right,
+      rgba(103, 232, 249, 0),
+      /* Transparente */ #67e8f9 /* Color #67E8F9 */
+    );
+
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  .logos-container::before {
+    left: 0; /* Colocar el gradiente en el lado izquierdo */
+  }
+
+  .logos-container::after {
+    right: 0; /* Colocar el gradiente en el lado derecho */
+  }
+
+  .logos {
+    display: flex;
+    width: 400rem;
+    padding: 40px 0;
+    overflow: hidden;
+    position: relative;
+  }
+  .logo-slide {
+    display: flex;
+    animation: 8s slide infinite linear;
+    position: relative;
+  }
+
+  .logo-slide img {
+    height: 80px;
+    margin: 0 10px;
+  }
+  .input-style {
+    border-radius: 5px;
+    border: 2px solid gray;
+    background: transparent;
+    padding: 0.4rem;
+  }
+  .textarea-style {
+    border-radius: 5px;
+    border: 2px solid gray;
+    background: transparent;
+    padding: 0.4rem;
+  }
+
+  .social-icon {
+    height: 30px;
+  }
+  .social-invert {
+    filter: invert(100%);
+  }
+  .nav-link {
+    padding: 1rem 1rem;
+  }
+  .mac-shadow {
+    filter: drop-shadow(0 10px 20px rgba(18, 194, 233, 0.5));
+  }
+
+  .box {
+    transition: transform 0.2s ease, filter 0.3s ease;
+  }
+
+  .box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 5px rgba(18, 194, 233, 0.2);
+    cursor: pointer;
+  }
+  .section-title {
+    margin-bottom: 1rem;
+  }
+
+  .section-bg > :nth-child(even) {
+    background-color: #f7f7ff;
+    box-shadow: 0 0 10px 1px rgba(34, 34, 34, 0.2);
+  }
+
+  .text-size {
+    font-size: medium;
+  }
+
+  .text-size {
+    font-size: small;
+  }
+}

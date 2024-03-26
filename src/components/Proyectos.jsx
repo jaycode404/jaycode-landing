@@ -6,12 +6,12 @@ export default function Proyectos() {
   
 
   return (
-    <section id="proyectos" className="text-black frame-section ">
-      <div className="margin-section-info">
-        <Typography variant="h1" className="text-6xl lg:text-left ">
+    <section id="proyectos" className="container">
+      <div className="info-box">
+        <Typography variant="h2" className="section-title">
           Proyectos<span className="dot">.</span>
         </Typography>
-        <Typography variant="lead" className="w-[90%]">
+        <Typography variant="lead" className="parrafo">
           Aquí menos palabras, más trabajo:
         </Typography>
       </div>
