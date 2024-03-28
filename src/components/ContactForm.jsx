@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import {
   Card,
   Textarea,
@@ -5,15 +6,35 @@ import {
   Button,
   Typography,
 } from "@material-tailwind/react";
+import emailjs from '@emailjs/browser';
 
 export function ContactForm() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_d26d7xt', 'template_uc77t9q', form.current, {
+        publicKey: '640qWiNVvwnks4LLD',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
   return (
     <Card
       color="transparent"
       shadow={true}
       className="card-form"
     >
-      <form className="contact-form">
+      <form ref={form} className="contact-form" onSubmit={sendEmail}>
         <div className="flex flex-col gap-2 ">
           <div className="lg:flex md:gap-2">
             <div className="flex flex-col">
@@ -24,7 +45,7 @@ export function ContactForm() {
               >
                 Tu nombre
               </Typography>
-              <input placeholder="Arnold" className="md:w-[100%] w-[80%] input-style" />
+              <input name="user_name"  placeholder="Arnold" className="md:w-[100%] w-[80%] input-style" />
             </div>
             <div className="flex flex-col gap">
               <Typography
@@ -35,6 +56,7 @@ export function ContactForm() {
                 Tu email
               </Typography>
               <input
+                name="user_email"
                 placeholder="arnold@gmail.com"
                 className="md:w-[100%] w-[80%] input-style"
               />
@@ -49,7 +71,7 @@ export function ContactForm() {
               Mensaje
             </Typography>
             <textarea
-              
+              name="message"
               className="w-full textarea-style"
               type="text-area"
               maxLength={100}
