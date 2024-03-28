@@ -4,7 +4,7 @@ export default function LogoSlider() {
   return (
     <div className="logo-slide-main">
       <img
-        src="/public/assets/macintosh.png"
+        src="/assets/macintosh.png"
         alt=""
         className="mac mac-shadow"
       />
@@ -13,63 +13,63 @@ export default function LogoSlider() {
           <div className="logos ">
             <div className="logo-slide">
               <img
-                src="/public/assets/react-3.svg"
+                src="/assets/react-3.svg"
                 alt=""
               />
               <img
-                src="/public/assets/js-logo.png"
+                src="/assets/js-logo.png"
                 alt=""
               />
               <img
-                src="/public/assets/tail-logo.png"
+                src="/assets/tail-logo.png"
                 alt=""
               />
               <img
-                src="/public/assets/html-logo.png"
+                src="/assets/html-logo.png"
                 alt=""
               />
               <img
-                src="/public/assets/css-logo.png"
+                src="/assets/css-logo.png"
                 alt=""
               />
               <img
-                src="/public/assets/mysql-logo.png"
+                src="/assets/mysql-logo.png"
                 alt=""
                 className="social-invert"
               />
               <img
-                src="/public/assets/nodejs-logo.png"
+                src="/assets/nodejs-logo.png"
                 alt=""
               />
             </div>
             <div className="logo-slide">
               <img
-                src="/public/assets/react-3.svg"
+                src="/assets/react-3.svg"
                 alt=""
               />
               <img
-                src="/public/assets/js-logo.png"
+                src="/assets/js-logo.png"
                 alt=""
               />
               <img
-                src="/public/assets/tail-logo.png"
+                src="/assets/tail-logo.png"
                 alt=""
               />
               <img
-                src="/public/assets/html-logo.png"
+                src="/assets/html-logo.png"
                 alt=""
               />
               <img
-                src="/public/assets/css-logo.png"
+                src="/assets/css-logo.png"
                 alt=""
               />
               <img
-                src="/public/assets/mysql-logo.png"
+                src="/assets/mysql-logo.png"
                 alt=""
                 className="social-invert"
               />
               <img
-                src="/public/assets/nodejs-logo.png"
+                src="/assets/nodejs-logo.png"
                 alt=""
               />
             </div>
