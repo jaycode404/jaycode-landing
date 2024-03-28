@@ -1,8 +1,14 @@
 import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
-import { Button, Input, Typography, Card } from "@material-tailwind/react";
-import Swal from "sweetalert2";
-export default function ContactForm() {
+import emailjs from "@emailjs/web";
+import {
+  Card,
+  Textarea,
+  Input,
+  Button,
+  Typography,
+} from "@material-tailwind/react";
+
+export function ContactFormOriginal() {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -14,17 +20,7 @@ export default function ContactForm() {
       })
       .then(
         () => {
-          Swal.fire({
-            position: "top-end",
-            icon: "success",
-            title: "E-mail enviado!",
-            showConfirmButton: false,
-            timer: 1500
-          });
-          form.current.reset(); 
-          
           console.log("SUCCESS!");
-
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -84,7 +80,7 @@ export default function ContactForm() {
           </div>
         </div>
 
-        <Button type="submit" className="mt-6 boton-light boton-form" fullWidth>
+        <Button className="mt-6 boton-light" fullWidth>
           Enviar
         </Button>
       </form>

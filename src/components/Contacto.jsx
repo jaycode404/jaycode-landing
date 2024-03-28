@@ -1,8 +1,9 @@
 import React from "react";
 import { Button, Typography } from "@material-tailwind/react";
 import { Slider } from "./Slider";
-import { ContactForm } from "./ContactForm";
+
 import Socials from "./Socials";
+import ContactForm from "./ContactForm";
 
 export default function Contacto() {
   return (
@@ -19,8 +20,7 @@ export default function Contacto() {
         </div>
         <Socials size={2.8} gap={5} />
       </div>
-
-      <ContactForm />
+      <ContactForm/>
     </section>
   );
 }

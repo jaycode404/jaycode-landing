@@ -877,7 +877,10 @@ shadowBlue {
 .React {
   color: #67e8f9;
 }
-
+.boton-form {
+  background-color: black;
+  color: white;
+}
 .boton-light:hover {
   filter: drop-shadow(0px 0px 40px rgba(18, 194, 233, 0.8));
 
