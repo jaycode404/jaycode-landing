@@ -31,7 +31,7 @@ export default function ProyectosGrid() {
           className="bg-cover bg-center absolute inset-0 rounded-xl"
           style={{
             backgroundImage:
-              "url('https://bespoke-kashata-1a54d2.netlify.app/assets/graph.png')",
+              "url('/public/assets/graph.png')",
             ...imagenStyle,
           }}
         ></div>
@@ -42,7 +42,7 @@ export default function ProyectosGrid() {
           className="bg-cover bg-center absolute inset-0 rounded-xl"
           style={{
             backgroundImage:
-              "url('https://bespoke-kashata-1a54d2.netlify.app/assets/bmo.png')",
+              "url('/public/assets/bmo.png')",
             ...imagenStyle,
           }}
         ></div>
@@ -53,7 +53,7 @@ export default function ProyectosGrid() {
           className="bg-cover bg-center absolute inset-0 rounded-xl"
           style={{
             backgroundImage:
-              "url('https://bespoke-kashata-1a54d2.netlify.app/assets/foto.png')",
+              "url('/public/assets/foto.png')",
             ...imagenStyle,
           }}
         ></div>
@@ -64,7 +64,7 @@ export default function ProyectosGrid() {
           className="bg-cover bg-center absolute inset-0 rounded-xl"
           style={{
             backgroundImage:
-              "url('https://bespoke-kashata-1a54d2.netlify.app/assets/cuadricula.jpg')",
+              "url('/public/assets/cuadricula.jpg')",
             ...imagenStyle,
           }}
         ></div>

@@ -11,7 +11,7 @@ export default function Proyectos() {
         <Typography variant="h2" className="section-title">
           Proyectos<span className="dot">.</span>
         </Typography>
-        <Typography variant="lead" className="parrafo">
+        <Typography variant="p" className="parrafo">
           Aquí menos palabras, más trabajo:
         </Typography>
         <Button color="blue">
