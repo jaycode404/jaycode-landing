@@ -19,12 +19,11 @@ export default function ContactForm() {
             icon: "success",
             title: "E-mail enviado!",
             showConfirmButton: false,
-            timer: 1500
+            timer: 1500,
           });
-          form.current.reset(); 
-          
-          console.log("SUCCESS!");
+          form.current.reset();
 
+          console.log("SUCCESS!");
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -46,7 +45,8 @@ export default function ContactForm() {
                 Tu nombre
               </Typography>
               <input
-                name="user_name"
+                type="text"
+                name="to_name"
                 placeholder="Arnold"
                 className="md:w-[100%] w-[80%] input-style"
               />
@@ -60,7 +60,8 @@ export default function ContactForm() {
                 Tu email
               </Typography>
               <input
-                name="user_email"
+                type="email"
+                name="from_name"
                 placeholder="arnold@gmail.com"
                 className="md:w-[100%] w-[80%] input-style"
               />
