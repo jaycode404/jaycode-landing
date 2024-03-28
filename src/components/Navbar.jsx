@@ -9,28 +9,28 @@ export function NavList() {
       className="nav-list"
     >
       <a
-        href="#proyectos"
+        href="/#proyectos"
         className="nav-link"
       >
         Proyectos
       </a>
 
       <a
-        href="#habilidades"
+        href="/#habilidades"
         className="nav-link  "
       >
         Habilidades
       </a>
 
       <a
-        href="#sobremi"
+        href="/#sobremi"
         className="nav-link"
       >
         Sobre Mi
       </a>
 
       <a
-        href="#contacto"
+        href="/#contacto"
         className="nav-link  "
       >
         Contacto

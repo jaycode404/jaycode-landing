@@ -232,6 +232,9 @@ body {
     position: relative;
     scale: 90%;
   }
+  .mac {
+    margin: 0 auto;
+  }
   .logo-slide-container {
     /* absolute top-6 item flex items-center right-[5.2rem] md:right-[4.9rem] md:top-6" */
     position: absolute;

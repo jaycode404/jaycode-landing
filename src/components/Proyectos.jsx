@@ -14,7 +14,8 @@ export default function Proyectos() {
         <Typography variant="lead" className="parrafo">
           Aquí menos palabras, más trabajo:
         </Typography>
-        <Button color="blue">Ver todos </Button>
+        <Button color="blue">
+          <a href="/proyectosall">Ver todos</a> </Button>
       </div>
       <ProyectosGrid />
     </section>
