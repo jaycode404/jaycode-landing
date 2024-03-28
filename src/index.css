@@ -139,6 +139,10 @@ body {
   .contact-form {
     width: 100%;
   }
+  /* FOOTER---------------------------- */
+  .footer-navlist {
+    font-size: 14px;
+  }
 }
 /* xs */
 @media (min-width: 475px) {
@@ -648,7 +652,7 @@ body {
     text-align: left;
     width: 85%;
     flex-direction: column;
-    gap: 2rem;
+    gap: .5rem;
     padding-left: 4rem;
   }
   .parrafo {

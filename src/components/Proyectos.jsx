@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography } from "@material-tailwind/react";
+import { Button, Typography } from "@material-tailwind/react";
 import { Slider } from "./Slider";
 import ProyectosGrid from "./ProyectosGrid";
 export default function Proyectos() {
@@ -14,6 +14,7 @@ export default function Proyectos() {
         <Typography variant="lead" className="parrafo">
           Aquí menos palabras, más trabajo:
         </Typography>
+        <Button color="blue">Ver todos </Button>
       </div>
       <ProyectosGrid />
     </section>

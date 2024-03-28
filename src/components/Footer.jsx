@@ -19,7 +19,10 @@ export default function Footer() {
           </Typography>
         </div>
         <div className="flex flex-col items-center">
+          <div className="footer-navlist">
+
           <NavList flex="flex" gap={0} />
+          </div>
         </div>
         <div className="flex flex-col items-center">
           <Typography className="" variant="h6">

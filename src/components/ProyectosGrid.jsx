@@ -26,7 +26,7 @@ export default function ProyectosGrid() {
     
     <div className="grid grid-cols-3 grid-rows-34 gap-4 p-4">
 
-      <div className="col-span-2 row-span-12 rounded-xl box p-2 border-4 border-black relative">
+      <div className="col-span-2 row-span-12 rounded-xl box p-2 border-2 border-black relative">
         <div
           className="bg-cover bg-center absolute inset-0 rounded-xl"
           style={{
@@ -37,7 +37,7 @@ export default function ProyectosGrid() {
         ></div>
         <Typography className="relative z-1">{proyectos.title}</Typography>
       </div>
-      <div className="col-span-1 row-span-8 rounded-xl box p-2 border-4 border-black relative">
+      <div className="col-span-1 row-span-8 rounded-xl box p-2 border-2 border-black relative">
         <div
           className="bg-cover bg-center absolute inset-0 rounded-xl"
           style={{
@@ -48,7 +48,7 @@ export default function ProyectosGrid() {
         ></div>
         <Typography className="relative z-1">Nombre de un Proyecto</Typography>
       </div>
-      <div className="col-span-1 row-span-12 rounded-xl box p-2 border-4 border-black relative">
+      <div className="col-span-1 row-span-12 rounded-xl box p-2 border-2 border-black relative">
         <div
           className="bg-cover bg-center absolute inset-0 rounded-xl"
           style={{
@@ -59,7 +59,7 @@ export default function ProyectosGrid() {
         ></div>
         <Typography className="relative z-1">Nombre de un Proyecto</Typography>
       </div>
-      <div className="col-span-1 row-span-8 rounded-xl box p-2 border-4 border-black relative">
+      <div className="col-span-1 row-span-8 rounded-xl box p-2 border-2 border-black relative">
         <div
           className="bg-cover bg-center absolute inset-0 rounded-xl"
           style={{
@@ -70,7 +70,7 @@ export default function ProyectosGrid() {
         ></div>
         <Typography className="relative z-1">Nombre de un Proyecto</Typography>
       </div>
-      <div className="col-span-1 row-span-8 rounded-xl box p-2 border-4 border-black relative">
+      <div className="col-span-1 row-span-8 rounded-xl box p-2 border-2 border-black relative">
         <div
           className="bg-cover bg-center absolute inset-0 rounded-xl"
           style={{
