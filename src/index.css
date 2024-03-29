@@ -574,19 +574,11 @@ body {
     z-index: -1;
   }
   /* GALLERY-------------------- */
-  /* .gallery-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 98%;
-    height: auto;
-    padding: .2rem;
-    margin: .3rem;
-    gap: 1rem;
-  } */
-  .imagen-gallery {
-    height: 130px;
-    width: 130px;
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); /* Cambia el número de columnas según el ancho de la pantalla */
   }
+  
+  
 }
 
 /* xl */
