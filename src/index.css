@@ -129,6 +129,18 @@ body {
     z-index: -1;
     background-color: #75be95;
   }
+  /* PROYECTS--------------------------- */
+  .proyect-grid-container {
+    display: grid;
+    height: 30rem;
+    grid-template-columns: 1fr 1fr 1fr; /* Tres columnas de ancho igual */
+    grid-template-rows: repeat(
+      10,
+      1fr
+    ); /* Dos filas de 100px de alto cada una */
+    gap: 1rem;
+    padding: 1rem;
+  }
   /* CONTACTO---------------------------- */
   .card-form {
     /* p-4 max-w-[100%]  items-center mx-2 shadow-xl */
@@ -494,15 +506,7 @@ body {
     z-index: -1;
   }
   /* GALLERY-------------------- */
-  /* .gallery-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 98%;
-    height: auto;
-    padding: .2rem;
-    margin: .3rem;
-    gap: 1rem;
-  } */
+  
   .proyect-grid-container {
     display: grid;
     height: 30rem;
@@ -608,12 +612,10 @@ body {
     scale: 120%;
     z-index: -1;
   }
-  /* GALLERY-------------------- */
-  /* .grid {
-    grid-template-columns: repeat(
-      auto-fill,
-      minmax(170px, 1fr)
-    ); */
+  /* PROYECTS-------------------- */
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  }
   .proyect-grid-container {
     display: grid;
     height: 30rem;
@@ -730,15 +732,7 @@ body {
     z-index: -1;
   }
   /* GALLERY-------------------- */
-  /* .gallery-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 98%;
-    height: auto;
-    padding: .2rem;
-    margin: .3rem;
-    gap: 1rem;
-  } */
+  
   .imagen-gallery {
     height: 130px;
     width: 130px;
@@ -866,15 +860,7 @@ body {
     z-index: -1;
   }
   /* GALLERY-------------------- */
-  /* .gallery-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 98%;
-    height: auto;
-    padding: .2rem;
-    margin: .3rem;
-    gap: 1rem;
-  } */
+  
   /* PROYECTOS GRID=------------------ */
   .proyect-grid-container {
     display: grid;
