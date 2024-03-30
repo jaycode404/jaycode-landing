@@ -3,8 +3,9 @@ import { Typography } from "@material-tailwind/react";
 
 export default function ProyectosGrid() {
   const [proyectos, setProyectos] = useState([]);
+
   useEffect(() => {
-    const getProyects = () => {
+    const getProyectos = () => {
       fetch("http://localhost:4000/proyectos")
         .then((res) => res.json())
         .then((data) => {
@@ -14,72 +15,22 @@ export default function ProyectosGrid() {
           console.error("Error al obtener los datos:", error);
         });
     };
-    getProyects()
+    getProyectos();
   }, []);
 
-  console.log(proyectos)
   const imagenStyle = {
     filter: "blur(3px)",
   };
 
   return (
-    
-    <div className="grid grid-cols-3 grid-rows-34 gap-4 p-4">
-
-      <div className="col-span-2 row-span-12 rounded-xl box p-2 border-2 border-black relative">
-        <div
-          className="bg-cover bg-center absolute inset-0 rounded-xl"
-          style={{
-            backgroundImage:
-              "url('/public/assets/graph.png')",
-            ...imagenStyle,
-          }}
-        ></div>
-        <Typography className="relative z-1">{proyectos.title}</Typography>
-      </div>
-      <div className="col-span-1 row-span-8 rounded-xl box p-2 border-2 border-black relative">
-        <div
-          className="bg-cover bg-center absolute inset-0 rounded-xl"
-          style={{
-            backgroundImage:
-              "url('/public/assets/bmo.png')",
-            ...imagenStyle,
-          }}
-        ></div>
-        <Typography className="relative z-1">Nombre de un Proyecto</Typography>
-      </div>
-      <div className="col-span-1 row-span-12 rounded-xl box p-2 border-2 border-black relative">
-        <div
-          className="bg-cover bg-center absolute inset-0 rounded-xl"
-          style={{
-            backgroundImage:
-              "url('/public/assets/foto.png')",
-            ...imagenStyle,
-          }}
-        ></div>
-        <Typography className="relative z-1">Nombre de un Proyecto</Typography>
-      </div>
-      <div className="col-span-1 row-span-8 rounded-xl box p-2 border-2 border-black relative">
-        <div
-          className="bg-cover bg-center absolute inset-0 rounded-xl"
-          style={{
-            backgroundImage:
-              "url('/public/assets/cuadricula.jpg')",
-            ...imagenStyle,
-          }}
-        ></div>
-        <Typography className="relative z-1">Nombre de un Proyecto</Typography>
-      </div>
-      <div className="col-span-1 row-span-8 rounded-xl box p-2 border-2 border-black relative">
-        <div
-          className="bg-cover bg-center absolute inset-0 rounded-xl"
-          style={{
-            backgroundImage: "url('public/assets/macintosh.png')",
-            ...imagenStyle,
-          }}
-        ></div>
-        <Typography className="relative z-1">Nombre de un Proyecto</Typography>
-      </div>
+    <div className="proyect-grid-container">
+      <div className="bg-gray-400 col-span-2 row-span-4"></div>
+      <div className="bg-blue-100 col-span-1 row-span-6"></div>
+      <div className="bg-orange-500 col-span-2 row-span-3"></div>
+      <div className="bg-green-100 col-span- row-span-6"></div>
+      <div className="bg-red-100 col-span-1 row-span-5"></div>
+      <div className="bg-yellow-500 col-span-1 row-span-5"></div>
+      
     </div>
   );
 }

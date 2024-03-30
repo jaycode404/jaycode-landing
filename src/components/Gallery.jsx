@@ -27,7 +27,7 @@ export function Gallery() {
   ];
 
   return (
-    <div className="grid grid-cols-2 gap-2">
+    <div className="grid grid-cols-2 gap-2 px-4">
       {data.map(({ imageLink, colSpan, rowSpan }, index) => (
         <div key={index} style={{ gridColumn: `span ${colSpan}`, gridRow: `span ${rowSpan}` }}>
           <img
