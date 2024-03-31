@@ -6,11 +6,29 @@
 /* color azul #37B5FF*/
 /* color lavanda  #B65BFE */
 /* color negro #222222 */
+:root {
+  --background-color: rgb(229, 231, 235);
+  --text-color: black;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.dark-mode {
+  --background-gradient: linear-gradient(to top, #001f3f, #001a35, #001226, #000c1c);
+  --text-color: white;
+  background: var(--background-gradient);
+}
+
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 html {
@@ -20,7 +38,6 @@ html {
 body {
   overflow-x: hidden;
   background-color: rgb(229, 231, 235);
-  /* background: linear-gradient(to top, #001f3f, #001a35, #001226, #000c1c); */
 }
 p {
   font-family: "Courier New", Courier, monospace;
@@ -137,7 +154,7 @@ p {
     display: flex;
     flex-direction: column;
     height: 30rem;
-    gap: .6rem;
+    gap: 0.6rem;
     padding: 1rem;
   }
   /* CONTACTO---------------------------- */
@@ -504,7 +521,7 @@ p {
     scale: 120%;
     z-index: -1;
   }
-  /* GALLERY-------------------- */
+  /* PROYECTS-------------------- */
 
   .proyect-grid-container {
     display: grid;
@@ -620,6 +637,10 @@ p {
     gap: 1rem;
     padding: 1rem;
   }
+  /* GALLERY ----------------------- */
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
 }
 
 /* xl */
@@ -726,10 +747,6 @@ p {
   }
   /* GALLERY-------------------- */
 
-  .imagen-gallery {
-    height: 130px;
-    width: 130px;
-  }
   /* PROYECTS------------------------- */
   .proyect-grid-container {
     display: grid;
@@ -741,10 +758,6 @@ p {
     ); /* Dos filas de 100px de alto cada una */
     gap: 1rem;
     padding: 1rem;
-  }
-
-  .grid-item {
-    background-color: #12c2e9;
   }
 }
 
@@ -1122,4 +1135,11 @@ shadowBlue {
   background-image: url("/public/assets/bmo.png");
   background-position: center;
   background-size: cover;
+}
+.theme-button {
+  padding: 0.3rem;
+  font-size: 20px;
+  background-color: rgb(46, 67, 69);
+  border-radius: 50%;
+  margin: 0.5rem 2rem;
 }

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Slider } from "./components/Slider";
 import { GeneralContext, GeneralProvider } from "./context/GeneralContext";
 import Header from "./components/Header";
@@ -11,8 +11,17 @@ import BentoGrid from "./components/Grid";
 import { NavList, NavbarSimple } from "./components/Navbar";
 import Footer from "./components/Footer";
 function App() {
+  const { darkMode, toggleTheme } = useContext(GeneralContext);
+
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add("dark-mode");
+    } else {
+      document.body.classList.remove("dark-mode");
+    }
+  }, [darkMode]);
   return (
-    <div className="h-auto ">
+    <div className={` h-auto `}>
       <NavbarSimple />
       <GeneralProvider>
         <div className="mx-auto gap-10 section-bg">
