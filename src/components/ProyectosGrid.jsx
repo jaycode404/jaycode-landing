@@ -1,47 +1,55 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Typography } from "@material-tailwind/react";
 
 export default function ProyectosGrid() {
-  const [proyectos, setProyectos] = useState([]);
-
-  useEffect(() => {
-    const getProyectos = () => {
-      fetch("http://localhost:4000/proyectos")
-        .then((res) => res.json())
-        .then((data) => {
-          setProyectos(data);
-        })
-        .catch((error) => {
-          console.error("Error al obtener los datos:", error);
-        });
-    };
-    getProyectos();
-  }, []);
-
-  const imagenStyle = {
-    filter: "blur(3px)",
-  };
+  const data = [
+    {
+      imageLink: "/assets/bmo.png",
+      colSpan: 2,
+      rowSpan: 4,
+    },
+    {
+      imageLink: "/assets/bmo.png",
+      colSpan: 1,
+      rowSpan: 6,
+    },
+    {
+      imageLink: "/assets/bmo.png",
+      colSpan: 2,
+      rowSpan: 3,
+    },
+    {
+      imageLink: "/assets/bmo.png",
+      colSpan: 1,
+      rowSpan: 6,
+    },
+    {
+      imageLink: "/assets/bmo.png",
+      colSpan: 1,
+      rowSpan: 5,
+    },
+    {
+      imageLink: "/assets/bmo.png",
+      colSpan: 1,
+      rowSpan: 5,
+    },
+  ];
 
   return (
     <div className="proyect-grid-container">
-      <div className="bg-gray-400 col-span-2 row-span-4">
-        <p>Proyect name</p>
-      </div>
-      <div className="bg-blue-100 col-span-1 row-span-6">
-        <p>Proyect name</p>
-      </div>
-      <div className="bg-orange-500 col-span-2 row-span-3">
-        <p>Proyect name</p>
-      </div>
-      <div className="bg-green-100 col-span- row-span-6">
-        <p>Proyect name</p>
-      </div>
-      <div className="bg-red-100 col-span-1 row-span-5">
-        <p>Proyect name</p>
-      </div>
-      <div className="bg-yellow-500 col-span-1 row-span-5">
-        <p>Proyect name</p>
-      </div>
+      {data.map(({ imageLink, colSpan, rowSpan }, index) => (
+        <div
+          key={index}
+          style={{
+            gridColumnEnd: `span ${colSpan}`,
+            gridRowEnd: `span ${rowSpan}`,
+            border: "1px solid black",
+            padding: "1rem",
+          }}
+        >
+          <p>Proyecto {index + 1}</p>
+        </div>
+      ))}
     </div>
   );
 }

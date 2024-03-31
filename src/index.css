@@ -22,8 +22,8 @@ body {
   background-color: rgb(229, 231, 235);
   /* background: linear-gradient(to top, #001f3f, #001a35, #001226, #000c1c); */
 }
-p{
-  font-family: 'Courier New', Courier, monospace;
+p {
+  font-family: "Courier New", Courier, monospace;
 }
 @media (min-width: 210px) {
   /* GENERAL---------------------------- */
@@ -134,14 +134,10 @@ p{
   }
   /* PROYECTS--------------------------- */
   .proyect-grid-container {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     height: 30rem;
-    grid-template-columns: 1fr 1fr 1fr; /* Tres columnas de ancho igual */
-    grid-template-rows: repeat(
-      10,
-      1fr
-    ); /* Dos filas de 100px de alto cada una */
-    gap: 1rem;
+    gap: .6rem;
     padding: 1rem;
   }
   /* CONTACTO---------------------------- */
@@ -616,17 +612,11 @@ p{
     z-index: -1;
   }
   /* PROYECTS-------------------- */
-  .grid {
-    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
-  }
+
   .proyect-grid-container {
     display: grid;
-    height: 30rem;
-    grid-template-columns: 1fr 1fr 1fr; /* Tres columnas de ancho igual */
-    grid-template-rows: repeat(
-      10,
-      1fr
-    ); /* Dos filas de 100px de alto cada una */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(10, 1fr);
     gap: 1rem;
     padding: 1rem;
   }
@@ -1026,9 +1016,7 @@ shadowBlue {
     rgba(56, 163, 165, 0.2),
     rgba(87, 204, 153, 0.2)
   );
-  backdrop-filter: blur(
-    20px
-  ); 
+  backdrop-filter: blur(20px);
 }
 
 @keyframes slide {
@@ -1124,7 +1112,14 @@ shadowBlue {
 
 .proyect-grid-container div {
   border-radius: 7px;
+  border: 2px solid black;
 }
 .proyect-grid-container p {
-  padding: .5rem;
+  padding: 0.5rem;
+}
+
+.img-bg {
+  background-image: url("/public/assets/bmo.png");
+  background-position: center;
+  background-size: cover;
 }
