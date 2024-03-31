@@ -24,13 +24,24 @@ export default function ProyectosGrid() {
 
   return (
     <div className="proyect-grid-container">
-      <div className="bg-gray-400 col-span-2 row-span-4"></div>
-      <div className="bg-blue-100 col-span-1 row-span-6"></div>
-      <div className="bg-orange-500 col-span-2 row-span-3"></div>
-      <div className="bg-green-100 col-span- row-span-6"></div>
-      <div className="bg-red-100 col-span-1 row-span-5"></div>
-      <div className="bg-yellow-500 col-span-1 row-span-5"></div>
-      
+      <div className="bg-gray-400 col-span-2 row-span-4">
+        <p>Proyect name</p>
+      </div>
+      <div className="bg-blue-100 col-span-1 row-span-6">
+        <p>Proyect name</p>
+      </div>
+      <div className="bg-orange-500 col-span-2 row-span-3">
+        <p>Proyect name</p>
+      </div>
+      <div className="bg-green-100 col-span- row-span-6">
+        <p>Proyect name</p>
+      </div>
+      <div className="bg-red-100 col-span-1 row-span-5">
+        <p>Proyect name</p>
+      </div>
+      <div className="bg-yellow-500 col-span-1 row-span-5">
+        <p>Proyect name</p>
+      </div>
     </div>
   );
 }
