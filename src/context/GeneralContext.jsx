@@ -9,7 +9,7 @@ const GeneralProvider = ({ children }) => {
   const [darkMode, setDarkMode] = useState(false)
   const toggleTheme = () => {
     setDarkMode(prevMode => !prevMode);
-    console.log('darkMode changed')
+    
   };
   const data = { nombre, appMessage, darkMode, setDarkMode, toggleTheme };
   return (

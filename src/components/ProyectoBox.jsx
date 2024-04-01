@@ -8,7 +8,7 @@ export default function ProyectoBox(props) {
 
   const {proyecto} = props;
   const {title, image,cols, rows} = proyecto;
-  console.log(title)
+  
   return (
     <div className={`col-span-${cols} row-span-${rows} rounded-xl box p-2 border-4 border-black relative`}>
       <div

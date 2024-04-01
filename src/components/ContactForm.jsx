@@ -4,7 +4,7 @@ import { Button, Input, Typography, Card } from "@material-tailwind/react";
 import Swal from "sweetalert2";
 import { GeneralContext } from "../context/GeneralContext";
 export default function ContactForm() {
-  const {darkMode} = useContext(GeneralContext)
+  const { darkMode } = useContext(GeneralContext);
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -24,8 +24,6 @@ export default function ContactForm() {
             timer: 1500,
           });
           form.current.reset();
-
-          console.log("SUCCESS!");
         },
         (error) => {
           console.log("FAILED...", error.text);

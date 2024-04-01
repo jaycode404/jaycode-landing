@@ -14,7 +14,7 @@ export default function Contacto() {
         <Typography variant="h1" className=" section-title text-gradient">
           Contacto<span className="dot">.</span>
         </Typography>
-        <div className="light-md-blue"></div>
+        {darkMode && <div className="light-md-blue"></div>}
 
         <div>
           <Typography variant="p" className="parrafo">

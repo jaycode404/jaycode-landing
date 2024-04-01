@@ -7,7 +7,7 @@ import { GeneralContext } from "../context/GeneralContext";
 export default function Footer() {
   const [inFooter, setFooter] =useState(true);
   const {darkMode} =useContext(GeneralContext)
-  console.log(darkMode, 'desde footer')
+  
   useEffect(() => {
     const yearElement = document.getElementById("year");
     const currentYear = new Date().getFullYear();

@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Button, Typography } from "@material-tailwind/react";
 import { Slider } from "./Slider";
 import ProyectosGrid from "./ProyectosGrid";
+import { GeneralContext } from "../context/GeneralContext";
 export default function Proyectos() {
+  const {darkMode} = useContext(GeneralContext)
   
 
   return (
@@ -16,9 +18,7 @@ export default function Proyectos() {
         </Typography>
         <Button color="blue">
           <a href="/proyectosall">Ver todos</a> </Button>
-        <div className="light-md-blue"></div>
-
-        <div className="light-md-blue"></div>
+          {darkMode && <div className="light-md-blue"></div>}
       </div>
       <ProyectosGrid />
     </section>
