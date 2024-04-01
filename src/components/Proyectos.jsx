@@ -16,6 +16,9 @@ export default function Proyectos() {
         </Typography>
         <Button color="blue">
           <a href="/proyectosall">Ver todos</a> </Button>
+        <div className="light-md-blue"></div>
+
+        <div className="light-md-blue"></div>
       </div>
       <ProyectosGrid />
     </section>
