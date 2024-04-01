@@ -37,10 +37,10 @@ export default function Header() {
           </Typography>
 
           {darkMode && <div className="light-md-blue"></div>}
-          <Typography variant="p" className="parrafo">
+          <p className="parrafo">
             Landing page de introducción a mi perfil profesional, donde expongo
             mi trabajo e información sintetizada respecto a mí.
-          </Typography>
+          </p>
           <Socials
             invert="social-invert"
             size={2.7}

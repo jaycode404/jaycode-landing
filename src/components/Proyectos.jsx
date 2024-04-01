@@ -4,8 +4,7 @@ import { Slider } from "./Slider";
 import ProyectosGrid from "./ProyectosGrid";
 import { GeneralContext } from "../context/GeneralContext";
 export default function Proyectos() {
-  const {darkMode} = useContext(GeneralContext)
-  
+  const { darkMode } = useContext(GeneralContext);
 
   return (
     <section id="proyectos" className="container">
@@ -13,12 +12,11 @@ export default function Proyectos() {
         <Typography variant="h2" className="section-title">
           Proyectos<span className="dot">.</span>
         </Typography>
-        <Typography variant="p" className="parrafo">
-          Aquí menos palabras, más trabajo:
-        </Typography>
+        <p className="parrafo">Aquí menos palabras, más trabajo:</p>
         <Button color="blue">
-          <a href="/proyectosall">Ver todos</a> </Button>
-          {darkMode && <div className="light-md-blue"></div>}
+          <a href="/proyectosall">Ver todos</a>{" "}
+        </Button>
+        {darkMode && <div className="light-md-blue"></div>}
       </div>
       <ProyectosGrid />
     </section>

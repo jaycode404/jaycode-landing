@@ -68,6 +68,14 @@ body {
   background-color: rgb(229, 231, 235);
 }
 
+.Typography-variant-p {
+  font-size: 1px;
+}
+
+p {
+  font-family: "Courier New", Courier, monospace;
+}
+
 @media (min-width: 210px) {
   /* GENERAL---------------------------- */
   .container {
@@ -186,9 +194,18 @@ body {
     display: flex;
     flex-direction: column;
     height: 30rem;
-    gap: 0.6rem;
+    gap: 0.7rem;
     padding: 1rem;
   }
+  .proyect-title {
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+  }
+  .proyect-desc {
+    display: none;
+  }
+
   /* CONTACTO---------------------------- */
   .card-form {
     /* p-4 max-w-[100%]  items-center mx-2 shadow-xl */
@@ -334,6 +351,12 @@ body {
     ); /* Dos filas de 100px de alto cada una */
     gap: 1rem;
     padding: 1rem;
+  }
+  .proyect-title {
+    padding: 1rem;
+  }
+  .proyect-desc {
+    display: flex;
   }
 }
 
@@ -676,6 +699,18 @@ body {
     gap: 1rem;
     padding: 1rem;
   }
+  .proyect-title {
+    font-size: 26px;
+    font-weight: 700;
+    position: relative;
+  }
+  
+.proyect-desc {
+  font-size: 15px;
+  line-height: 13px;
+  position: relative;
+}
+  
   /* GALLERY ----------------------- */
   .gallery-grid {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -1215,10 +1250,13 @@ shadowBlue {
   filter: blur(1px);
   opacity: 0.7;
 }
-.proyect-title {
-  position: relative;
-}
+
 
 .dark-mode .proyect-item {
   opacity: 0.4;
+}
+
+.proyect-item-container {
+  width: 100%;
+  flex-grow: 1;
 }

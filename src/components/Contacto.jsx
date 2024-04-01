@@ -17,10 +17,10 @@ export default function Contacto() {
         {darkMode && <div className="light-md-blue"></div>}
 
         <div>
-          <Typography variant="p" className="parrafo">
+          <p className="parrafo">
             ¡Contactame! Estaré leyendo<br></br> tu propuesta en breve y será un
             placer colaborar.
-          </Typography>
+          </p>
         </div>
         <Socials invert="social-invert" size={2.8} gap={5} />
       </div>

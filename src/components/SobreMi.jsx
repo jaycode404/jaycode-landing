@@ -8,12 +8,12 @@ export default function Section() {
         <Typography variant="h2" className="section-title">
           Sobre mí<span className="dot">.</span>
         </Typography>
-        <Typography variant="p" className="parrafo">
+        <p className="parrafo">
           Programador web full-stack con gusto por la creación y resolución de
           problemas mediante el código. Busco integrarme a un equipo donde pueda
           reforzar mis habilidades, aportar valor y ampliar mi conocimiento en
           un entorno colaborativo y dinámico.
-        </Typography>
+        </p>
       </div>
       <Gallery />
     </section>

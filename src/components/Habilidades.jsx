@@ -16,7 +16,7 @@ export default function Habilidades() {
         >
           Habilidades<span className="dot">.</span>
         </Typography>
-        <Typography variant="p" className="parrafo">
+        <p className="parrafo">
           Desarrollador Full Stack con habilidades sólidas en
           <span className="JavaScript"> JavaScript</span>,
           <span className="React"> React</span>,
@@ -27,7 +27,7 @@ export default function Habilidades() {
           soluciones web eficientes y escalables. Comprometido con la mejora
           continua y el aprendizaje constante para afrontar nuevos desafíos
           tecnológicos.
-        </Typography>
+        </p>
       </div>
       <div >
         <LogoSlider />

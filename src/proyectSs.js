@@ -1,7 +1,7 @@
 // captureScreenshots.js
 
-import puppeteer from 'puppeteer';
-import fs from 'fs';
+import puppeteer from "puppeteer";
+import fs from "fs";
 async function takeScreenshot(url, outputPath) {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
@@ -11,9 +11,9 @@ async function takeScreenshot(url, outputPath) {
 }
 
 const urls = [
-  'https://jayflix-six.vercel.app/',
-  'https://jaycode-landing.vercel.app/',
-  
+  "https://jayflix-six.vercel.app/",
+  "https://jaycode-landing.vercel.app/",
+  "https://randomusic.vercel.app/",
 ];
 
 urls.forEach(async (url, index) => {
