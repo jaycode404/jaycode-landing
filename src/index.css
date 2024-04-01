@@ -67,9 +67,7 @@ body {
   overflow-x: hidden;
   background-color: rgb(229, 231, 235);
 }
-p {
-  font-family: "Courier New", Courier, monospace;
-}
+
 @media (min-width: 210px) {
   /* GENERAL---------------------------- */
   .container {
@@ -123,7 +121,7 @@ p {
   }
   .theme-button {
     font-size: 20px;
-    margin-left: .5rem;
+    margin-left: 0.5rem;
   }
   .header-container {
     padding-top: 4rem;
@@ -255,7 +253,7 @@ p {
   }
   .theme-button {
     font-size: 24px;
-    margin-left: .5rem;
+    margin-left: 0.5rem;
   }
 
   .header-container {
@@ -509,7 +507,7 @@ p {
   }
   .theme-button {
     font-size: 26px;
-    margin-left: .5rem;
+    margin-left: 0.5rem;
   }
   .header-container {
     padding-top: 4rem;
@@ -732,7 +730,7 @@ p {
   }
   .theme-button {
     font-size: 30px;
-    margin-left: .5rem;
+    margin-left: 0.5rem;
   }
   .nav-logo:hover {
     cursor: pointer;
@@ -1171,6 +1169,7 @@ shadowBlue {
 .section-bg > :nth-child(even) {
   background-color: #f7f7ff;
   box-shadow: 0 0 10px 1px rgba(34, 34, 34, 0.2);
+  border-radius: 10px;
 }
 
 .nav-link:hover {
@@ -1178,7 +1177,7 @@ shadowBlue {
   color: white;
 }
 .dark-mode .nav-link:hover {
-  background-color: #3FBAE8;
+  background-color: #3fbae8;
   color: white;
 }
 
@@ -1200,11 +1199,26 @@ shadowBlue {
 }
 .dark-mode input::placeholder {
   color: rgb(193, 199, 238);
-
 }
 .dark-mode textarea::placeholder {
   color: rgb(193, 199, 238);
 }
 .dark-mode .card-form {
   background-color: #082547;
+}
+
+.proyect-item {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  filter: blur(1px);
+  opacity: 0.7;
+}
+.proyect-title {
+  position: relative;
+}
+
+.dark-mode .proyect-item {
+  opacity: 0.4;
 }

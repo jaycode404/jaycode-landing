@@ -23,7 +23,6 @@ export default function Contacto() {
           </Typography>
         </div>
         <Socials invert="social-invert" size={2.8} gap={5} />
-
       </div>
       <ContactForm />
     </section>
