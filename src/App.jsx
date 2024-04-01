@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Slider } from "./components/Slider";
 import { GeneralContext, GeneralProvider } from "./context/GeneralContext";
 import Header from "./components/Header";
@@ -10,33 +10,53 @@ import Contacto from "./components/Contacto";
 import BentoGrid from "./components/Grid";
 import { NavList, NavbarSimple } from "./components/Navbar";
 import Footer from "./components/Footer";
+
 function App() {
-  const { darkMode, toggleTheme } = useContext(GeneralContext);
-  console.log(darkMode, "desde App");
+  const { darkMode, toggleTheme, setDarkMode } = useContext(GeneralContext);
 
   useEffect(() => {
+    const darkModeMedia = window.matchMedia("(prefers-color-scheme: dark)");
+
+    // Función para manejar los cambios en la media query
+    const handleDarkModeChange = (event) => {
+      setDarkMode(event.matches);
+    };
+
+    // Configuración del listener para la media query
+    darkModeMedia.addEventListener("change", handleDarkModeChange);
+
+    // Establecer el modo oscuro inicial
+    setDarkMode(darkModeMedia.matches);
+
+    // Limpiar el listener al desmontar el componente
+    return () => {
+      darkModeMedia.removeEventListener("change", handleDarkModeChange);
+    };
+  }, []); // Se ejecuta solo una vez al montar el componente
+
+  useEffect(() => {
+    // Aplicar o quitar la clase dark-mode en el cuerpo del documento según el estado del modo oscuro
     if (darkMode) {
       document.body.classList.add("dark-mode");
     } else {
       document.body.classList.remove("dark-mode");
     }
-  }, [darkMode]);
+  }, [darkMode]); // Se ejecuta cada vez que darkMode cambia
+
   return (
-    
-      <div className={` h-auto `}>
-        <NavbarSimple />
-        <div className="mx-auto gap-10 section-bg">
-          <Header />
-          <Proyectos />
-          <Habilidades />
-          <Section />
-          <Contacto />
-        </div>
-        <div className="bg-black ">
-          <Footer />
-        </div>
+    <div className={` h-auto `}>
+      <NavbarSimple toggleTheme={toggleTheme} />
+      <div className="mx-auto gap-10 section-bg">
+        <Header />
+        <Proyectos />
+        <Habilidades />
+        <Section />
+        <Contacto />
       </div>
-    
+      <div className="bg-black ">
+        <Footer />
+      </div>
+    </div>
   );
 }
 
