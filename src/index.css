@@ -987,7 +987,7 @@ shadowBlue {
   color: white;
 }
 .dark-mode .boton-form {
-  background-color: rgb(10, 69, 92);
+  background-color: rgb(31, 163, 215);
   color: white;
 }
 .boton-light:hover {
@@ -999,11 +999,11 @@ shadowBlue {
 
 .light-md-blue {
   position: absolute;
-  width: 900px;
-  height: 900px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   background-color: #37b5ff; /* Color verde-azul */
-  filter: blur(100px); /* Desenfoque */
+  filter: blur(200px); /* Desenfoque */
   z-index: -1; /* Ajusta el valor según sea necesario */
 }
 .light-md-lavanda {

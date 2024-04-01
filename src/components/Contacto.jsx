@@ -14,6 +14,8 @@ export default function Contacto() {
         <Typography variant="h1" className=" section-title text-gradient">
           Contacto<span className="dot">.</span>
         </Typography>
+        <div className="light-md-blue"></div>
+
         <div>
           <Typography variant="p" className="parrafo">
             ¡Contactame! Estaré leyendo<br></br> tu propuesta en breve y será un

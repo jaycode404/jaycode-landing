@@ -36,6 +36,7 @@ export default function Header() {
             Jacob<span className="dot">.</span>
           </Typography>
 
+        <div className="light-md-blue"></div>
           <Typography variant="p" className="parrafo">
             Landing page de introducción a mi perfil profesional, donde expongo
             mi trabajo e información sintetizada respecto a mí.
