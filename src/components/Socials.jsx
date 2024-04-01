@@ -2,9 +2,8 @@ import React, { useContext, useState } from "react";
 import { GeneralContext } from "../context/GeneralContext";
 
 export default function Socials({ size, gap, header, footer }) {
-  const { darkMode, setDarkMode } = useContext(GeneralContext)
+  const { darkMode, setDarkMode } = useContext(GeneralContext);
   
-
   return (
     <div className={`flex gap-[3rem] mt-2`}>
       <a href="https://github.com/jaycode404" target="_blank">
@@ -12,7 +11,7 @@ export default function Socials({ size, gap, header, footer }) {
           src="/assets/github.png"
           alt=""
           style={{ width: `${size}rem` }}
-          className={darkMode ? "social-invert" : ""}
+          className={`${darkMode ? "social-invert" : ""} ${footer ? "social-footer" : ""}`}
         />
       </a>
 
@@ -21,7 +20,7 @@ export default function Socials({ size, gap, header, footer }) {
           src="/assets/linkedin.png"
           alt=""
           style={{ width: `${size}rem` }}
-          className={darkMode ? "social-invert" : ""}
+          className={`${darkMode ? "social-invert" : ""} ${footer ? "social-footer" : ""}`}
         />
       </a>
 
@@ -30,7 +29,7 @@ export default function Socials({ size, gap, header, footer }) {
           src="/assets/email.png"
           alt=""
           style={{ width: `${size}rem` }}
-          className={darkMode ? "social-invert" : ""}
+          className={`${darkMode ? "social-invert" : ""} ${footer ? "social-footer" : ""}`}
         />
       </a>
 
@@ -40,7 +39,7 @@ export default function Socials({ size, gap, header, footer }) {
             src="/assets/cv.png"
             alt=""
             style={{ width: `${size}rem` }}
-            className={darkMode ? "social-invert" : ""}
+            className={`${darkMode ? "social-invert" : ""} ${footer ? "social-footer" : ""}`}
           />
         </a>
       )}

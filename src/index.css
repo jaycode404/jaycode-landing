@@ -1133,6 +1133,10 @@ shadowBlue {
 .social-invert {
   filter: invert(0%);
 }
+.social-footer {
+  filter: invert(100%);
+  
+}
 .dark-mode .social-invert {
   filter: invert(100%);
 }
