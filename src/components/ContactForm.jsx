@@ -1,8 +1,10 @@
-import React, { useRef } from "react";
+import React, { useContext, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Button, Input, Typography, Card } from "@material-tailwind/react";
 import Swal from "sweetalert2";
+import { GeneralContext } from "../context/GeneralContext";
 export default function ContactForm() {
+  const {darkMode} = useContext(GeneralContext)
   const form = useRef();
 
   const sendEmail = (e) => {

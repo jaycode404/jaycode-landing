@@ -1,10 +1,11 @@
 import { Typography } from "@material-tailwind/react";
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { NavList } from "./Navbar";
 import Socials from "./Socials";
 import { GeneralContext } from "../context/GeneralContext";
 
 export default function Footer() {
+  const [inFooter, setFooter] =useState(true);
   const {darkMode} =useContext(GeneralContext)
   console.log(darkMode, 'desde footer')
   useEffect(() => {
@@ -24,7 +25,7 @@ export default function Footer() {
         <div className="flex flex-col items-center">
           <div className="footer-navlist">
 
-          <NavList flex="flex" gap={0} />
+          <NavList inFooter={inFooter} flex="flex" gap={0} />
           </div>
         </div>
         <div className="flex flex-col items-center">

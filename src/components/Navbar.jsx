@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { Typography } from "@material-tailwind/react";
 import { GeneralContext } from "../context/GeneralContext";
 
-export function NavList() {
+export function NavList({inFooter}) {
   const { darkMode, toggleTheme } = useContext(GeneralContext);
   return (
     
@@ -23,9 +23,9 @@ export function NavList() {
         Contacto
       </a>
     
-    <button onClick={toggleTheme} size="sm" className="theme-button">
+    {!inFooter && <button onClick={toggleTheme} size="sm" className="theme-button">
     {darkMode ? "🌙" : "🔆"}
-    </button>
+    </button>}
     </div>
     
   );

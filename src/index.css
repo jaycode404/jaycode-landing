@@ -986,6 +986,10 @@ shadowBlue {
   background-color: black;
   color: white;
 }
+.dark-mode .boton-form {
+  background-color: rgb(10, 69, 92);
+  color: white;
+}
 .boton-light:hover {
   filter: drop-shadow(0px 0px 40px rgba(18, 194, 233, 0.8));
 
@@ -1190,4 +1194,17 @@ shadowBlue {
   background-image: url("/public/assets/bmo.png");
   background-position: center;
   background-size: cover;
+}
+.dark-mode h6 {
+  color: white;
+}
+.dark-mode input::placeholder {
+  color: rgb(193, 199, 238);
+
+}
+.dark-mode textarea::placeholder {
+  color: rgb(193, 199, 238);
+}
+.dark-mode .card-form {
+  background-color: #082547;
 }
