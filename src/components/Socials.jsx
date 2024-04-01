@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext, useState } from "react";
+import { GeneralContext } from "../context/GeneralContext";
 
-export default function Socials({ size, gap, invert, header }) {
+export default function Socials({ size, gap, header, footer }) {
+  const { darkMode, setDarkMode } = useContext(GeneralContext)
   
+
   return (
     <div className={`flex gap-[3rem] mt-2`}>
       <a href="https://github.com/jaycode404" target="_blank">
@@ -9,7 +12,7 @@ export default function Socials({ size, gap, invert, header }) {
           src="/assets/github.png"
           alt=""
           style={{ width: `${size}rem` }}
-          className={`${invert} ? ${invert} : ''`}
+          className={darkMode ? "social-invert" : ""}
         />
       </a>
 
@@ -18,7 +21,7 @@ export default function Socials({ size, gap, invert, header }) {
           src="/assets/linkedin.png"
           alt=""
           style={{ width: `${size}rem` }}
-          className={`${invert} ? ${invert} : ''`}
+          className={darkMode ? "social-invert" : ""}
         />
       </a>
 
@@ -27,7 +30,7 @@ export default function Socials({ size, gap, invert, header }) {
           src="/assets/email.png"
           alt=""
           style={{ width: `${size}rem` }}
-          className={`${invert} ? ${invert} : ''`}
+          className={darkMode ? "social-invert" : ""}
         />
       </a>
 
@@ -37,7 +40,7 @@ export default function Socials({ size, gap, invert, header }) {
             src="/assets/cv.png"
             alt=""
             style={{ width: `${size}rem` }}
-            className={invert ? invert : ""}
+            className={darkMode ? "social-invert" : ""}
           />
         </a>
       )}

@@ -28,7 +28,7 @@ export function NavbarSimple({ flex, gap }) {
   const { darkMode, toggleTheme } = useContext(GeneralContext);
 
   return (
-    <div className="navbar-container">
+    <div className={` navbar-container`}>
       <div className="navbar-div">
         <Typography as="a" href="/" variant="h6" className="nav-logo nav-link">
           <span className="span-code lg:text-xl">{"<"}</span> Jaycode{" "}

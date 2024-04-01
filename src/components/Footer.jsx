@@ -1,9 +1,12 @@
 import { Typography } from "@material-tailwind/react";
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import { NavList } from "./Navbar";
 import Socials from "./Socials";
+import { GeneralContext } from "../context/GeneralContext";
 
 export default function Footer() {
+  const {darkMode} =useContext(GeneralContext)
+  console.log(darkMode, 'desde footer')
   useEffect(() => {
     const yearElement = document.getElementById("year");
     const currentYear = new Date().getFullYear();
@@ -29,7 +32,7 @@ export default function Footer() {
             Sociales
           </Typography>
           <div className="p-2">
-            <Socials invert="social-invert" gap={4} size={2} />
+          <Socials footer="footer"  gap={4} size={2} />
           </div>
         </div>
       </div>

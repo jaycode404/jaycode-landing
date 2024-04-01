@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Button, Typography } from "@material-tailwind/react";
 import { Slider } from "./Slider";
 
 import Socials from "./Socials";
 import ContactForm from "./ContactForm";
+import { GeneralContext } from "../context/GeneralContext";
 
 export default function Contacto() {
+  const { darkMode, toggleTheme } = useContext(GeneralContext);
   return (
     <section id="contacto" className="container">
       <div className="info-box last">
@@ -18,9 +20,10 @@ export default function Contacto() {
             placer colaborar.
           </Typography>
         </div>
-        <Socials size={2.8} gap={5} />
+        <Socials invert="social-invert" size={2.8} gap={5} />
+
       </div>
-      <ContactForm/>
+      <ContactForm />
     </section>
   );
 }

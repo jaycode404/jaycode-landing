@@ -12,6 +12,7 @@ import { NavList, NavbarSimple } from "./components/Navbar";
 import Footer from "./components/Footer";
 function App() {
   const { darkMode, toggleTheme } = useContext(GeneralContext);
+  console.log(darkMode, "desde App");
 
   useEffect(() => {
     if (darkMode) {
@@ -21,9 +22,9 @@ function App() {
     }
   }, [darkMode]);
   return (
-    <div className={` h-auto `}>
-      <NavbarSimple />
-      <GeneralProvider>
+    
+      <div className={` h-auto `}>
+        <NavbarSimple />
         <div className="mx-auto gap-10 section-bg">
           <Header />
           <Proyectos />
@@ -34,8 +35,8 @@ function App() {
         <div className="bg-black ">
           <Footer />
         </div>
-      </GeneralProvider>
-    </div>
+      </div>
+    
   );
 }
 

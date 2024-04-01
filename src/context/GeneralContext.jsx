@@ -11,7 +11,7 @@ const GeneralProvider = ({ children }) => {
     setDarkMode(prevMode => !prevMode);
     console.log('darkMode changed')
   };
-  const data = { nombre, appMessage, darkMode, toggleTheme };
+  const data = { nombre, appMessage, darkMode, setDarkMode, toggleTheme };
   return (
     <GeneralContext.Provider value={data}>{children}</GeneralContext.Provider>
   );

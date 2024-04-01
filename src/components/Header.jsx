@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Typography } from "@material-tailwind/react";
 import { useTypewriter } from "react-simple-typewriter";
 import Socials from "./Socials";
-
+import { GeneralContext } from "../context/GeneralContext";
 export default function Header() {
   const [text] = useTypewriter({
     words: ["React", "JavaScript", "Node", "WebDev"],
@@ -13,7 +13,7 @@ export default function Header() {
   });
 
   const [headerId, setHeaderId] = useState("");
-
+  const { darkMode, toggleTheme } = useContext(GeneralContext);
   useEffect(() => {
     const showHeaderId = () => {
       const headerDiv = document.getElementById("header");
@@ -21,7 +21,6 @@ export default function Header() {
       if (headerDiv) {
         setHeaderId("header");
       } else {
-        
       }
     };
 
@@ -29,7 +28,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header id="header" >
+    <header id="header">
       <div className="header-container container">
         <div className="hero-img"></div>
         <div className="info-box">
@@ -37,21 +36,17 @@ export default function Header() {
             Jacob<span className="dot">.</span>
           </Typography>
 
-          <Typography
-            variant="p"
-            className="parrafo"
-          >
-            Landing page de introducción a mi perfil profesional, donde expongo mi trabajo e información sintetizada respecto a mí.
+          <Typography variant="p" className="parrafo">
+            Landing page de introducción a mi perfil profesional, donde expongo
+            mi trabajo e información sintetizada respecto a mí.
           </Typography>
-            <Socials
-              size={2.7}
-              gap={10}
-              header={`${headerId ? "true" : "false"}`}
-            />
-            
+          <Socials
+          invert="social-invert"
+            size={2.7}
+            gap={10}
+            header={`${headerId ? "true" : "false"}`}
+          />
         </div>
-        
-
       </div>
     </header>
   );
