@@ -14,7 +14,7 @@ export default function Proyectos() {
         </Typography>
         <p className="parrafo">Aquí menos palabras, más trabajo:</p>
         <Button color="blue">
-          <a href="/proyectosall">Ver todos</a>{" "}
+          <a href="/proyectosall" className="button-font">Ver todos</a>{" "}
         </Button>
         {darkMode && <div className="light-md-blue"></div>}
       </div>

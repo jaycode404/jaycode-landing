@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.share-tech mono-regular {
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* color base #F5F5F5*/
 /* color azul #37B5FF*/
 /* color lavanda  #B65BFE */
@@ -12,7 +18,8 @@
 }
 
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 600;
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -74,7 +81,7 @@ body {
 }
 
 p {
-  font-family: "Courier New", Courier, monospace;
+
 }
 
 @media (min-width: 210px) {
@@ -93,7 +100,7 @@ p {
     gap: 1rem;
   }
   .section-title {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Share Tech Mono", monospace;
     font-size: 40px;
     margin-bottom: 0.5rem;
   }
@@ -106,6 +113,7 @@ p {
     font-size: 9px;
   }
   .nav-logo {
+    font-family: "Share Tech Mono", monospace;
     font-size: 10px;
   }
 
@@ -127,7 +135,7 @@ p {
   .nav-link {
     /* flex nav-link items-center transition-colors hover:bg-black hover:text-white */
     place-items: center;
-    padding: 0.7rem 0.2rem;
+    padding: 0.7rem 0.4rem;
   }
   .theme-button {
     font-size: 20px;
@@ -1293,3 +1301,16 @@ shadowBlue {
   color: white;
 }
 
+.footer-sign {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 10px;
+}
+
+.footer-title {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 18px;
+}
+
+.button-font {
+  font-family: "Share Tech Mono", monospace;
+}

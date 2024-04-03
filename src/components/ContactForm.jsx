@@ -85,7 +85,7 @@ export default function ContactForm() {
           </div>
         </div>
 
-        <Button type="submit" className="mt-6 boton-light boton-form" fullWidth>
+        <Button type="submit" className="mt-6 boton-light boton-form button-font" fullWidth>
           Enviar
         </Button>
       </form>
