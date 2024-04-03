@@ -8,28 +8,28 @@ export default function ProyectosGrid() {
     {
       proyectTitle: "CodeFlix",
       proyectDesc: "una descripcion corta whatever",
-      imageLink: "/screenshot-1.png",
+      imageLink: "/public/screenshot-1.png",
       colSpan: 2,
       rowSpan: 4,
     },
     {
       proyectTitle: "Portafolio",
       proyectDesc: "una descripcion corta whatever",
-      imageLink: "/screenshot-2.png",
+      imageLink: "/public/screenshot-2.png",
       colSpan: 1,
       rowSpan: 6,
     },
     {
       proyectTitle: "RamdoMusic",
       proyectDesc: "una descripcion corta whatever",
-      imageLink: "/screenshot-3.png",
+      imageLink: "/public/screenshot-3.png",
       colSpan: 2,
       rowSpan: 3,
     },
     {
       proyectTitle: "Recordatorios ",
       proyectDesc: "una descripcion corta whatever",
-      imageLink: "/screenshot-4.png",
+      imageLink: "/public/screenshot-4.png",
       colSpan: 1,
       rowSpan: 6,
     },
@@ -59,7 +59,6 @@ export default function ProyectosGrid() {
             style={{
               gridColumnEnd: `span ${colSpan}`,
               gridRowEnd: `span ${rowSpan}`,
-
               position: "relative",
             }}
           >
