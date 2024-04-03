@@ -20,16 +20,16 @@ export default function ProyectosGrid() {
       rowSpan: 6,
     },
     {
-      proyectTitle: "CodeFlix",
+      proyectTitle: "RamdoMusic",
       proyectDesc: "una descripcion corta whatever",
       imageLink: "/screenshot-3.png",
       colSpan: 2,
       rowSpan: 3,
     },
     {
-      proyectTitle: "CodeFlix",
+      proyectTitle: "Recordatorios ",
       proyectDesc: "una descripcion corta whatever",
-      imageLink: "/assets/bmo.png",
+      imageLink: "/screenshot-4.png",
       colSpan: 1,
       rowSpan: 6,
     },
@@ -50,7 +50,7 @@ export default function ProyectosGrid() {
   ];
 
   return (
-    <div className="proyect-grid-container">
+    <div className="proyect-grid-container ">
       {data.map(
         ({ proyectDesc, proyectTitle, imageLink, colSpan, rowSpan }, index) => (
           <div
@@ -59,7 +59,7 @@ export default function ProyectosGrid() {
             style={{
               gridColumnEnd: `span ${colSpan}`,
               gridRowEnd: `span ${rowSpan}`,
-              border: `1px solid ${darkMode ? "white" : "black"}`,
+
               position: "relative",
             }}
           >
@@ -71,7 +71,6 @@ export default function ProyectosGrid() {
               }}
             ></div>
             <p className="proyect-title">{proyectTitle}</p>
-            
           </div>
         )
       )}

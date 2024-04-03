@@ -18,7 +18,8 @@ export default function Proyectos() {
         </Button>
         {darkMode && <div className="light-md-blue"></div>}
       </div>
-      <ProyectosGrid />
+      
+        <ProyectosGrid />
     </section>
   );
 }
