@@ -12,6 +12,7 @@
 }
 
 body {
+  font-family: 'Courier New', Courier, monospace;
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -92,6 +93,7 @@ p {
     gap: 1rem;
   }
   .section-title {
+    font-family: 'Courier New', Courier, monospace;
     font-size: 40px;
     margin-bottom: 0.5rem;
   }

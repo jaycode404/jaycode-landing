@@ -32,7 +32,7 @@ export default function Header() {
       <div className="header-container container">
         <div className="hero-img"></div>
         <div className="info-box">
-          <Typography variant="h1" className="hero-title">
+          <Typography variant="h1" className="section-title">
             Jacob<span className="dot">.</span>
           </Typography>
 
