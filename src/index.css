@@ -76,14 +76,6 @@ body {
   background-color: rgb(229, 231, 235);
 }
 
-.Typography-variant-p {
-  font-size: 1px;
-}
-
-p {
-
-}
-
 @media (min-width: 210px) {
   /* GENERAL---------------------------- */
   .container {
@@ -99,6 +91,7 @@ p {
     padding-bottom: 3rem;
     gap: 1rem;
   }
+
   .section-title {
     font-family: "Share Tech Mono", monospace;
     font-size: 40px;
@@ -161,8 +154,8 @@ p {
   }
 
   .parrafo {
-    font-size: 12px;
-    line-height: 25 /*  */ px;
+    font-size: 16px;
+    line-height: 22px;
   }
 
   .info-box {
@@ -1288,12 +1281,8 @@ shadowBlue {
 }
 
 .proyect-title {
-  
   color: white;
-  text-shadow: 
-    -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
 }
 
