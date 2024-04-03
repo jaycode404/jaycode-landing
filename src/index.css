@@ -110,7 +110,7 @@ p {
     position: fixed;
     z-index: 10;
     background-color: #f3f4f6;
-    font-size: 9px;
+    font-size: 8px;
   }
   .nav-logo {
     font-family: "Share Tech Mono", monospace;
@@ -135,7 +135,7 @@ p {
   .nav-link {
     /* flex nav-link items-center transition-colors hover:bg-black hover:text-white */
     place-items: center;
-    padding: 0.7rem 0.4rem;
+    padding: 0.7rem 0.2rem;
   }
   .theme-button {
     font-size: 20px;
