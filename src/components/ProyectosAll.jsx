@@ -5,8 +5,11 @@ import ProyectosGrid from './ProyectosGrid'
 export default function ProyectosAll() {
   return (
     <div>
-      <Typography variant='h1' className='pt-10'>Aqui aparecen todos los proyectos</Typography>
+      <div  className='proyectos-all-container'>
+
+      <Typography variant='h1' className='pt-8 section-title'>Todos los proyectos</Typography>
       <ProyectosGrid/>
+      </div>
     </div>
   )
 }

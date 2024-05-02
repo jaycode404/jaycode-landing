@@ -10,6 +10,9 @@ import Contacto from "./components/Contacto";
 import BentoGrid from "./components/Grid";
 import { NavList, NavbarSimple } from "./components/Navbar";
 import Footer from "./components/Footer";
+import { Router, Routes, Route } from "react-router";
+import ProyectosAll from "./components/ProyectosAll";
+import ProyectSpace from "./components/ProyectSpace";
 
 function App() {
   const { darkMode, toggleTheme, setDarkMode } = useContext(GeneralContext);
@@ -45,7 +48,22 @@ function App() {
 
   return (
     <div className={` h-auto `}>
-      <NavbarSimple toggleTheme={toggleTheme} />
+      <NavbarSimple />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/proyectosall" element={<ProyectosAll />} />
+        <Route path="/proyectosall/:id" element={<ProyectSpace />} />
+      </Routes>
+      <div className="bg-black footer">
+        <Footer />
+      </div>
+    </div>
+  );
+}
+
+export function Home() {
+  return (
+    <>
       <div className="mx-auto gap-10 section-bg">
         <Header />
         <Proyectos />
@@ -53,10 +71,7 @@ function App() {
         <Section />
         <Contacto />
       </div>
-      <div className="bg-black ">
-        <Footer />
-      </div>
-    </div>
+    </>
   );
 }
 

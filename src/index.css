@@ -208,6 +208,9 @@ body {
   .proyect-desc {
     display: none;
   }
+  .proyectos-all-container {
+    padding: 2rem 2rem;
+  }
 
   /* CONTACTO---------------------------- */
   .card-form {
@@ -1302,4 +1305,25 @@ shadowBlue {
 
 .button-font {
   font-family: "Share Tech Mono", monospace;
+}
+.proyectos-all-container {
+  padding: 2rem 2rem;
+}
+
+.proyect-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 6rem 3rem;
+  gap: 3rem;
+}
+.proyect-img {
+  width: 35rem;
+}
+
+
+
+.proyect-button {
+  align-self: end;
+  padding: 1rem;
+  background-color: #2dd4bf;
 }

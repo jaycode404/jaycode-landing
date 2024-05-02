@@ -15,6 +15,7 @@ const urls = [
   "https://jaycode-landing.vercel.app/",
   "https://randomusic.vercel.app/",
   "https://recordatorios-crud-app.vercel.app/",
+  "https://pedagogia-landing.vercel.app/",
 ];
 
 urls.forEach(async (url, index) => {
