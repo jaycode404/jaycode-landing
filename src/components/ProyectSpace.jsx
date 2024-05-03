@@ -7,17 +7,15 @@ export default function ProyectSpace() {
 
   const { proyectDesc, proyectTitle, imageLink, colSpan, rowSpan } = proyecto;
   return (
-    <>
-      <div className="proyect-container">
-        <div>
-          <img src={imageLink} className="proyect-img" alt="proyect-imag" />
-        </div>
-        <div className="">
-          <h2 className="proyect-title">{proyectTitle}</h2>
-          <p>{proyectDesc}</p>
-          <button className="proyect-button"></button>
-        </div>
+    <div className="proyect-container">
+      <div>
+        <img src={imageLink} className="proyect-img" alt="proyect-imag" />
       </div>
-    </>
+      <div className="proyect-info-container">
+        <h2 className="proyect-title">{proyectTitle}</h2>
+        <p>{proyectDesc}</p>
+        <Button type="" className="proyect-button"> Visitar</Button>
+      </div>
+    </div>
   );
 }

@@ -1320,10 +1320,11 @@ shadowBlue {
   width: 35rem;
 }
 
-
-
+.proyect-info-container {
+  display: grid;
+}
 .proyect-button {
+  
   align-self: end;
-  padding: 1rem;
   background-color: #2dd4bf;
 }

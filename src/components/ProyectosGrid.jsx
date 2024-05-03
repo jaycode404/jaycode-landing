@@ -6,7 +6,8 @@ export const data = [
   {
     id: 1,
     proyectTitle: "CodeFlix",
-    proyectDesc: "CodeFlix es una plataforma de contenido dirigida a programadores, que ofrece una amplia selección de recursos educativos y entretenidos. Desde tutoriales prácticos hasta charlas inspiradoras, CodeFlix es el destino ideal para programadores de todos los niveles. Ofrece herramientas interactivas y una interfaz fácil de usar para facilitar el aprendizaje y la colaboración.",
+    proyectDesc:
+      "CodeFlix es una plataforma de contenido dirigida a programadores, que ofrece una amplia selección de recursos educativos y entretenidos. Desde tutoriales prácticos hasta charlas inspiradoras, CodeFlix es el destino ideal para programadores de todos los niveles. Ofrece herramientas interactivas y una interfaz fácil de usar para facilitar el aprendizaje y la colaboración.",
     imageLink: "/assets/screenshot-1.png",
     colSpan: 2,
     rowSpan: 4,
@@ -63,7 +64,8 @@ export default function ProyectosGrid() {
           { proyectDesc, proyectTitle, imageLink, colSpan, rowSpan, id },
           index
         ) => (
-          <div
+          <a
+            href={`/proyectosall/${id}`}
             key={index}
             className="proyect-item-container"
             style={{
@@ -80,13 +82,13 @@ export default function ProyectosGrid() {
                   position: "absolute",
                 }}
               ></div>
+              <a href={`/proyectosall/${id}`} className="proyect-title">
+                {proyectTitle}
+              </a>
             </a>
-            <p className="proyect-title">{proyectTitle}</p>
-          </div>
+          </a>
         )
       )}
     </div>
   );
 }
-
-
