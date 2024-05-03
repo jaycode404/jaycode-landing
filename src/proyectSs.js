@@ -1,11 +1,13 @@
-// captureScreenshots.js
-
 import puppeteer from "puppeteer";
 import fs from "fs";
+
 async function takeScreenshot(url, outputPath) {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
-  await page.goto(url);
+  
+  // Espera hasta que el evento "load" del DOM se complete
+  await page.goto(url, { waitUntil: "load" });
+  
   await page.screenshot({ path: outputPath });
   await browser.close();
 }

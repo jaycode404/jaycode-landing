@@ -208,8 +208,28 @@ body {
   .proyect-desc {
     display: none;
   }
+
   .proyectos-all-container {
-    padding: 2rem 2rem;
+    padding: 1rem 1rem;
+  }
+
+  .proyect-container {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2rem;
+    gap: 2rem;
+  }
+  .proyect-img {
+    width: 35rem;
+  }
+
+  .proyect-info-container {
+    display: grid;
+    gap: 1rem;
+  }
+  .proyect-button {
+    align-self: end;
+    background-color: #2dd4bf;
   }
 
   /* CONTACTO---------------------------- */
@@ -363,6 +383,24 @@ body {
   }
   .proyect-desc {
     display: flex;
+  }
+  .proyect-container {
+    display: flex;
+    flex-direction: column;
+    padding: 7rem 2rem;
+    gap: 2rem;
+  }
+  .proyect-img {
+    width: 35rem;
+  }
+
+  .proyect-info-container {
+    display: grid;
+    gap: 1rem;
+  }
+  .proyect-button {
+    align-self: end;
+    background-color: #2dd4bf;
   }
 }
 
@@ -602,6 +640,22 @@ body {
     gap: 1rem;
     padding: 1rem;
   }
+  .proyect-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 7rem 2rem;
+    gap: 2rem;
+  }
+  .proyect-img {
+    width: 35rem;
+  }
+  .proyect-info-container {
+    display: grid;
+  }
+  .proyect-button {
+    align-self: end;
+    background-color: #2dd4bf;
+  }
 }
 
 /* lg */
@@ -715,6 +769,22 @@ body {
     font-size: 15px;
     line-height: 13px;
     position: relative;
+  }
+  .proyect-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 7rem 2rem;
+    gap: 2rem;
+  }
+  .proyect-img {
+    width: 35rem;
+  }
+  .proyect-info-container {
+    display: grid;
+  }
+  .proyect-button {
+    align-self: end;
+    background-color: #2dd4bf;
   }
 
   /* GALLERY ----------------------- */
@@ -843,6 +913,23 @@ body {
     gap: 1rem;
     padding: 1rem;
   }
+  .proyect-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 7rem 2rem;
+    gap: 2rem;
+  }
+  .proyect-img {
+    width: 45rem;
+  }
+  .proyect-info-container {
+    display: grid;
+    font-size: 25px;
+  }
+  .proyect-button {
+    align-self: end;
+    background-color: #2dd4bf;
+  }
 }
 
 /* 2xl */
@@ -961,8 +1048,26 @@ body {
     padding: 1rem;
   }
   .proyect-title {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
+    font-size: 35px;
+  }
+
+  .proyect-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 6rem 3rem;
+    gap: 1rem;
+  }
+  .proyect-img {
+    width: 45rem;
+  }
+
+  .proyect-info-container {
+    display: grid;
+    font-size: 25px;
+  }
+  .proyect-button {
+    align-self: end;
+    background-color: #2dd4bf;
   }
 }
 
@@ -1305,26 +1410,4 @@ shadowBlue {
 
 .button-font {
   font-family: "Share Tech Mono", monospace;
-}
-.proyectos-all-container {
-  padding: 2rem 2rem;
-}
-
-.proyect-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 6rem 3rem;
-  gap: 3rem;
-}
-.proyect-img {
-  width: 35rem;
-}
-
-.proyect-info-container {
-  display: grid;
-}
-.proyect-button {
-  
-  align-self: end;
-  background-color: #2dd4bf;
 }
