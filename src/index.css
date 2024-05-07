@@ -1411,3 +1411,14 @@ shadowBlue {
 .button-font {
   font-family: "Share Tech Mono", monospace;
 }
+.proyect-img {
+  border-radius: 15px;
+}
+.button {
+  padding: .5rem;
+  border-radius: 8px;
+  background-color: #2196f3;  
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 900;
+}

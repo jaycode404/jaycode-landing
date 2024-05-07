@@ -4,10 +4,10 @@ import fs from "fs";
 async function takeScreenshot(url, outputPath) {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
-  
+
   // Espera hasta que el evento "load" del DOM se complete
   await page.goto(url, { waitUntil: "load" });
-  
+
   await page.screenshot({ path: outputPath });
   await browser.close();
 }
@@ -18,6 +18,7 @@ const urls = [
   "https://randomusic.vercel.app/",
   "https://recordatorios-crud-app.vercel.app/",
   "https://pedagogia-landing.vercel.app/",
+  "https://busqueda-indexada.vercel.app/",
 ];
 
 urls.forEach(async (url, index) => {

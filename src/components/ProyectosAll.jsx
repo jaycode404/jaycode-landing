@@ -7,7 +7,7 @@ export default function ProyectosAll() {
     <div>
       <div  className='proyectos-all-container'>
 
-      <Typography variant='h1' className='pt-8 section-title'>Todos los proyectos</Typography>
+      <Typography variant='h1' className='pt-[4rem] section-title ml-4'>Todos los proyectos</Typography>
       <ProyectosGrid/>
       </div>
     </div>

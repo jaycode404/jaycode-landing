@@ -13,16 +13,13 @@ export default function Proyectos() {
           Proyectos<span className="dot">.</span>
         </Typography>
         <p className="parrafo">Aquí menos palabras, más trabajo:</p>
-        <Button color="blue">
-          <a href="/proyectosall" className="button-font">
-            Ver todos
-          </a>{" "}
-        </Button>
+        <a href="/proyectosall" className="button boton-light">
+          Ver todos
+        </a>
         {darkMode && <div className="light-md-blue"></div>}
       </div>
 
       <ProyectosGrid />
-      
     </section>
   );
 }

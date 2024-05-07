@@ -16,7 +16,8 @@ export const data = [
   {
     id: 2,
     proyectTitle: "Portafolio",
-    proyectDesc: "Un portafolio personal que muestra mis proyectos y habilidades.",
+    proyectDesc:
+      "Un portafolio personal que muestra mis proyectos y habilidades.",
     imageLink: "/assets/screenshot-2.png",
     proyectSite: "https://jaycode-landing.vercel.app/",
     colSpan: 1,
@@ -25,7 +26,8 @@ export const data = [
   {
     id: 3,
     proyectTitle: "RamdoMusic",
-    proyectDesc: "RamdoMusic es una aplicación web para descubrir, escuchar y compartir música de manera gratuita. Explora una amplia variedad de géneros y artistas, crea listas de reproducción personalizadas y sigue a tus artistas favoritos.",
+    proyectDesc:
+      "RamdoMusic es una aplicación web para descubrir, escuchar y compartir música de manera gratuita. Explora una amplia variedad de géneros y artistas, crea listas de reproducción personalizadas y sigue a tus artistas favoritos.",
     imageLink: "/assets/screenshot-3.png",
     proyectSite: "https://randomusic.vercel.app/",
     colSpan: 2,
@@ -34,7 +36,8 @@ export const data = [
   {
     id: 4,
     proyectTitle: "Recordatorios",
-    proyectDesc: "Una aplicación simple de recordatorios para ayudarte a organizar tus tareas diarias. Agrega, edita y elimina recordatorios fácilmente, y recibe notificaciones para recordarte las tareas importantes.",
+    proyectDesc:
+      "Una aplicación simple de recordatorios para ayudarte a organizar tus tareas diarias. Agrega, edita y elimina recordatorios fácilmente, y recibe notificaciones para recordarte las tareas importantes.",
     imageLink: "/assets/screenshot-4.png",
     proyectSite: "https://recordatorios-crud-app.vercel.app/",
     colSpan: 1,
@@ -43,7 +46,8 @@ export const data = [
   {
     id: 5,
     proyectTitle: "Pedagogia",
-    proyectDesc: "Pedagogia es una plataforma educativa que ofrece recursos y materiales didácticos para docentes y estudiantes. Explora contenido educativo de alta calidad, participa en actividades interactivas y colabora con otros educadores.",
+    proyectDesc:
+      "Creación de landing page para cliente enfocado en la mejora de imagen de su negocio. Una pagina web disenada para dar a conocer su servicio pedagogico con los requerimientos esteticos y responsive pedidos.",
     imageLink: "/assets/screenshot-5.png",
     proyectSite: "https://pedagogia-landing.vercel.app/",
     colSpan: 1,
@@ -51,15 +55,16 @@ export const data = [
   },
   {
     id: 6,
-    proyectTitle: "CodeFlix",
-    proyectDesc: "CodeFlix es una plataforma de streaming de video que ofrece una amplia variedad de contenido, incluyendo películas, series de televisión, documentales y más. Disfruta de contenido ilimitado en cualquier momento y lugar.",
-    imageLink: "/assets/bmo.png",
-    proyectSite: "asdasd",
+    proyectTitle: "IndexSearch",
+    proyectDesc:
+      "index search es un modelo de busqueda que filtra rapidamente una lista de contactos o de otro tipo de informacion basada en el input search del cliente, aumentando la eficiencia y el ahorro de tiempo del programa.",
+    imageLink: "/assets/screenshot-6.png",
+    proyectSite: "https://busqueda-indexada.vercel.app/",
     colSpan: 1,
     rowSpan: 5,
   },
+  
 ];
-
 
 export default function ProyectosGrid() {
   const { darkMode } = useContext(GeneralContext);
