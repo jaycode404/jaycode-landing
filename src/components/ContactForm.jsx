@@ -42,7 +42,7 @@ export default function ContactForm() {
                 color="blue-gray"
                 className="text-black "
               >
-                Tu nombre
+                Tu nombre:
               </Typography>
               <input
                 type="text"
@@ -57,7 +57,7 @@ export default function ContactForm() {
                 color="blue-gray"
                 className=" text-black"
               >
-                Tu email
+                Tu email:
               </Typography>
               <input
                 type="email"
@@ -73,7 +73,7 @@ export default function ContactForm() {
               color="blue-gray"
               className="-mb-3 text-black"
             >
-              Mensaje
+              Mensaje:
             </Typography>
             <textarea
               name="message"

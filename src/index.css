@@ -17,11 +17,16 @@
   --text-color: black;
 }
 
+
+
 body {
-  font-family: "Share Tech Mono", monospace;
-  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  /* font-family: "Share Tech Mono", monospace; */
+  
   background-color: var(--background-color);
   color: var(--text-color);
+  overflow-x: hidden;
+  background-color: rgb(229, 231, 235);
 }
 
 .dark-mode {
@@ -31,8 +36,8 @@ body {
     #001a35,
     #001226,
     #000c1c
-  );
-  --text-color: white;
+    );
+    --text-color: white;
   background: var(--background-gradient);
 }
 .dark-mode .navbar-container {
@@ -71,11 +76,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  overflow-x: hidden;
-  background-color: rgb(229, 231, 235);
-}
-
 @media (min-width: 210px) {
   /* GENERAL---------------------------- */
   .container {
@@ -93,7 +93,7 @@ body {
   }
 
   .section-title {
-    font-family: "Share Tech Mono", monospace;
+    font-family: "Roboto", sans-serif;
     font-size: 40px;
     margin-bottom: 0.5rem;
   }
@@ -106,7 +106,7 @@ body {
     font-size: 8px;
   }
   .nav-logo {
-    font-family: "Share Tech Mono", monospace;
+    
     font-size: 10px;
   }
 
@@ -1404,7 +1404,7 @@ shadowBlue {
 }
 
 .footer-title {
-  font-family: "Share Tech Mono", monospace;
+  
   font-size: 18px;
 }
 
