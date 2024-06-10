@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .share-tech mono-regular {
-  font-family: "Share Tech Mono", monospace;
+  /* font-family: "Share Tech Mono", monospace; */
   font-weight: 400;
   font-style: normal;
 }
@@ -20,7 +20,7 @@
 
 
 body {
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   /* font-family: "Share Tech Mono", monospace; */
   
   background-color: var(--background-color);
@@ -145,8 +145,8 @@ html {
   .hero-img {
     height: 10rem;
     width: 10rem;
-    background-image: url("/public/assets/foto.png"),
-      url("/public/assets/graph-1.png");
+    background-image: url("/assets/foto.png"),
+      url("/assets/graph-1.png");
     background-size: cover;
     background-repeat: no-repeat;
     inset: 0;
@@ -310,8 +310,8 @@ html {
   .hero-img {
     height: 18rem;
     width: 18rem;
-    background-image: url("/public/assets/foto.png"),
-      url("/public/assets/graph-1.png");
+    background-image: url("/assets/foto.png"),
+      url("/assets/graph-1.png");
     background-size: cover;
     background-repeat: no-repeat;
     inset: 0;
@@ -464,8 +464,8 @@ html {
   .hero-img {
     height: 19rem;
     width: 19rem;
-    background-image: url("/public/assets/foto.png"),
-      url("/public/assets/graph-1.png");
+    background-image: url("/assets/foto.png"),
+      url("/assets/graph-1.png");
     background-size: cover;
     background-repeat: no-repeat;
     inset: 0;
@@ -587,8 +587,8 @@ html {
   .hero-img {
     height: 22rem;
     width: 22rem;
-    background-image: url("/public/assets/foto.png"),
-      url("/public/assets/graph-1.png");
+    background-image: url("/assets/foto.png"),
+      url("/assets/graph-1.png");
     background-size: cover;
     background-repeat: no-repeat;
     inset: 0;
@@ -709,8 +709,8 @@ html {
   .hero-img {
     height: 24rem;
     width: 24rem;
-    background-image: url("/public/assets/foto.png"),
-      url("/public/assets/graph-1.png");
+    background-image: url("/assets/foto.png"),
+      url("/assets/graph-1.png");
     background-size: cover;
     background-repeat: no-repeat;
     inset: 0;
@@ -857,8 +857,8 @@ html {
   .hero-img {
     height: 23rem;
     width: 23rem;
-    background-image: url("/public/assets/foto.png"),
-      url("/public/assets/graph-1.png");
+    background-image: url("/assets/foto.png"),
+      url("/assets/graph-1.png");
     background-size: cover;
     background-repeat: no-repeat;
     inset: 0;
@@ -995,8 +995,8 @@ html {
   .hero-img {
     height: 26rem;
     width: 26rem;
-    background-image: url("/public/assets/foto.png"),
-      url("/public/assets/graph-1.png");
+    background-image: url("/assets/foto.png"),
+      url("/assets/graph-1.png");
     background-size: cover;
     background-repeat: no-repeat;
     inset: 0;
@@ -1341,7 +1341,7 @@ shadowBlue {
 }
 
 .img-bg {
-  background-image: url("/public/assets/bmo.png");
+  background-image: url("/assets/bmo.png");
   background-position: center;
   background-size: cover;
 }
@@ -1404,13 +1404,10 @@ shadowBlue {
 }
 
 .footer-title {
-  
   font-size: 18px;
 }
 
-.button-font {
-  font-family: "Share Tech Mono", monospace;
-}
+
 .proyect-img {
   border-radius: 15px;
 }

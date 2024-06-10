@@ -1,8 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Slider } from "./components/Slider";
 import { GeneralContext, GeneralProvider } from "./context/GeneralContext";
 import Header from "./components/Header";
-import { Typography } from "@material-tailwind/react";
 import Section from "./components/SobreMi";
 import Proyectos from "./components/Proyectos";
 import Habilidades from "./components/Habilidades";

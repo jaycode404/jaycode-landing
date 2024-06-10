@@ -38,7 +38,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex justify-center pt-8">
-        <Typography variant="p" className="footer-sign text-gray-500">
+        <Typography  className="footer-sign text-gray-500">
           Diseñado y programado por Jaycode
           <span id="year"></span>
         </Typography>

@@ -70,7 +70,7 @@ export default function ProyectosGrid() {
   const { darkMode } = useContext(GeneralContext);
 
   return (
-    <div className="proyect-grid-container ">
+    <div className="proyect-grid-container">
       {data.map(
         (
           { proyectDesc, proyectTitle, imageLink, colSpan, rowSpan, id },
@@ -86,18 +86,16 @@ export default function ProyectosGrid() {
               position: "relative",
             }}
           >
-            <a href={`/proyectosall/${id}`}>
-              <div
-                className="proyect-item"
-                style={{
-                  backgroundImage: `url(${imageLink})`,
-                  position: "absolute",
-                }}
-              ></div>
-              <a href={`/proyectosall/${id}`} className="proyect-title">
-                {proyectTitle}
-              </a>
-            </a>
+            <div
+              className="proyect-item"
+              style={{
+                backgroundImage: `url(${imageLink})`,
+                position: "absolute",
+              }}
+            ></div>
+            <div className="proyect-title">
+              {proyectTitle}
+            </div>
           </a>
         )
       )}
