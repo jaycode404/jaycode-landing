@@ -56,10 +56,13 @@ p {
   color: var(--neon-blue);
 }
 .button:hover {
-  background-color: var(--boton-bg);
+  background-color: var(--neon-blue);
   cursor: pointer;
 }
 .button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rems;
   padding: 0.5rem;
   width: fit-content;
   color: var(--text-white);
@@ -71,6 +74,9 @@ p {
 }
 .side-border {
   border-left: 4px solid var(--neon-blue);
+}
+.icon {
+  height: 15px;
 }
 /* NAVBAR------------------------ */
 
