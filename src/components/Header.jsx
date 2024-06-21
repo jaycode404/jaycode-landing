@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Typography } from "@material-tailwind/react";
 import { useTypewriter } from "react-simple-typewriter";
 import Socials from "./Socials";
 import { GeneralContext } from "../context/GeneralContext";
+
 export default function Header() {
   const [text] = useTypewriter({
     words: ["React", "JavaScript", "Node", "WebDev"],
@@ -14,13 +14,14 @@ export default function Header() {
 
   const [headerId, setHeaderId] = useState("");
   const { darkMode, toggleTheme } = useContext(GeneralContext);
+
   useEffect(() => {
     const showHeaderId = () => {
       const headerDiv = document.getElementById("header");
-
       if (headerDiv) {
         setHeaderId("header");
       } else {
+        // Código adicional si fuera necesario
       }
     };
 
@@ -29,26 +30,27 @@ export default function Header() {
 
   return (
     <header id="header">
-      <div className="header-container container">
-        <div className="hero-img"></div>
-        <div className="info-box">
-          <Typography variant="h1" className="section-title">
-            Jacob<span className="dot">.</span>
-          </Typography>
+      <div className="header-container">
+        <div className="header-info">
+          <h1 className="hero-title">
+            jacob<span className="dot">.</span>
+          </h1>
 
-          {darkMode && <div className="light-md-blue"></div>}
-          <p className="parrafo">
-            Landing page de introducción a mi perfil profesional, donde expongo
-            mi trabajo e información sintetizada respecto a mí.
+          <p className="side-border">Me gusta crear aplicaciones útiles para mi entorno
+
+           es divertidoasdasdddddddddddddddddddd 
           </p>
-          <Socials
-            invert="social-invert"
-            size={2.7}
-            gap={10}
-            header={`${headerId ? "true" : "false"}`}
-          />
+          <button className="button">hola</button>
         </div>
+
+        <div className="hero-img"></div>
       </div>
+      {/* <Socials
+        invert="social-invert"
+        size={2.7}
+        gap={10}
+        header={`${headerId ? "true" : "false"}`}
+      /> */}
     </header>
   );
 }

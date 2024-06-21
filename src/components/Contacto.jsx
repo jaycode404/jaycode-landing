@@ -1,25 +1,21 @@
 import React, { useContext } from "react";
-import { Button, Typography } from "@material-tailwind/react";
-import { Slider } from "./Slider";
-
 import Socials from "./Socials";
 import ContactForm from "./ContactForm";
 import { GeneralContext } from "../context/GeneralContext";
 
 export default function Contacto() {
-  const { darkMode, toggleTheme } = useContext(GeneralContext);
-  return (
-    <section id="contacto" className="container">
-      <div className="info-box last">
-        <Typography variant="h1" className=" section-title text-gradient">
-          Contacto<span className="dot">.</span>
-        </Typography>
-        {darkMode && <div className="light-md-blue"></div>}
+  const { darkMode } = useContext(GeneralContext);
 
+  return (
+    <section id="contacto">
+      <div className="info-box">
+        <h2>
+          Contacto<span>.</span>
+        </h2>
+        {darkMode && <div></div>}
         <div>
-          <p className="parrafo">
-            ¡Contactame! Estaré leyendo<br></br> tu propuesta en breve y será un
-            placer colaborar.
+          <p>
+            ¡Contáctame! Estaré leyendo tu propuesta en breve y será un placer colaborar.
           </p>
         </div>
         <Socials invert="social-invert" size={2.8} gap={5} />

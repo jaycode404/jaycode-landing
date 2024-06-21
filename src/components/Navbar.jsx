@@ -1,33 +1,21 @@
-import React, { useContext, useState } from "react";
-import { Typography } from "@material-tailwind/react";
+import React, { useContext } from "react";
 import { GeneralContext } from "../context/GeneralContext";
 
-export function NavList({inFooter}) {
+export function NavList({ inFooter }) {
   const { darkMode, toggleTheme } = useContext(GeneralContext);
   return (
-    
-    <div className="nav-list">
-      <a href="/#proyectos" className="nav-link">
-        Proyectos
-      </a>
+    <div className="navlist-container">
+      <a href="/#proyectos">Proyectos</a>
+      <a href="/#habilidades">Habilidades</a>
+      <a href="/#sobremi">Sobre Mi</a>
+      <a href="/#contacto">Contacto</a>
 
-      <a href="/#habilidades" className="nav-link  ">
-        Habilidades
-      </a>
-
-      <a href="/#sobremi" className="nav-link">
-        Sobre Mi
-      </a>
-
-      <a href="/#contacto" className="nav-link  ">
-        Contacto
-      </a>
-    
-    {!inFooter && <button onClick={toggleTheme} size="sm" className="theme-button">
-    {darkMode ? "🌙" : "🔆"}
-    </button>}
+      {!inFooter && (
+        <button onClick={toggleTheme} size="sm">
+          {darkMode ? "🌙" : "🔆"}
+        </button>
+      )}
     </div>
-    
   );
 }
 
@@ -35,16 +23,13 @@ export function NavbarSimple({ flex, gap }) {
   const { darkMode, toggleTheme } = useContext(GeneralContext);
 
   return (
-    <div className={` navbar-container`}>
-      <div className="navbar-div">
-        <Typography as="a" href="/" variant="h6" className="nav-logo nav-link">
-          <span className="span-code lg:text-xl">{"<"}</span> Jaycode{" "}
-          <span className="span-code">{"/>"}</span>
-        </Typography>
-        <NavList flex={flex} gap={gap} />
-        
-        
+    <nav className="navbar-container">
+      <div>
+        <span as="a" href="/">
+          Jaycode
+        </span>
       </div>
-    </div>
+      <NavList />
+    </nav>
   );
 }

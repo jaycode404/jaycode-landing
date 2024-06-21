@@ -1,8 +1,8 @@
 import React, { useContext, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { Button, Input, Typography, Card } from "@material-tailwind/react";
 import Swal from "sweetalert2";
 import { GeneralContext } from "../context/GeneralContext";
+
 export default function ContactForm() {
   const { darkMode } = useContext(GeneralContext);
   const form = useRef();
@@ -32,63 +32,53 @@ export default function ContactForm() {
   };
 
   return (
-    <Card color="transparent" shadow={true} className="card-form">
+    <div className="card-form">
       <form ref={form} className="contact-form" onSubmit={sendEmail}>
-        <div className="flex flex-col gap-2 ">
+        <div className="flex flex-col gap-2">
           <div className="lg:flex md:gap-2">
             <div className="flex flex-col">
-              <Typography
-                variant="h6"
-                color="blue-gray"
-                className="text-black "
-              >
+              <label htmlFor="name" className="text-black">
                 Tu nombre:
-              </Typography>
+              </label>
               <input
                 type="text"
+                id="name"
                 name="to_name"
                 placeholder="Arnold"
-                className="md:w-[100%] w-[80%] input-style"
+                className="input-style"
               />
             </div>
-            <div className="flex flex-col gap">
-              <Typography
-                variant="h6"
-                color="blue-gray"
-                className=" text-black"
-              >
+            <div className="flex flex-col">
+              <label htmlFor="email" className="text-black">
                 Tu email:
-              </Typography>
+              </label>
               <input
                 type="email"
+                id="email"
                 name="from_name"
                 placeholder="arnold@gmail.com"
-                className="md:w-[100%] w-[80%] input-style"
+                className="input-style"
               />
             </div>
           </div>
           <div className="flex flex-col gap-6">
-            <Typography
-              variant="h6"
-              color="blue-gray"
-              className="-mb-3 text-black"
-            >
+            <label htmlFor="message" className="text-black">
               Mensaje:
-            </Typography>
+            </label>
             <textarea
+              id="message"
               name="message"
-              className="w-full textarea-style"
-              type="text-area"
+              className="textarea-style"
               maxLength={100}
               placeholder="Me gustaría colaborar..."
             />
           </div>
         </div>
 
-        <Button type="submit" className="mt-6 boton-light boton-form button-font" fullWidth>
+        <button type="submit" className="boton-light boton-form button-font">
           Enviar
-        </Button>
+        </button>
       </form>
-    </Card>
+    </div>
   );
 }

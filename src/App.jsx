@@ -53,7 +53,7 @@ function App() {
         <Route path="/proyectosall/:id" element={<ProyectSpace />} />
       </Routes>
       <div className="bg-black footer">
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   );
@@ -64,10 +64,10 @@ export function Home() {
     <>
       <div className="mx-auto gap-10 section-bg">
         <Header />
-        <Proyectos />
+        {/* <Proyectos />
         <Habilidades />
         <Section />
-        <Contacto />
+        <Contacto /> */}
       </div>
     </>
   );
