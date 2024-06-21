@@ -62,6 +62,7 @@ export default function Header() {
         </div>
 
         <div className="hero-img"></div>
+        {/* <img src="/assets/laptop.png" alt="" /> */}
       </div>
       {/* <Socials
         invert="social-invert"

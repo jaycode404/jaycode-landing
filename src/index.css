@@ -4,7 +4,7 @@
   --body-font: "Roboto Mono", monospace;
   --title-font: "Roboto", sans-serif;
   --main-dark-blue: #060522; /* Fondo principal */
-  --neon-blue: #14b8a6; /* Color de enlaces */
+  --neon-blue: rgb(20, 184, 166); /* Color de enlaces */
   --boton-bg: #064e3b; /* Color de encabezados */
   --dark-turquoise: #007373; /* Pie de página */
   --midnight-blue: #001f3f; /* Otro tono de azul */
@@ -102,10 +102,41 @@ p {
 
 .hero-img::before {
   content: "";
+  background-image: url(/assets/laptop-2.png);
+  position: absolute;
+  width: 5rem;
+  height: 4rem;
+  left: 70%;
+  top: 17rem;
+  z-index: -1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: drop-shadow(10px 10px 10px rgba(20, 184, 166, 0.5));
+}
+
+.hero-img::after {
+  content: "";
+  background-image: url(/assets/laptop.png);
+  position: absolute;
+  width: 5rem;
+  height: 4rem;
+  left: 50%;
+  z-index: -2;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: drop-shadow(10px 10px 10px rgba(20, 184, 166, 0.5));
+  opacity: .8;
+}
+
+.hero-img .extra {
+  content: "";
   background-image: url(/assets/graph.png);
   position: absolute;
   width: 10rem;
   height: 14rem;
+  left: 45%;
   z-index: -1;
   background-position: center;
   background-repeat: no-repeat;
