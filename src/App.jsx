@@ -12,6 +12,8 @@ import { Router, Routes, Route } from "react-router";
 import ProyectosAll from "./components/ProyectosAll";
 import ProyectSpace from "./components/ProyectSpace";
 import Interactive from "./components/Interactive";
+import Particles from "./components/Particles";
+import ParticlesComponent from "./components/Particles";
 
 function App() {
   const { darkMode, toggleTheme, setDarkMode } = useContext(GeneralContext);
@@ -34,7 +36,7 @@ function App() {
     return () => {
       darkModeMedia.removeEventListener("change", handleDarkModeChange);
     };
-  }, []); // Se ejecuta solo una vez al montar el componente
+  }, []);
 
   useEffect(() => {
     // Aplicar o quitar la clase dark-mode en el cuerpo del documento según el estado del modo oscuro
@@ -43,7 +45,7 @@ function App() {
     } else {
       document.body.classList.remove("dark-mode");
     }
-  }, [darkMode]); // Se ejecuta cada vez que darkMode cambia
+  }, [darkMode]); 
 
   return (
     <div className={` h-auto `}>
@@ -63,6 +65,7 @@ export function Home() {
     <>
       <div className="mx-auto gap-10 section-bg">
         <Header />
+        
         <Proyectos />
         <Interactive/>
         <Habilidades />

@@ -124,18 +124,22 @@ p {
 }
 
 /* HEADER ---------------- */
-header::before {
+#particles-js {
+  display: flex;
+  position: absolute;
+}
+/* header::before {
   content: "";
   position: absolute;
-  background-image: url(assets/code-bg.jpg);
+  background-image: url(assets/particles.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 80%;
   width: 100%;
-  opacity: .1;
+  opacity: .2;
   z-index: -1;
-}
+} */
 .header-container {
   position: relative;
   display: grid;

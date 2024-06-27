@@ -15,6 +15,7 @@ export default function Proyectos() {
         <button className="button" href="/proyectosall">
           Ver todos
         </button>
+        <div id="particles-js"></div>
         {darkMode && <div></div>}
       </div>
       {/* <ProyectosGrid /> */}
