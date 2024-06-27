@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import { Router, Routes, Route } from "react-router";
 import ProyectosAll from "./components/ProyectosAll";
 import ProyectSpace from "./components/ProyectSpace";
+import Interactive from "./components/Interactive";
 
 function App() {
   const { darkMode, toggleTheme, setDarkMode } = useContext(GeneralContext);
@@ -52,9 +53,7 @@ function App() {
         <Route path="/proyectosall" element={<ProyectosAll />} />
         <Route path="/proyectosall/:id" element={<ProyectSpace />} />
       </Routes>
-      <div className="bg-black footer">
-        {/* <Footer /> */}
-      </div>
+      <div className="bg-black footer"><Footer /></div>
     </div>
   );
 }
@@ -64,10 +63,11 @@ export function Home() {
     <>
       <div className="mx-auto gap-10 section-bg">
         <Header />
-        {/* <Proyectos />
+        <Proyectos />
+        <Interactive/>
         <Habilidades />
         <Section />
-        <Contacto /> */}
+        <Contacto />
       </div>
     </>
   );

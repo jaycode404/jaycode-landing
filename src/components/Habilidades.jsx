@@ -4,10 +4,10 @@ import LogoSlider from "./LogoSlider";
 
 export default function Habilidades() {
   return (
-    <section id="habilidades">
+    <section id="habilidades" className="section">
       <div>
-        <h2>
-          Habilidades<span>.</span>
+        <h2 >
+          Habilidades<span className="dot">.</span>
         </h2>
         <p>
           Desarrollador Full Stack con habilidades sólidas en JavaScript, React,
@@ -18,7 +18,7 @@ export default function Habilidades() {
         </p>
       </div>
       <div>
-        <LogoSlider />
+        {/* <LogoSlider /> */}
       </div>
     </section>
   );

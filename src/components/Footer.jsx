@@ -16,33 +16,25 @@ export default function Footer() {
   }, []);
 
   return (
-    <div>
-      <div>
-        <div>
-          <h6 className="footer-title">
-            Desarrollo Web Jaycode
-          </h6>
-        </div>
-        <div className="flex flex-col items-center">
+    <footer>
+      <div className="footer-section section">
+        <h6>Desarrollo Web Jcode</h6>
           <div className="footer-navlist">
             <NavList inFooter={true} flex="flex" gap={0} />
-          </div>
         </div>
         <div>
-          <Typography className="footer-title" variant="h6">
-            Sociales
-          </Typography>
+          <h6>Sociales</h6>
           <div>
             <Socials footer="footer" gap={4} size={2} />
           </div>
         </div>
       </div>
-      <div>
+      <div className="section footer-last">
         <p>
           Diseñado y programado por Jaycode
           <span id="year"></span>
         </p>
       </div>
-    </div>
+    </footer>
   );
 }

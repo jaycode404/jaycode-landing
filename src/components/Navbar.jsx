@@ -7,11 +7,11 @@ export function NavList({ inFooter }) {
     <div className="navlist-container">
       <a href="/#proyectos">Proyectos</a>
       <a href="/#habilidades">Habilidades</a>
-      <a href="/#sobremi">Sobre Mi</a>
+      <a href="/#sobremi">Sobre Mí</a>
       <a href="/#contacto">Contacto</a>
 
       {!inFooter && (
-        <button onClick={toggleTheme} size="sm">
+        <button className="dark-theme-button" onClick={toggleTheme} size="sm">
           {darkMode ? "🌙" : "🔆"}
         </button>
       )}
@@ -25,9 +25,9 @@ export function NavbarSimple({ flex, gap }) {
   return (
     <nav className="navbar-container">
       <div>
-        <span as="a" href="/">
-          Jaycode
-        </span>
+        <a href="/">
+          Jcode
+        </a>
       </div>
       <NavList />
     </nav>

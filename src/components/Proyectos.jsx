@@ -6,16 +6,18 @@ export default function Proyectos() {
   const { darkMode } = useContext(GeneralContext);
 
   return (
-    <section id="proyectos">
+    <section id="proyectos" className="section">
       <div>
-        <h2>
-          Proyectos<span>.</span>
+        <h2 className="section-title">
+          Proyectos<span className="dot">.</span>
         </h2>
         <p>Aquí menos palabras, más trabajo:</p>
-        <a href="/proyectosall">Ver todos</a>
+        <button className="button" href="/proyectosall">
+          Ver todos
+        </button>
         {darkMode && <div></div>}
       </div>
-      <ProyectosGrid />
+      {/* <ProyectosGrid /> */}
     </section>
   );
 }

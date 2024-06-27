@@ -37,8 +37,11 @@ export default function Header() {
           </h1>
 
           <p className="side-border">
-            Me gusta crear aplicaciones útiles para mi entorno es
-            divertidoasdasdddddddddddddddddddd
+            <i>
+              {/* hay que pomeer este texto em italica */}
+              Me gusta crear aplicaciones útiles para mi entorno, mi filosofia
+              del codigo es materializar soluciones a través de la programación.
+            </i>
           </p>
 
           <button className="button">
