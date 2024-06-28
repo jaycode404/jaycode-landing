@@ -24,6 +24,9 @@ const ProyectCard = ({ proyecto }) => {
         <div className="project-tec">
           <SpanDynamic text="#react" />
           <SpanDynamic text="#html" />
+          <SpanDynamic text="#javascript" />
+          <SpanDynamic text="#firebase" />
+          
         </div>
         <a
           className="button"

@@ -15,6 +15,7 @@ export default function Section() {
           un entorno colaborativo y dinámico.
         </p>
       </div>
+      {/* aqui pondremos el 3ds slider de LUNDEV */}
       {/* <Gallery /> */}
     </section>
   );

@@ -102,6 +102,7 @@ p {
   color: var(--text-white);
   border: 1px solid var(--neon-blue);
   border-radius: var(--border-radius);
+  font-size: 12px;
   font-weight: 600;
   background-color: var(--midnight-blue);
   text-transform: uppercase;
@@ -225,8 +226,50 @@ section h2 {
   font-size: 50px;
 }
 /* PROYECTS -------------------------- */
+
+.project-slider {
+  position: relative;
+  width: 100%;
+  height: 25rem;
+  overflow: hidden;
+}
+.item {
+  position: absolute;
+  width: 200px;
+  height: 320px;
+  text-align: justify;
+  border-radius: 10px;
+  padding: 20px;
+  transition: 0.5s;
+  left: calc(50%);
+  background-color: white;
+  color: #060522;
+  top: 0;
+}
+#next, #prev{
+  position: absolute;
+  top: 40%;
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: large;
+  font-family: var(--body-font);
+  font-weight: bold;
+  left: 50px;
+}
+
+#next{
+  left: unset;
+  right: 50px;
+}
+
+
+.proyectos-info {
+  margin-bottom: 2rem;
+}
 .proyect-container {
   display: flex;
+  overflow-x: hidden;
   gap: 1rem;
 }
 .project-card {
@@ -245,19 +288,34 @@ section h2 {
 }
 .project-info {
   margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 .project-desc {
   font-size: 12px;
+  line-height: 1.3;
   width: 90%;
-  height: 3rem;
+  height: 4rem;
   overflow: hidden;
-  white-space: colapse;
+  white-space: nowrap;
   text-wrap: wrap;
   padding: 0;
 }
-
+.project-tec {
+  margin: 0.5rem 0;
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: hidden;
+}
+.project-info {
+}
 /* TECNOLOGIAS--------------- */
 
+.tecnologia {
+  font-size: 12px;
+  font-weight: bold;
+}
 .react {
   background: linear-gradient(90deg, #a8e8ff, #7ecbff, #4fa6ff);
   -webkit-background-clip: text;
