@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import SpanDynamic from "./SpanDinamyc";
 const ProyectCard = ({ proyecto }) => {
-  const { desc, title, imageLink, siteLink } = proyecto;
+  const { id, desc, title, imageLink, siteLink, tecnologias } = proyecto;
 
   const spanRef = useRef(null);
   const [className, setClassName] = useState("");
@@ -12,7 +12,7 @@ const ProyectCard = ({ proyecto }) => {
     }
   }, []);
   return (
-    <div className="project-card">
+    <a href={`/proyectosall/${id}`} className="project-card">
       <img className="project-img" src={imageLink} alt={title} />
 
       <div className="project-info">
@@ -22,11 +22,9 @@ const ProyectCard = ({ proyecto }) => {
 
       <div className="project-footer">
         <div className="project-tec">
-          <SpanDynamic text="#react" />
-          <SpanDynamic text="#html" />
-          <SpanDynamic text="#javascript" />
-          <SpanDynamic text="#firebase" />
-          
+          {tecnologias.map((tecnologia) => {
+            return <SpanDynamic text={`#${tecnologia}`} />;
+          })}
         </div>
         <a
           className="button"
@@ -38,7 +36,7 @@ const ProyectCard = ({ proyecto }) => {
         </a>
         <i className="fa-brands fa-html5"></i>
       </div>
-    </div>
+    </a>
   );
 };
 

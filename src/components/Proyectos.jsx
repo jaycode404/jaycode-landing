@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import ProyectosGrid from "./ProyectosGrid";
 import { GeneralContext } from "../context/GeneralContext";
-import ProjectSlider from './ProjectSlider'
+import ProjectSlider from "./ProjectSlider";
 
 export default function Proyectos() {
   const { darkMode } = useContext(GeneralContext);
@@ -13,14 +13,14 @@ export default function Proyectos() {
           Proyectos<span className="dot">.</span>
         </h2>
         <p>Aquí menos palabras, más trabajo:</p>
-        <button className="button" href="/proyectosall">
+        <a className="button" href="/proyectosall">
           Ver todos
-        </button>
+        </a>
         <div id="particles-js"></div>
         {darkMode && <div></div>}
       </div>
       {/* <ProyectosGrid /> */}
-      <ProjectSlider/>
+      <ProjectSlider />
     </section>
   );
 }

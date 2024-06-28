@@ -71,8 +71,11 @@ a:hover::after {
 }
 p {
   color: var(--p-color);
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0;
   line-height: 1.5;
+}
+.header-info p {
+  padding-left: 0.5rem;
 }
 
 .dot {
@@ -224,9 +227,21 @@ p {
 }
 section h2 {
   font-size: 50px;
+  margin-bottom: 1rem;
 }
 /* PROYECTS -------------------------- */
-
+.project-space {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem;
+}
+.project-container {
+  display: grid;
+  height: auto;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
 .project-slider {
   position: relative;
   width: 100%;
@@ -272,12 +287,24 @@ section h2 {
 .proyectos-info {
   margin-bottom: 2rem;
 }
-.proyect-container {
-  display: flex;
-  overflow-x: hidden;
-  gap: 1rem;
+
+.project-card:hover {
+  cursor: pointer;
 }
+
 .project-card {
+  width: 240px;
+  height: 350px;
+  border-radius: var(--border-radius);
+  transition: 0.5s;
+  background-color: var(--midnight-blue);
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-slider .project-card {
   position: absolute;
   width: 240px;
   height: 350px;
@@ -291,6 +318,9 @@ section h2 {
   border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
+}
+.project-space .project-img {
+  width: 35rem;
 }
 .project-img {
   border-radius: var(--border-radius);
@@ -336,7 +366,28 @@ section h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+.javascript {
+  background: linear-gradient(to right, #f0db4f, #f2c94c, #f7b731, #f0db4f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.firebase {
+  background: linear-gradient(to right, #ffa000, #f57c00, #f58535, #ffca28);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.tailwind {
+  background: linear-gradient(
+    to right,
+    #06b6d4,
+    #3b82f6,
+    #a855f7,
+    #ec4899,
+    #f43f5e
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 /* FOOTER -------------- */
 footer div {
   margin-bottom: 1rem;
