@@ -233,7 +233,7 @@ section h2 {
   height: 25rem;
   overflow: hidden;
 }
-.item {
+/* .item {
   position: absolute;
   width: 200px;
   height: 320px;
@@ -241,28 +241,33 @@ section h2 {
   border-radius: 10px;
   padding: 20px;
   transition: 0.5s;
-  left: calc(50%);
+  left: calc(35%);
   background-color: white;
   color: #060522;
   top: 0;
+} */
+#next,
+#prev:hover {
+  cursor: pointer;
 }
-#next, #prev{
+#next,
+#prev {
   position: absolute;
   top: 40%;
   color: white;
   background-color: transparent;
   border: none;
-  font-size: large;
+  /* border: 2px solid var(--neon-blue); */
+  font-size: 40px;
   font-family: var(--body-font);
   font-weight: bold;
   left: 50px;
 }
 
-#next{
+#next {
   left: unset;
   right: 50px;
 }
-
 
 .proyectos-info {
   margin-bottom: 2rem;
@@ -273,19 +278,24 @@ section h2 {
   gap: 1rem;
 }
 .project-card {
-  min-width: 16rem;
-  min-height: 18rem;
+  position: absolute;
+  width: 240px;
+  height: 350px;
+  border-radius: var(--border-radius);
+  transition: 0.5s;
+  left: calc(35%);
+  top: 3rem;
+
   background-color: var(--midnight-blue);
   padding: 0.5rem;
   border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
 }
 .project-img {
-  border-radius: 5px;
+  border-radius: var(--border-radius);
 }
+
 .project-info {
   margin-top: 0.5rem;
   display: flex;

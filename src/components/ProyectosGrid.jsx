@@ -64,10 +64,10 @@ export default function ProyectosGrid() {
   const { darkMode } = useContext(GeneralContext);
 
   return (
-    <div className="proyect-container">
+    <ProjectSlider >
       {data.map((proyecto) => (
         <ProyectCard proyecto={proyecto} />
       ))}
-    </div>
+    </ProjectSlider>
   );
 }
