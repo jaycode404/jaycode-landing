@@ -1,35 +1,42 @@
-import {
-    Card,
-    CardHeader,
-    CardBody,
-    CardFooter,
-    Typography,
-    Button,
-    IconButton,
-  } from "@material-tailwind/react";
-import {Iconos}  from './Iconos'  
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-  export function ProyectCard() {
-    return (
-      <Card className="mt-[8rem] w-96 h-[25rem] mx-[4.5rem]">
-        <CardHeader floated={false} color="blue-gray" className="relative">
-          <img src="https://picsum.photos/200/400" alt="card-image" />
-        </CardHeader>
-        <CardBody>
-          <Typography variant="h5" color="blue-gray" className="mb-2">
-            CRUD de empleados
-          </Typography>
-          <Typography>
-            The place is close to Barceloneta Beach and bus stop just 2 min by
-            walk and near to &quot;Naviglio&quot; where you can enjoy the main
-            night life in Barcelona.
-          </Typography>
-        </CardBody>
-        <CardFooter className="pt-0">
-          <Button>Visitar</Button>
-          <i class="fa-brands fa-html5"></i>
-        </CardFooter>
-      </Card>
-    );
-  }
-  
+import React, { useEffect, useState, useRef } from "react";
+import SpanDynamic from "./SpanDinamyc";
+const ProyectCard = ({ proyecto }) => {
+  const { desc, title, imageLink, siteLink } = proyecto;
+
+  const spanRef = useRef(null);
+  const [className, setClassName] = useState("");
+
+  useEffect(() => {
+    if (spanRef.current) {
+      setClassName(spanRef.current.textContent.slice(1));
+    }
+  }, []);
+  return (
+    <div className="project-card">
+      <img className="project-img" src={imageLink} alt={title} />
+
+      <div className="project-info">
+        <h4 className="project-title">{title}</h4>
+        <p className="project-desc">{desc}</p>
+      </div>
+
+      <div className="project-footer">
+        <div className="project-tec">
+          <SpanDynamic text="#react" />
+          <SpanDynamic text="#html" />
+        </div>
+        <a
+          className="button"
+          href={siteLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Visitar
+        </a>
+        <i className="fa-brands fa-html5"></i>
+      </div>
+    </div>
+  );
+};
+
+export default ProyectCard;

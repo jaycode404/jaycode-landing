@@ -18,7 +18,7 @@ export default function Proyectos() {
         <div id="particles-js"></div>
         {darkMode && <div></div>}
       </div>
-      {/* <ProyectosGrid /> */}
+      <ProyectosGrid />
     </section>
   );
 }

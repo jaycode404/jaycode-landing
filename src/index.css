@@ -15,6 +15,7 @@
   --padding-section: 1rem;
   --margin-section: 0 auto;
   --width-section: 60%;
+  --border-radius: 5px;
 }
 /* GENERAL ------------------- */
 * {
@@ -100,7 +101,7 @@ p {
   height: fit-content;
   color: var(--text-white);
   border: 1px solid var(--neon-blue);
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   font-weight: 600;
   background-color: var(--midnight-blue);
   text-transform: uppercase;
@@ -223,6 +224,51 @@ p {
 section h2 {
   font-size: 50px;
 }
+/* PROYECTS -------------------------- */
+.proyect-container {
+  display: flex;
+  gap: 1rem;
+}
+.project-card {
+  min-width: 16rem;
+  min-height: 18rem;
+  background-color: var(--midnight-blue);
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+.project-img {
+  border-radius: 5px;
+}
+.project-info {
+  margin-top: 0.5rem;
+}
+.project-desc {
+  font-size: 12px;
+  width: 90%;
+  height: 3rem;
+  overflow: hidden;
+  white-space: colapse;
+  text-wrap: wrap;
+  padding: 0;
+}
+
+/* TECNOLOGIAS--------------- */
+
+.react {
+  background: linear-gradient(90deg, #a8e8ff, #7ecbff, #4fa6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.html {
+  background: linear-gradient(90deg, #e44d26, #f16529);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* FOOTER -------------- */
 footer div {
   margin-bottom: 1rem;

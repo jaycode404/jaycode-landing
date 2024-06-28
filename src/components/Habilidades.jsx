@@ -1,6 +1,6 @@
 import React from "react";
-import { Slider } from "./Slider";
-import LogoSlider from "./LogoSlider";
+// import { Slider } from "./Slider";
+// import LogoSlider from "./LogoSlider";
 
 export default function Habilidades() {
   return (
