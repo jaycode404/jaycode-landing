@@ -17,7 +17,7 @@ export default function Footer() {
 
   return (
     <footer>
-      <div className="footer-section section">
+      <div className="footer-section ">
         <h6>Desarrollo Web Jcode</h6>
           <div className="footer-navlist">
             <NavList inFooter={true} flex="flex" gap={0} />

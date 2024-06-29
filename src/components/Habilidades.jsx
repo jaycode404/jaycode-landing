@@ -12,13 +12,31 @@ export default function Habilidades() {
           Habilidades<span className="dot">.</span>
         </h2>
         <p>
-          Desarrollador Full Stack con habilidades sólidas en JavaScript, React,
-          HTML, CSS, Tailwind, MySQL y Node.js. Experiencia en la
+          Soy desarrollador Full Stack con habilidades sólidas en el entorno web. Estas son las tecnologias basado en los intereses de las aplicaciones que me gusta crear.
           {/* este texto hay que dividirlo en dos partes uno con tecnologias front y el otro back  y ademas las softskills */}
-          creación de soluciones web eficientes y escalables. Comprometido con
-          la mejora continua y el aprendizaje constante para afrontar nuevos
-          desafíos tecnológicos.
         </p>
+        <div className="tecnologias-side">
+          <div>
+            <h4 className="front-title firebase">FrontEnd</h4>
+            <ul className="frontend-container">
+              <li>JavaScript</li>
+              <li>REACT</li>
+              <li>HTML</li>
+              <li>Tailwind</li>
+              <li>CSS</li>
+              <li>SASS</li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="back-title tailwind">BackEnd</h4>
+            <ul className="frontend-container">
+              <li>NODE.JS</li>
+              <li>PHP</li>
+              <li>MySQL</li>
+              
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   );

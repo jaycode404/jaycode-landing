@@ -4,9 +4,9 @@ import ProyectosGrid from "./ProyectosGrid";
 
 export default function ProyectosAll() {
   return (
-    <section className="section">
-      <h2>Todos los proyectos</h2>
+    <div  className="proyectos-all-container">
+      <h2 className="section-title">Todos los proyectos</h2>
       <ProyectosGrid />
-    </section>
+    </div>
   );
 }

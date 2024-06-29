@@ -9,7 +9,7 @@ export default function Proyectos() {
   return (
     <section id="proyectos" className="section">
       <div className="proyectos-info">
-        <h2 className="section-title">
+        <h2 >
           Proyectos<span className="dot">.</span>
         </h2>
         <p>

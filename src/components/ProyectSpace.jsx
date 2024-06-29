@@ -14,7 +14,9 @@ export default function ProyectSpace() {
       <div className="proyect-info-container">
         <h2 className="proyect-title">{title}</h2>
         <p>{desc}</p>
-        <a href={siteLink} className="button">
+        <a href={siteLink} 
+        target="_blank"
+        className="button">
           {" "}
           Visitar
         </a>

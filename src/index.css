@@ -13,7 +13,7 @@
   --text-white: #ffffff; /* Texto blanco */
   --p-color: #cacaca;
   --padding-section: 1rem;
-  --margin-section: 0 auto;
+  --margin-section: 2rem auto;
   --width-section: 70%;
   --border-radius: 5px;
 }
@@ -115,6 +115,10 @@ p {
 }
 .icon {
   height: 15px;
+}
+.section-title {
+  font-size: 50px;
+  margin-bottom: 2rem;
 }
 /* NAVBAR------------------------ */
 
@@ -233,16 +237,21 @@ section h2 {
   margin-bottom: 1rem;
 }
 /* PROYECTS -------------------------- */
+.proyectos-all-container {
+  width: var(--width-section);
+  margin: var(--margin-section);
+  padding: var(--padding-section);
+}
 .project-space {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 2rem;
 }
 .project-container {
-  display: grid;
-  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
   width: 100%;
-  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 .project-slider {
@@ -353,6 +362,30 @@ section h2 {
 }
 .project-info {
 }
+/* HABIlIDADES ------------- */
+.tecnologias-side {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.frontend-container {
+  display: flex;
+  font-size: 12px;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 0.5rem;
+}
+
+.back-title {
+  font-size: 25px;
+  font-weight: 900;
+}
+.front-title {
+  font-size: 25px;
+  font-weight: 900;
+}
+
 /* TECNOLOGIAS--------------- */
 
 .tecnologia {
@@ -419,10 +452,13 @@ section h2 {
   left: 0;
   width: 40px;
   height: 110%;
-  background: linear-gradient(to left,  rgba(255, 255, 255, 0), var(--neon-blue));
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    var(--neon-blue)
+  );
   z-index: 2;
-  opacity: .5;
-
+  opacity: 0.5;
 }
 .screen-lights::after {
   background-color: red;
@@ -432,9 +468,13 @@ section h2 {
   right: 0;
   width: 40px;
   height: 110%;
-  background: linear-gradient(to right,  rgba(255, 255, 255, 0), var(--neon-blue));
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    var(--neon-blue)
+  );
   z-index: 2;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .logos {
@@ -447,7 +487,6 @@ section h2 {
   height: 10rem;
   z-index: -1;
   background-color: var(--midnight-blue);
-  
 }
 .logo-slider {
   display: inline-block;

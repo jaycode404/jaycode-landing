@@ -68,8 +68,8 @@ export function Home() {
         
         <Proyectos />
         <Habilidades />
-        {/* 
         <Interactive/>
+        {/* 
         <Section />
         <Contacto /> */}
       </div>
