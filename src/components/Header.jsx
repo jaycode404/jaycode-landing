@@ -31,7 +31,7 @@ export default function Header() {
 
   return (
     <header id="header">
-      <Particles/>
+      <Particles />
       <div className="header-container">
         <div className="header-info">
           <h1 className="hero-title">
@@ -67,7 +67,6 @@ export default function Header() {
         </div>
 
         <div className="hero-img"></div>
-    
       </div>
       {/* <Socials
         invert="social-invert"

@@ -54,6 +54,9 @@ a {
   padding-bottom: 4px;
   border-bottom: 1px solid transparent;
 }
+li {
+  list-style-type: square;
+}
 a::after {
   content: "";
   position: absolute;
@@ -386,6 +389,92 @@ section h2 {
   font-weight: 900;
 }
 
+/* SOBRE MI ------------------- */
+.banner {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner .roll {
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  top: 10%;
+  left: calc(50% - 100px);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: autoRun 20s linear infinite;
+}
+.banner .roll .picture {
+  position: absolute;
+  inset: 0 0 0 0;
+  transform: rotateY(
+      calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+    )
+    translateZ(550px);
+}
+
+@keyframes autoRun {
+  from {
+    transform: perspective(1000px) rotateX(-12deg) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1000px) rotateX(-12deg) rotateY(360deg);
+  }
+}
+.banner .roll .picture img {
+  width: 5rem;
+  object-fit: cover;
+}
+
+.banner .content {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1400px, 100vw);
+  height: max-content;
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  z-index: -1;
+}
+
+.banner .content h2 {
+  font-size: 16em;
+  line-height: 1em;
+  color: white;
+  position: relative;
+}
+.banner .content h2::after {
+  position: absolute;
+  inset: 0 0 0 0;
+  content: attr(data-content);
+  z-index: 2;
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+}
+.banner .content .autor {
+  text-align: right;
+  max-width: 200px;
+}
+.banner .content .model {
+  background-image: url(/assets/foto.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100%;
+  height: 75vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
 /* TECNOLOGIAS--------------- */
 
 .tecnologia {
@@ -491,12 +580,14 @@ section h2 {
 .logo-slider {
   display: inline-block;
   padding: 1rem;
+  align-items: center;
   animation: 10s slide infinite linear;
 }
 
 .logo-slider img {
   width: 5rem;
   margin: 1rem;
+  filter: drop-shadow(0 0 5px #14b8a6);
 }
 /* FOOTER -------------- */
 footer div {

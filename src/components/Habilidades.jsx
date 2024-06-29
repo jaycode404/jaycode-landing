@@ -1,6 +1,6 @@
 import React from "react";
 import LogoSlider from "./LogoSlider";
-
+import Particles from "./Particles";
 export default function Habilidades() {
   return (
     <section id="habilidades" className="section">
@@ -11,8 +11,11 @@ export default function Habilidades() {
         <h2>
           Habilidades<span className="dot">.</span>
         </h2>
+        <Particles />
         <p>
-          Soy desarrollador Full Stack con habilidades sólidas en el entorno web. Estas son las tecnologias basado en los intereses de las aplicaciones que me gusta crear.
+          Soy desarrollador Full Stack con habilidades sólidas en el entorno
+          web. Éstas son las tecnologias basado en los intereses de las
+          aplicaciones que me gusta crear.
           {/* este texto hay que dividirlo en dos partes uno con tecnologias front y el otro back  y ademas las softskills */}
         </p>
         <div className="tecnologias-side">
@@ -33,7 +36,6 @@ export default function Habilidades() {
               <li>NODE.JS</li>
               <li>PHP</li>
               <li>MySQL</li>
-              
             </ul>
           </div>
         </div>

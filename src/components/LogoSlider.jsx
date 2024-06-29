@@ -18,14 +18,11 @@ export default function LogoSlider() {
             <img src="/assets/react-3.svg" alt="" />
             <img src="/assets/js-logo.png" alt="" />
             <img src="/assets/tail-logo.png" alt="" />
-            <img src="/assets/html-logo.png" alt="" />
-            <img src="/assets/css-logo.png" alt="" />
-            <img
-              src="/assets/mysql-logo.png"
-              alt=""
-              className="social-invert"
-            />
-            <img src="/assets/nodejs-logo.png" alt="" />
+            <img src="/assets/html-5.png" alt="" />
+            <img src="/assets/css-3.png" alt="" />
+            <img src="/assets/mysql.png" alt="" className="social-invert" />
+            <img src="/assets/nodo-js.png" alt="" />
+            <img src="/assets/php.png" alt="" />
           </div>
           <div className="logo-slider" style={sliderStyle}>
             <img src="/assets/react-3.svg" alt="" />
@@ -39,6 +36,7 @@ export default function LogoSlider() {
               className="social-invert"
             />
             <img src="/assets/nodejs-logo.png" alt="" />
+            <img src="/assets/php.png" alt="" />
           </div>
         </div>
       </div>

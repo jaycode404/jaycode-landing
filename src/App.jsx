@@ -14,6 +14,7 @@ import ProyectSpace from "./components/ProyectSpace";
 import Interactive from "./components/Interactive";
 import Particles from "./components/Particles";
 import ParticlesComponent from "./components/Particles";
+import PictureRoll from "./components/PictureRoll";
 
 function App() {
   const { darkMode, toggleTheme, setDarkMode } = useContext(GeneralContext);
@@ -45,7 +46,7 @@ function App() {
     } else {
       document.body.classList.remove("dark-mode");
     }
-  }, [darkMode]); 
+  }, [darkMode]);
 
   return (
     <div className={` h-auto `}>
@@ -55,7 +56,9 @@ function App() {
         <Route path="/proyectosall" element={<ProyectosAll />} />
         <Route path="/proyectosall/:id" element={<ProyectSpace />} />
       </Routes>
-      <div className="bg-black footer"><Footer /></div>
+      <div className="bg-black footer">
+        <Footer />
+      </div>
     </div>
   );
 }
@@ -65,12 +68,13 @@ export function Home() {
     <>
       <div className="mx-auto gap-10 section-bg">
         <Header />
-        
+
         <Proyectos />
         <Habilidades />
-        <Interactive/>
-        {/* 
+        {/* <Interactive/> */}
         <Section />
+        <PictureRoll/>
+        {/* 
         <Contacto /> */}
       </div>
     </>
