@@ -33,17 +33,17 @@ export default function PictureRoll() {
           <img src="/assets/pokemon.jpg" alt="" />
         </div>
       </div>
-      <div className="content">
-        <h2 data-content="JACOB">JACOB</h2>
+      {/* <div className="content"> */}
+      {/* <h2 data-content="JACOB">JACOB</h2>
         <div className="autor">
           <h4>JCODE</h4>
           <p>
             <b>webDesing</b>
           </p>
           <p>lmao ya quiero chambear</p>
-        </div>
-        <div className="model"></div>
-      </div>
+        </div> */}
+      <img className="model" src="/assets/foto.png" alt="" />
+      {/* </div> */}
     </div>
   );
 }

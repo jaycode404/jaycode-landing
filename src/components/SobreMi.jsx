@@ -1,8 +1,7 @@
 import React from "react";
 import { Gallery } from "./Gallery";
-
+import PictureRoll from "./PictureRoll";
 export default function Section() {
-  
   return (
     <section id="sobremi" className="section">
       <div>
@@ -16,7 +15,7 @@ export default function Section() {
           un entorno colaborativo y dinámico.
         </p>
       </div>
-      
+        <PictureRoll />
     </section>
   );
 }

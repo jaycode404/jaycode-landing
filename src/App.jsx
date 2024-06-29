@@ -73,7 +73,6 @@ export function Home() {
         <Habilidades />
         {/* <Interactive/> */}
         <Section />
-        <PictureRoll/>
         {/* 
         <Contacto /> */}
       </div>
