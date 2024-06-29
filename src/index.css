@@ -407,6 +407,36 @@ section h2 {
 .logo-slider-container {
   position: relative;
 }
+.screen-lights {
+  position: relative;
+  z-index: 2;
+}
+.screen-lights::before {
+  background-color: red;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 110%;
+  background: linear-gradient(to left,  rgba(255, 255, 255, 0), var(--neon-blue));
+  z-index: 2;
+  opacity: .5;
+
+}
+.screen-lights::after {
+  background-color: red;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 110%;
+  background: linear-gradient(to right,  rgba(255, 255, 255, 0), var(--neon-blue));
+  z-index: 2;
+  opacity: .5;
+}
+
 .logos {
   position: absolute;
   top: 3rem;
@@ -417,6 +447,7 @@ section h2 {
   height: 10rem;
   z-index: -1;
   background-color: var(--midnight-blue);
+  
 }
 .logo-slider {
   display: inline-block;
