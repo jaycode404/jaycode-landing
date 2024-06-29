@@ -12,7 +12,15 @@ export default function Proyectos() {
         <h2 className="section-title">
           Proyectos<span className="dot">.</span>
         </h2>
-        <p>Aquí menos palabras, más trabajo:</p>
+        <p>
+          Aquí, un catalogo de los proyectos que he creado para mí y para
+          clientes reales.
+        </p>
+        <p>
+          Usualmente me gusta discutir sobre el objetivo de la aplicación a
+          desarrollar y simplificar el codigo para llegar al objetivo más
+          eficiente, escalable o ambas.
+        </p>
         <a className="button" href="/proyectosall">
           Ver todos
         </a>

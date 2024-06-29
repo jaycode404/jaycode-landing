@@ -14,7 +14,7 @@
   --p-color: #cacaca;
   --padding-section: 1rem;
   --margin-section: 0 auto;
-  --width-section: 60%;
+  --width-section: 70%;
   --border-radius: 5px;
 }
 /* GENERAL ------------------- */
@@ -152,7 +152,7 @@ p {
   grid-template-columns: repeat(2, 1fr);
 
   padding: var(--padding-section);
-  width: var(--width-section);
+  width: 60%;
   margin: var(--margin-section);
   margin-bottom: 8rem;
 }
@@ -221,6 +221,9 @@ p {
 
 /* SECTION----------------------------- */
 .section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
   padding: var(--padding-section);
   width: var(--width-section);
   margin: var(--margin-section);
@@ -245,7 +248,7 @@ section h2 {
 .project-slider {
   position: relative;
   width: 100%;
-  height: 25rem;
+  height: 30rem;
   overflow: hidden;
 }
 /* .item {
@@ -310,7 +313,7 @@ section h2 {
   height: 350px;
   border-radius: var(--border-radius);
   transition: 0.5s;
-  left: calc(35%);
+  left: calc(22%);
   top: 3rem;
 
   background-color: var(--midnight-blue);
@@ -387,6 +390,43 @@ section h2 {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* LOGOS ------------------ */
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.mac {
+  width: 100%;
+}
+.logo-slider-container {
+  position: relative;
+}
+.logos {
+  position: absolute;
+  top: 3rem;
+  left: 25%;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 13rem;
+  height: 10rem;
+  z-index: -1;
+  background-color: var(--midnight-blue);
+}
+.logo-slider {
+  display: inline-block;
+  padding: 1rem;
+  animation: 10s slide infinite linear;
+}
+
+.logo-slider img {
+  width: 5rem;
+  margin: 1rem;
 }
 /* FOOTER -------------- */
 footer div {

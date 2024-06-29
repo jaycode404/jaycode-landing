@@ -67,10 +67,11 @@ export function Home() {
         <Header />
         
         <Proyectos />
-        <Interactive/>
         <Habilidades />
+        {/* 
+        <Interactive/>
         <Section />
-        <Contacto />
+        <Contacto /> */}
       </div>
     </>
   );
