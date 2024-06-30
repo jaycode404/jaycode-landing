@@ -13,7 +13,7 @@
   --text-white: #ffffff; /* Texto blanco */
   --p-color: #cacaca;
   --padding-section: 1rem;
-  --margin-section: 2rem auto;
+  --margin-section: 4rem auto;
   --width-section: 70%;
   --border-radius: 5px;
 }
@@ -408,7 +408,7 @@ section h2 {
   transform-style: preserve-3d;
   transform: perspective(1000px);
   animation: autoRun 20s linear infinite;
-  z-index: 1
+  z-index: 1;
 }
 .banner .roll .picture {
   position: absolute;
@@ -471,8 +471,8 @@ section h2 {
   background-repeat: no-repeat;
   background-position: center;
   width: 1rem; */
- width: 15rem; 
- margin-top: 4rem;
+  width: 15rem;
+  margin-top: 4rem;
 }
 
 /* TECNOLOGIAS--------------- */
@@ -588,6 +588,14 @@ section h2 {
   width: 5rem;
   margin: 1rem;
   filter: drop-shadow(0 0 5px #14b8a6);
+}
+/* SOCIALS -------- */
+.socials-container {
+  display: flex;
+  gap: 1rem;
+}
+.socials-container svg {
+  
 }
 /* FOOTER -------------- */
 footer div {

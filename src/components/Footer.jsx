@@ -25,7 +25,7 @@ export default function Footer() {
         <div>
           <h6>Sociales</h6>
           <div>
-            <Socials footer="footer" gap={4} size={2} />
+            <Socials footer="footer" gap={1} size={2} />
           </div>
         </div>
       </div>

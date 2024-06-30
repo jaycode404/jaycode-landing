@@ -71,10 +71,10 @@ export function Home() {
 
         <Proyectos />
         <Habilidades />
-        {/* <Interactive/> */}
         <Section />
         {/* 
-        <Contacto /> */}
+        <Contacto />
+        <Interactive/> */}
       </div>
     </>
   );
