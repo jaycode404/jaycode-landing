@@ -1,11 +1,11 @@
 import React, { useContext, useState } from "react";
-import { GeneralContext } from "../context/GeneralContext";
 
-export default function Socials({ size, gap, header, footer }) {
-  const { darkMode, setDarkMode } = useContext(GeneralContext);
-
+export default function Socials({ flex, gap, padding }) {
   return (
-    <div style={{ display: 'flex', gap: `${gap}rem` }}>
+    <div
+      className="socials-container"
+      style={{ "--flex": flex, "--gap": gap, "--padding": padding }}
+    >
       <a href="https://github.com/jaycode404" target="_blank">
         <svg
           xmlns="http://www.w3.org/2000/svg"

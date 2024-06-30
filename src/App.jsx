@@ -15,6 +15,7 @@ import Interactive from "./components/Interactive";
 import Particles from "./components/Particles";
 import ParticlesComponent from "./components/Particles";
 import PictureRoll from "./components/PictureRoll";
+import SideBar from "./components/SideBar";
 
 function App() {
   const { darkMode, toggleTheme, setDarkMode } = useContext(GeneralContext);
@@ -50,6 +51,7 @@ function App() {
 
   return (
     <div className={` h-auto `}>
+      <SideBar/>
       <NavbarSimple />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -68,12 +70,17 @@ export function Home() {
     <>
       <div className="mx-auto gap-10 section-bg">
         <Header />
-
-        <Proyectos />
-        <Habilidades />
+        <div className="">
+          <Proyectos />
+        </div>
+        <div className="contacto-bg">
+          <Habilidades />
+        </div>
         <Section />
+        <div className="contacto-bg">
+          <Contacto />
+        </div>
         {/* 
-        <Contacto />
         <Interactive/> */}
       </div>
     </>

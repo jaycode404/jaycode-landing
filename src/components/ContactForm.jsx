@@ -33,49 +33,45 @@ export default function ContactForm() {
 
   return (
     <div className="card-form">
-      <form ref={form} className="contact-form" onSubmit={sendEmail}>
-        <div className="flex flex-col gap-2">
-          <div className="lg:flex md:gap-2">
-            <div className="flex flex-col">
-              <label htmlFor="name" className="text-black">
-                Tu nombre:
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="to_name"
-                placeholder="Arnold"
-                className="input-style"
-              />
-            </div>
-            <div className="flex flex-col">
-              <label htmlFor="email" className="text-black">
-                Tu email:
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="from_name"
-                placeholder="arnold@gmail.com"
-                className="input-style"
-              />
-            </div>
-          </div>
-          <div className="flex flex-col gap-6">
-            <label htmlFor="message" className="text-black">
-              Mensaje:
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              className="textarea-style"
-              maxLength={100}
-              placeholder="Me gustaría colaborar..."
-            />
-          </div>
+      <form className="contact-form" ref={form} onSubmit={sendEmail}>
+        <div >
+          <label htmlFor="name" className="">
+            Nombre:
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="to_name"
+            placeholder="Arnold"
+            className="input-style"
+          />
+        </div>
+        <div >
+          <label htmlFor="email" className="">
+            E-mail:
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="from_name"
+            placeholder="arnold@gmail.com"
+            className="input-style"
+          />
+        </div>
+        <div >
+          <label htmlFor="message" className="text-black">
+            Mensaje:
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            className=""
+            maxLength={100}
+            placeholder="Me gustaría colaborar..."
+          />
         </div>
 
-        <button type="submit" className="boton-light boton-form button-font">
+        <button type="submit" className="button">
           Enviar
         </button>
       </form>

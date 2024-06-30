@@ -17,19 +17,17 @@ export default function Footer() {
 
   return (
     <footer>
-      <div className="footer-section ">
+      <div>
         <h6>Desarrollo Web Jcode</h6>
-          <div className="footer-navlist">
-            <NavList inFooter={true} flex="flex" gap={0} />
-        </div>
         <div>
-          <h6>Sociales</h6>
-          <div>
-            <Socials footer="footer" gap={1} size={2} />
-          </div>
+          <NavList inFooter={true} flex="flex" gap={0} />
         </div>
       </div>
-      <div className="section footer-last">
+      <div>
+        <h6>Sociales</h6>
+        <Socials gap={'1rem'} />
+      </div>
+      <div>
         <p>
           Diseñado y programado por Jaycode
           <span id="year"></span>

@@ -36,6 +36,7 @@ export default function Habilidades() {
               <li>NODE.JS</li>
               <li>PHP</li>
               <li>MySQL</li>
+              <li>Firebase</li>
             </ul>
           </div>
         </div>
