@@ -51,7 +51,6 @@ function App() {
 
   return (
     <div className={` h-auto `}>
-      <SideBar/>
       <NavbarSimple />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -68,6 +67,8 @@ function App() {
 export function Home() {
   return (
     <>
+      <SideBar/>
+
       <div className="mx-auto gap-10 section-bg">
         <Header />
         <div className="">

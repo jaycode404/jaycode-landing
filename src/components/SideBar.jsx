@@ -8,8 +8,8 @@ export default function SideBar() {
   useEffect(() => {
     const handleScroll = () => {
       const triggerPoint = 400;
-      const hidePoint = 500;
-      if (window.scrollY < triggerPoint) {
+      
+      if (window.scrollY > triggerPoint) {
         setShowBar(true);
       } else {
         setShowBar(false);
@@ -23,7 +23,7 @@ export default function SideBar() {
     }
   }, []);
   return (
-    <div className={`sidebar ${showBar ? '' : 'visible'}`}>
+    <div className={`sidebar ${showBar ? 'visible' : ''}`}>
       <Socials flex={"column"} gap={".5rem"} padding={"1rem"} />
     </div>
   );
