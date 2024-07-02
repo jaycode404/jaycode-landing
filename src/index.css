@@ -710,8 +710,23 @@ footer {
   top: 30%;
   opacity: 0; /* Comienza con opacidad 0 */
   transition: opacity 0.2s ease-in-out; /* Transición suave de opacidad */
-
+  z-index: 5;
 }
 .visible {
   opacity: 1;
+}
+
+/* CALL TO ACTION ---------------- */
+.call-action {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.call-action div h3 {
+  margin-bottom: 2.5rem;
+}
+.call-action div p {
+  margin-left: 1rem;
 }

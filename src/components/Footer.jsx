@@ -29,7 +29,7 @@ export default function Footer() {
       </div>
       <div>
         <p>
-          Diseñado y programado por Jaycode
+          Diseñado y programado por Jcode
           <span id="year"></span>
         </p>
       </div>

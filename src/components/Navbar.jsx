@@ -9,12 +9,12 @@ export function NavList({ inFooter }) {
       <a href="/#habilidades">Habilidades</a>
       <a href="/#sobremi">Sobre Mí</a>
       <a href="/#contacto">Contacto</a>
-
+{/* 
       {!inFooter && (
         <button className="dark-theme-button" onClick={toggleTheme} size="sm">
           {darkMode ? "🌙" : "🔆"}
         </button>
-      )}
+      )} */}
     </div>
   );
 }

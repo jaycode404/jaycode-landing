@@ -41,8 +41,8 @@ export default function Header() {
           <p className="side-border">
             <i>
               {/* hay que pomeer este texto em italica */}
-              Me gusta crear aplicaciones útiles para mi entorno, mi filosofia
-              del codigo es materializar soluciones a través de la programación.
+              Programador web full-stack inclinado al diseño UX / UI con gusto
+              por la creación y resolución de problemas mediante el código.
             </i>
           </p>
 

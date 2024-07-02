@@ -20,7 +20,7 @@ export default function Contacto() {
             ¡Contáctame! Estaré leyendo tu propuesta en breve y será un placer
             colaborar.
           </p>
-          <p>Aquí mis sitios donde podrás encontrarme y contactarme:</p>
+          <p>Aquí mis redes donde podrás encontrarme y contactarme:</p>
         </div>
         <Socials gap={'1rem'} />
       </div>

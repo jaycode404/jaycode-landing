@@ -16,6 +16,8 @@ import Particles from "./components/Particles";
 import ParticlesComponent from "./components/Particles";
 import PictureRoll from "./components/PictureRoll";
 import SideBar from "./components/SideBar";
+import CallToAction from "./components/CallToAction";
+import Reviews from "./components/Reviews";
 
 function App() {
   const { darkMode, toggleTheme, setDarkMode } = useContext(GeneralContext);
@@ -67,20 +69,23 @@ function App() {
 export function Home() {
   return (
     <>
-      <SideBar/>
+      <SideBar />
 
       <div className="mx-auto gap-10 section-bg">
         <Header />
         <div className="">
           <Proyectos />
         </div>
+        <CallToAction />
         <div className="contacto-bg">
           <Habilidades />
         </div>
-        <Section />
+        <Reviews />
         <div className="contacto-bg">
-          <Contacto />
+        <Section />
         </div>
+
+          <Contacto />
         {/* 
         <Interactive/> */}
       </div>
