@@ -10,7 +10,7 @@ export default function CallToAction() {
         </h2>
       </div>
       <div>
-        <h3 className="firebase">Contactame:</h3>
+        <h3 className="firebase">Contáctame:</h3>
         <Socials gap={"1rem"} />
       </div>
     </section>

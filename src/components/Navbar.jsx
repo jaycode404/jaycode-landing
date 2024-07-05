@@ -26,7 +26,7 @@ export function NavbarSimple({ flex, gap }) {
   return (
     <nav className="navbar-container">
       <div>
-        <a href="/">Jcode</a>
+        <a className="nav-logo" href="/">Jcode</a>
       </div>
       <NavList />
     </nav>
