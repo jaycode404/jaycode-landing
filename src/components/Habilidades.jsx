@@ -3,7 +3,7 @@ import LogoSlider from "./LogoSlider";
 import Particles from "./Particles";
 export default function Habilidades() {
   return (
-    <section id="habilidades" className="section">
+    <section id="habilidades" >
       <LogoSlider />
       <div className="habilidades-info">
         <h2>

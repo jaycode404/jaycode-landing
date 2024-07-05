@@ -142,8 +142,8 @@ const ProjectSlider = ({ children }) => {
 
   return (
     <div className="project-slider">
-      {data.map((proyecto) => (
-        <ProyectCard proyecto={proyecto} />
+      {data.map((proyecto, index) => (
+        <ProyectCard key={index} proyecto={proyecto} />
       ))}
       <button id="next">{">"}</button>
       <button id="prev">{"<"}</button>

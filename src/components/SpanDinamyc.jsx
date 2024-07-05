@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 
 const SpanDynamic = ({ text }) => {
-  const spanRef = useState("");
+  const spanRef = useRef(null); // Use useRef instead of useState for refs
   const [className, setClassName] = useState("");
 
   useEffect(() => {
@@ -9,8 +9,9 @@ const SpanDynamic = ({ text }) => {
       setClassName(spanRef.current.textContent.slice(1));
     }
   }, []);
+
   return (
-    <span ref={spanRef} className={`${className}  tecnologias`}>
+    <span ref={spanRef} className={`${className} tecnologias`}>
       {text}
     </span>
   );

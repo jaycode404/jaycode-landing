@@ -7,9 +7,9 @@ export default function Proyectos() {
   const { darkMode } = useContext(GeneralContext);
 
   return (
-    <section id="proyectos" className="section">
+    <section id="proyectos"  >
       <div className="proyectos-info">
-        <h2 >
+        <h2>
           Proyectos<span className="dot">.</span>
         </h2>
         <p>

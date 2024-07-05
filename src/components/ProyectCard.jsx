@@ -22,8 +22,8 @@ const ProyectCard = ({ proyecto }) => {
 
       <div className="project-footer">
         <div className="project-tec">
-          {tecnologias.map((tecnologia) => {
-            return <SpanDynamic text={`#${tecnologia}`} />;
+          {tecnologias.map((tecnologia, i) => {
+            return <SpanDynamic key={i} text={`#${tecnologia}`} />;
           })}
         </div>
         <a

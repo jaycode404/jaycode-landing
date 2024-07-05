@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useTypewriter } from "react-simple-typewriter";
-import Socials from "./Socials";
 import { GeneralContext } from "../context/GeneralContext";
 import Particles from "./Particles";
 
@@ -37,13 +36,12 @@ export default function Header() {
           <h1 className="hero-title">
             jacob<span className="dot">.</span>
           </h1>
-
           <p className="side-border">
             <i>
               {/* hay que pomeer este texto em italica */}
-              Programador web <span className="tailwind"> full-stack</span> inclinado al diseño UX /
-              UI con gusto por la creación y resolución de problemas mediante el
-              código.
+              Programador web <span className="tailwind"> full-stack</span>{" "}
+              inclinado al diseño UX / UI con gusto por la creación y resolución
+              de problemas mediante el código.
             </i>
           </p>
 
@@ -66,15 +64,8 @@ export default function Header() {
             CV
           </button>
         </div>
-
         <div className="hero-img"></div>
       </div>
-      {/* <Socials
-        invert="social-invert"
-        size={2.7}
-        gap={10}
-        header={`${headerId ? "true" : "false"}`}
-      /> */}
     </header>
   );
 }
