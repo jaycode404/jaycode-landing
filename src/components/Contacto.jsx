@@ -8,21 +8,23 @@ export default function Contacto() {
 
   return (
     <section id="contacto" className="contacto-container">
-      <ContactForm />
+      <div className="contacto-form-container">
+        <ContactForm />
+      </div>
 
-      <div className="info-box">
-        <h2>
-          Contacto<span className="dot">.</span>
-        </h2>
-        
-        <div>
+      <div className="contacto-info-container">
+        <div className="info-box">
+          <h2>
+            Contacto<span className="dot">.</span>
+          </h2>
+
           <p>
             ¡Contáctame! Estaré leyendo tu propuesta en breve y será un placer
             colaborar.
           </p>
           <p>Aquí mis redes donde podrás encontrarme y contactarme:</p>
         </div>
-        <Socials gap={'1rem'} />
+        <Socials gap={"1rem"} />
       </div>
     </section>
   );

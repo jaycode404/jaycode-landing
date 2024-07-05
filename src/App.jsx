@@ -68,7 +68,7 @@ function App() {
 
 export function Home() {
   return (
-    <>
+    <main>
       <SideBar />
 
       <div className="mx-auto gap-10 section-bg">
@@ -89,7 +89,7 @@ export function Home() {
         {/* 
         <Interactive/> */}
       </div>
-    </>
+    </main>
   );
 }
 

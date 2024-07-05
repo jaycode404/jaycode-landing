@@ -2,7 +2,7 @@ import puppeteer from "puppeteer";
 import fs from "fs";
 
 function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 async function takeScreenshot(url, outputPath) {
@@ -26,6 +26,7 @@ const urls = [
   "https://busqueda-indexada.vercel.app/",
   "https://burger-landing-ten.vercel.app/",
   "https://apaloosa.vercel.app/",
+  "https://encriptador-javascript.vercel.app/",
 ];
 
 urls.forEach(async (url, index) => {

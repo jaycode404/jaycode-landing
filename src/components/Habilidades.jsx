@@ -4,14 +4,12 @@ import Particles from "./Particles";
 export default function Habilidades() {
   return (
     <section id="habilidades" className="section">
-      <div>
-        <LogoSlider />
-      </div>
-      <div>
+      <LogoSlider />
+      <div className="habilidades-info">
         <h2>
           Habilidades<span className="dot">.</span>
         </h2>
-        <Particles />
+
         <p>
           Soy desarrollador Full Stack con habilidades sólidas en el entorno
           web. Éstas son las tecnologias basado en los intereses de las

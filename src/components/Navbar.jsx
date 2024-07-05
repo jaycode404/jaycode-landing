@@ -4,7 +4,7 @@ import { GeneralContext } from "../context/GeneralContext";
 export function NavList({ inFooter }) {
   const { darkMode, toggleTheme } = useContext(GeneralContext);
   return (
-    <div className="navlist-container">
+    <div className="navlist-container" >
       <a href="/#proyectos">Proyectos</a>
       <a href="/#habilidades">Habilidades</a>
       <a href="/#sobremi">Sobre Mí</a>

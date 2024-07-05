@@ -4,7 +4,7 @@ export default function CallToAction() {
   return (
     <section className="call-action">
       <div>
-        <h2>
+        <h2 className="title">
           ¿Tienes un proyecto? <br />
           <span className="tailwind">Vamos a construirlo!</span>
         </h2>
