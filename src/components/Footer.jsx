@@ -20,7 +20,7 @@ export default function Footer() {
       <div>
         <h6>Desarrollo Web Jcode</h6>
         <div>
-          <NavList inFooter={true} flex="flex" gap={0} />
+          <NavList inFooter={true} flex="flex" gap={0} fontSize={'10px'} />
         </div>
       </div>
       <div>

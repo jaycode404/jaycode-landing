@@ -1,15 +1,16 @@
 import React, { useContext } from "react";
 import { GeneralContext } from "../context/GeneralContext";
 
-export function NavList({ inFooter }) {
+export function NavList({ inFooter, fontSize }) {
   const { darkMode, toggleTheme } = useContext(GeneralContext);
+
   return (
-    <div className="navlist-container" >
+    <div className="navlist-container " style={{ fontSize: fontSize }}>
       <a href="/#proyectos">Proyectos</a>
       <a href="/#habilidades">Habilidades</a>
       <a href="/#sobremi">Sobre Mí</a>
       <a href="/#contacto">Contacto</a>
-{/* 
+      {/* 
       {!inFooter && (
         <button className="dark-theme-button" onClick={toggleTheme} size="sm">
           {darkMode ? "🌙" : "🔆"}
@@ -25,9 +26,7 @@ export function NavbarSimple({ flex, gap }) {
   return (
     <nav className="navbar-container">
       <div>
-        <a href="/">
-          Jcode
-        </a>
+        <a href="/">Jcode</a>
       </div>
       <NavList />
     </nav>
