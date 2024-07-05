@@ -10,7 +10,7 @@ const SpanDynamic = ({ text }) => {
     }
   }, []);
   return (
-    <span ref={spanRef} className={`${className} tecnologia`}>
+    <span ref={spanRef} className={`${className}  tecnologias`}>
       {text}
     </span>
   );
