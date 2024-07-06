@@ -315,16 +315,20 @@ h5 {
     padding: var(--padding-section);
   }
   .project-space {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     padding: 2rem;
   }
+  .project-space-info p {
+    margin-bottom: 1rem;
+  }
   .project-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 100%;
-    gap: 1rem;
+    gap: 0.5rem;
   }
 
   .project-slider {
@@ -379,8 +383,8 @@ h5 {
   }
 
   .project-card {
-    width: 240px;
-    height: 350px;
+    width: 100%;
+    height: fit-content;
     border-radius: var(--border-radius);
     transition: 0.5s;
     background-color: var(--midnight-blue);
@@ -406,7 +410,7 @@ h5 {
     flex-direction: column;
   }
   .project-space .project-img {
-    width: 35rem;
+    width: 100%;
   }
   .project-img {
     border-radius: var(--border-radius);
@@ -434,7 +438,9 @@ h5 {
     gap: 0.5rem;
     overflow-x: hidden;
   }
-
+  .section-title {
+    font-size: 70px;
+  }
   /* HABIlIDADES ------------- */
   .hab-bg {
     position: relative;
@@ -1068,17 +1074,22 @@ h5 {
     padding: var(--padding-section);
   }
   .project-space {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     padding: 2rem;
   }
+  .project-space-info p {
+    margin-bottom: 1rem;
+  }
   .project-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 100%;
-    gap: 1rem;
+    gap: 0.5rem;
   }
+
   .project-slider {
     position: relative;
     width: 100%;
@@ -1131,8 +1142,8 @@ h5 {
   }
 
   .project-card {
-    width: 240px;
-    height: 350px;
+    width: 100%;
+    height: fit-content;
     border-radius: var(--border-radius);
     transition: 0.5s;
     background-color: var(--midnight-blue);
@@ -1148,7 +1159,7 @@ h5 {
     height: 350px;
     border-radius: var(--border-radius);
     transition: 0.5s;
-    left: calc(18%);
+    left: calc(17%);
     top: 3rem;
 
     background-color: var(--midnight-blue);
@@ -1158,7 +1169,7 @@ h5 {
     flex-direction: column;
   }
   .project-space .project-img {
-    width: 35rem;
+    width: 100%;
   }
   .project-img {
     border-radius: var(--border-radius);
@@ -1186,7 +1197,8 @@ h5 {
     gap: 0.5rem;
     overflow-x: hidden;
   }
-  .project-info {
+  .section-title {
+    font-size: 70px;
   }
   /* HABIlIDADES ------------- */
   .hab-bg {
@@ -1830,18 +1842,27 @@ h5 {
     margin: var(--margin-section);
     padding: var(--padding-section);
   }
+
   .project-space {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     padding: 2rem;
   }
+  .project-space-info p {
+    margin-bottom: 1rem;
+  }
+  .project-container .project-card .project-title {
+    font-size: 40px;
+  }
   .project-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 100%;
-    gap: 1rem;
+    gap: 0.5rem;
   }
+
   .project-slider {
     position: relative;
     width: 100%;
@@ -1894,8 +1915,8 @@ h5 {
   }
 
   .project-card {
-    width: 240px;
-    height: 350px;
+    width: 100%;
+    height: fit-content;
     border-radius: var(--border-radius);
     transition: 0.5s;
     background-color: var(--midnight-blue);
@@ -1906,15 +1927,15 @@ h5 {
   }
 
   .project-slider .project-card .button {
-    font-size: 14px;
+    font-size: 12px;
   }
   .project-slider .project-card {
     position: absolute;
     width: 240px;
-    height: auto;
+    height: fit-content;
     border-radius: var(--border-radius);
     transition: 0.5s;
-    left: calc(30%);
+    left: calc(28%);
     top: 3rem;
 
     background-color: var(--midnight-blue);
@@ -1924,7 +1945,7 @@ h5 {
     flex-direction: column;
   }
   .project-space .project-img {
-    width: 35rem;
+    width: 100%;
   }
   .project-img {
     border-radius: var(--border-radius);
@@ -1936,11 +1957,8 @@ h5 {
     flex-direction: column;
     gap: 0.5rem;
   }
-  .project-title {
-    font-size: 20px;
-  }
   .project-desc {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.3;
     width: 90%;
     height: 4rem;
@@ -1949,14 +1967,18 @@ h5 {
     text-wrap: wrap;
     padding: 0;
   }
+
+  .project-space .project-title {
+    font-size: 44px;
+  }
   .project-tec {
     margin: 0.5rem 0;
     display: flex;
     gap: 0.5rem;
     overflow-x: hidden;
   }
-  .tecnologias {
-    font-size: 14px;
+  .section-title {
+    font-size: 60px;
   }
 
   /* HABIlIDADES ------------- */
@@ -2348,7 +2370,7 @@ h5 {
     --width-section: 95%;
   }
 
-  /* GENERAL0------------------------------- */
+  /* GENERAL0------------------------ */
   input:focus {
     border-bottom: 1px solid var(--neon-blue);
   }
@@ -2608,18 +2630,24 @@ h5 {
     margin: var(--margin-section);
     padding: var(--padding-section);
   }
+
   .project-space {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     padding: 2rem;
   }
+  .project-space-info p {
+    margin-bottom: 1rem;
+  }
   .project-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 100%;
-    gap: 1rem;
+    gap: 0.5rem;
   }
+
   .project-slider {
     position: relative;
     width: 100%;
@@ -2672,8 +2700,8 @@ h5 {
   }
 
   .project-card {
-    width: 240px;
-    height: 350px;
+    width: 100%;
+    height: fit-content;
     border-radius: var(--border-radius);
     transition: 0.5s;
     background-color: var(--midnight-blue);
@@ -2684,15 +2712,15 @@ h5 {
   }
 
   .project-slider .project-card .button {
-    font-size: 14px;
+    font-size: 12px;
   }
   .project-slider .project-card {
     position: absolute;
     width: 240px;
-    height: auto;
+    height: fit-content;
     border-radius: var(--border-radius);
     transition: 0.5s;
-    left: calc(33%);
+    left: calc(28%);
     top: 3rem;
 
     background-color: var(--midnight-blue);
@@ -2702,7 +2730,7 @@ h5 {
     flex-direction: column;
   }
   .project-space .project-img {
-    width: 35rem;
+    width: 100%;
   }
   .project-img {
     border-radius: var(--border-radius);
@@ -2714,11 +2742,8 @@ h5 {
     flex-direction: column;
     gap: 0.5rem;
   }
-  .project-title {
-    font-size: 20px;
-  }
   .project-desc {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.3;
     width: 90%;
     height: 4rem;
@@ -2727,14 +2752,17 @@ h5 {
     text-wrap: wrap;
     padding: 0;
   }
+  .project-title {
+    font-size: 22px;
+  }
   .project-tec {
     margin: 0.5rem 0;
     display: flex;
     gap: 0.5rem;
     overflow-x: hidden;
   }
-  .tecnologias {
-    font-size: 14px;
+  .section-title {
+    font-size: 60px;
   }
 
   /* HABIlIDADES ------------- */
@@ -3382,7 +3410,7 @@ h5 {
   }
   /* PROYECTS -------------------------- */
   .proyectos-all-container {
-    width: var(--width-section);
+    width: 80%;
     margin: var(--margin-section);
     padding: var(--padding-section);
   }
@@ -3394,13 +3422,14 @@ h5 {
   #proyectos {
     position: relative;
   }
+  .project-container .project-card .project-title {
+    font-size: 20px;
+  }
   .project-container {
-    position: absolute;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     height: 100%;
     width: 100%;
-
     gap: 1rem;
   }
   .project-slider {
@@ -3521,6 +3550,9 @@ h5 {
   }
   .tecnologias {
     font-size: 14px;
+  }
+  .section-title {
+    font-size: 80px;
   }
 
   /* HABIlIDADES ------------- */
@@ -3913,7 +3945,7 @@ h5 {
   .container {
     max-width: 1300px;
   }
-  
+
   :root {
     --margin-section: 1rem auto;
     --width-section: 55%;
@@ -4173,11 +4205,11 @@ h5 {
   section h2 {
     font-size: 60px;
     margin-bottom: 0.5rem;
-    padding-top: .5rem;
+    padding-top: 0.5rem;
   }
   /* PROYECTS -------------------------- */
   .proyectos-all-container {
-    width: var(--width-section);
+    width: 90%;
     margin: var(--margin-section);
     padding: var(--padding-section);
   }
@@ -4190,12 +4222,11 @@ h5 {
     position: relative;
   }
   .project-container {
-    position: absolute;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     height: 100%;
     width: 100%;
-
     gap: 1rem;
   }
   .project-slider {
@@ -4710,11 +4741,11 @@ h5 {
   }
 }
 /* xl */
-@media (min-width: 1440px) {
+@media (min-width: 1430px) {
   .container {
-    max-width: 1440px;
+    max-width: 1430px;
   }
-  
+
   :root {
     --margin-section: 1rem auto;
     --width-section: 50%;
@@ -4977,7 +5008,7 @@ h5 {
   }
   /* PROYECTS -------------------------- */
   .proyectos-all-container {
-    width: var(--width-section);
+    width: 90%;
     margin: var(--margin-section);
     padding: var(--padding-section);
   }
@@ -4990,12 +5021,11 @@ h5 {
     position: relative;
   }
   .project-container {
-    position: absolute;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     height: 100%;
     width: 100%;
-
     gap: 1rem;
   }
   .project-slider {
@@ -5083,7 +5113,7 @@ h5 {
     flex-direction: column;
   }
   .project-space .project-img {
-    width: 35rem;
+    width: 100%;
   }
   .project-img {
     border-radius: var(--border-radius);
@@ -5116,6 +5146,9 @@ h5 {
   }
   .tecnologias {
     font-size: 14px;
+  }
+  .section-title {
+    font-size: 80px;
   }
 
   /* HABIlIDADES ------------- */
@@ -5778,7 +5811,7 @@ h5 {
   }
   /* PROYECTS -------------------------- */
   .proyectos-all-container {
-    width: var(--width-section);
+    width: 90%;
     margin: var(--margin-section);
     padding: var(--padding-section);
   }
@@ -5791,9 +5824,9 @@ h5 {
     position: relative;
   }
   .project-container {
-    position: absolute;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     height: 100%;
     width: 100%;
 
@@ -5884,7 +5917,7 @@ h5 {
     flex-direction: column;
   }
   .project-space .project-img {
-    width: 35rem;
+    width: 100%;
   }
   .project-img {
     border-radius: var(--border-radius);
@@ -5919,6 +5952,10 @@ h5 {
     font-size: 14px;
   }
 
+  .section-title{
+    text-align: center;
+    font-size: 70px;
+  }
   /* HABIlIDADES ------------- */
   .hab-bg {
     position: relative;

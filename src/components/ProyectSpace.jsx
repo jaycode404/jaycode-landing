@@ -9,10 +9,10 @@ export default function ProyectSpace() {
   return (
     <div className="project-space">
       <div>
-        <img src={imageLink} className="project-img" alt="proyect-imag" />
+        <img src={imageLink} className="project-img" alt="project-img" />
       </div>
-      <div className="proyect-info-container">
-        <h2 className="proyect-title">{title}</h2>
+      <div className="project-space-info">
+        <h2 className="project-title">{title}</h2>
         <p>{desc}</p>
         <a href={siteLink} 
         target="_blank"
