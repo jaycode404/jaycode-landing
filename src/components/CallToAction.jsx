@@ -9,7 +9,7 @@ export default function CallToAction() {
           <span className="tailwind">Vamos a construirlo!</span>
         </h2>
       </div>
-      <div>
+      <div className="cta-socials">
         <h3 className="firebase">Contáctame:</h3>
         <Socials gap={"1rem"} />
       </div>
