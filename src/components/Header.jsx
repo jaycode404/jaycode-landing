@@ -61,7 +61,7 @@ export default function Header() {
 
           <a
             className="button"
-            href="cv.pdf"
+            href="/cv.pdf"
             download={"/cv.pdf"}
           >
             <svg
