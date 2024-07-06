@@ -4,6 +4,20 @@ import { GeneralContext } from "../context/GeneralContext";
 import Particles from "./Particles";
 
 export default function Header() {
+  /* 
+  
+  
+  HAZ QUE EL TEXTO TENFA EL WRITE EFFECT
+  
+  
+  */
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.download = "/assets/cv.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   const [text] = useTypewriter({
     words: ["React", "JavaScript", "Node", "WebDev"],
     loop: {},
@@ -45,7 +59,11 @@ export default function Header() {
             </i>
           </p>
 
-          <button className="button">
+          <a
+            className="button"
+            href="cv.pdf"
+            download={"/cv.pdf"}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -62,7 +80,7 @@ export default function Header() {
               <circle cx="12" cy="7" r="4"></circle>
             </svg>
             CV
-          </button>
+          </a>
         </div>
         <div className="hero-img"></div>
       </div>
