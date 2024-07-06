@@ -3130,13 +3130,13 @@ h5 {
     border-bottom: 1px solid var(--neon-blue);
   }
   input::placeholder {
-    font-size: 20px;
+    font-size: 14px;
   }
   input {
     font-family: var(--body-font);
-    font-size: 20px;
-    padding: 0.7rem;
-    height: 3rem;
+    font-size: 14px;
+    padding: 0.3rem 0.3rem 0.3rem 0.5rem;
+    height: 2.5 rem;
     background-color: var(--main-dark-blue);
     border: none;
     outline: none;
@@ -3148,12 +3148,12 @@ h5 {
   }
 
   textarea::placeholder {
-    font-size: 20px;
+    font-size: 14px;
   }
   textarea {
     font-family: var(--body-font);
     font-size: 20px;
-    padding: 0.2rem;
+    padding: 0.3rem 0.3rem 0.3rem 0.5rem;
     background-color: var(--main-dark-blue);
     border: none;
     outline: none;
@@ -3190,7 +3190,7 @@ h5 {
     color: var(--p-color);
     padding: 0.5rem 0.5rem 0.5rem 0;
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 14px;
   }
   li {
     font-size: 16px;
@@ -3220,13 +3220,13 @@ h5 {
     display: flex;
     align-items: center;
     gap: 0.1rem;
-    padding: 0.5rem;
+    padding: 0.5rem 0.6rem;
     width: fit-content;
     height: fit-content;
     color: var(--text-white);
     border: 1px solid var(--neon-blue);
     border-radius: var(--border-radius);
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     background-color: var(--midnight-blue);
     text-transform: uppercase;
@@ -3254,7 +3254,7 @@ h5 {
     width: fit-content;
     padding: 1rem;
     gap: 1.5rem;
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .navlist-container {
@@ -3268,7 +3268,7 @@ h5 {
     position: relative;
     height: 70vh;
     padding: 0 1rem;
-    width: 80%;
+    width: var(--width-section);
     margin: 0 auto 2rem auto;
     gap: 1rem;
     display: grid;
@@ -3356,11 +3356,11 @@ h5 {
     font-size: 12px;
   }
   .hero-title {
-    font-size: 130px;
+    font-size: 100px;
     font-weight: 700;
   }
   .header-container i {
-    font-size: 18px;
+    font-size: 15px;
   }
 
   /* SECTION----------------------------- */
@@ -3378,7 +3378,7 @@ h5 {
   }
   section h2 {
     font-size: 50px;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   /* PROYECTS -------------------------- */
   .proyectos-all-container {
@@ -3440,13 +3440,13 @@ h5 {
     padding: 1rem;
     font-family: var(--body-font);
     font-weight: bold;
-    left: 7rem;
+    left: 5rem;
     z-index: 2;
   }
 
   #next {
     left: unset;
-    right: 20rem;
+    right: 5rem;
   }
 
   .proyectos-info {
@@ -3478,7 +3478,7 @@ h5 {
     height: auto;
     border-radius: var(--border-radius);
     transition: 0.5s;
-    left: calc(24%);
+    left: calc(33%);
     top: 3rem;
 
     background-color: var(--midnight-blue);
@@ -3540,13 +3540,13 @@ h5 {
     opacity: 0.2;
   }
   .habilidades-info li {
-    font-size: 14px;
+    font-size: 9px;
   }
   .habilidades-info h4 {
-    font-size: 40px;
+    font-size: 25px;
   }
   .habilidades-info p {
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
   }
   .tecnologias-side {
     display: grid;
@@ -3555,7 +3555,8 @@ h5 {
 
   .frontend-container {
     display: flex;
-    height: 8rem;
+    /* height: 8rem; */
+
     font-size: 12px;
     gap: 0.5rem;
     padding: 0.5rem;
@@ -3583,11 +3584,11 @@ h5 {
   }
 
   .banner .roll {
-    scale: 30%;
+    scale: 20%;
     position: absolute;
     width: 190px;
-    height: 50px;
-    top: 10%;
+    height: 20px;
+    top: 4%;
     left: calc(50% - 100px);
     transform-style: preserve-3d;
     transform: perspective(1000px);
@@ -3656,7 +3657,7 @@ h5 {
     background-position: center;
     width: 1rem; */
     width: 15rem;
-    margin-top: 4.8rem;
+    margin-top: 1.5rem;
   }
 
   /* TECNOLOGIAS--------------- */
@@ -3709,12 +3710,12 @@ h5 {
   }
   .mac {
     width: 100%;
-    scale: 90%;
+    scale: 100%;
   }
   .logo-slider-container {
     position: relative;
     align-self: end;
-    bottom: 0rem;
+    bottom: 4rem;
   }
   .screen-lights {
     position: relative;
@@ -3755,12 +3756,12 @@ h5 {
 
   .logos {
     position: absolute;
-    top: 2.5rem;
-    left: 26%;
+    top: 1.5rem;
+    left: 22%;
     overflow: hidden;
     white-space: nowrap;
-    width: 12rem;
-    height: 10rem;
+    width: 10rem;
+    height: 8rem;
     z-index: -1;
     background-color: var(--midnight-blue);
   }
@@ -3772,8 +3773,8 @@ h5 {
   }
 
   .logo-slider img {
-    width: 5rem;
-    margin: 2rem 1.5rem;
+    width: 3.5rem;
+    margin: 1rem 1rem;
     filter: drop-shadow(0 0 5px #14b8a6);
   }
   /* SOCIALS -------- */
@@ -3822,12 +3823,12 @@ h5 {
     background: linear-gradient(290deg, #001f3f, #060522);
     width: 100%;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: var(--border-radius);
     /* box-shadow: 10px 10px 30px 5px rgba(84, 238, 189, 0.5); */
   }
   .contact-form label {
-    font-size: 20px;
+    font-size: 16px;
   }
   .contact-form {
     display: flex;
@@ -3880,7 +3881,7 @@ h5 {
 
   /* CALL TO ACTION ---------------- */
   .call-action div h3 {
-    font-size: 30px;
+    font-size: 26px;
   }
   .call-action div {
     place-content: center;
@@ -3897,7 +3898,7 @@ h5 {
     text-align: center;
   }
   .call-action .title {
-    font-size: 36px;
+    font-size: 28px;
   }
   .call-action div h3 {
     margin-bottom: 1rem;
