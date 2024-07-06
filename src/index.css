@@ -442,7 +442,7 @@ h5 {
   .hab-bg:before {
     position: absolute;
     content: "";
-    background-image: url(assets/square-bg.png);
+    background-image: url(/assets/square-bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -713,7 +713,7 @@ h5 {
   .contacto-bg::before {
     position: absolute;
     content: "";
-    background-image: url(assets/dot-bg.png);
+    background-image: url(/assets/dot-bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1195,7 +1195,7 @@ h5 {
   .hab-bg:before {
     position: absolute;
     content: "";
-    background-image: url(assets/square-bg.png);
+    background-image: url(/assets/square-bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1466,7 +1466,7 @@ h5 {
   .contacto-bg::before {
     position: absolute;
     content: "";
-    background-image: url(assets/dot-bg.png);
+    background-image: url(/assets/dot-bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1966,7 +1966,7 @@ h5 {
   .hab-bg:before {
     position: absolute;
     content: "";
-    background-image: url(assets/square-bg.png);
+    background-image: url(/assets/square-bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2238,7 +2238,7 @@ h5 {
   .contacto-bg::before {
     position: absolute;
     content: "";
-    background-image: url(assets/dot-bg.png);
+    background-image: url(/assets/dot-bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2744,7 +2744,7 @@ h5 {
   .hab-bg:before {
     position: absolute;
     content: "";
-    background-image: url(assets/square-bg.png);
+    background-image: url(/assets/square-bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -3016,7 +3016,7 @@ h5 {
   .contacto-bg::before {
     position: absolute;
     content: "";
-    background-image: url(assets/dot-bg.png);
+    background-image: url(/assets/dot-bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -3530,7 +3530,7 @@ h5 {
   .hab-bg:before {
     position: absolute;
     content: "";
-    background-image: url(assets/square-bg.png);
+    background-image: url(/assets/square-bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -3809,7 +3809,7 @@ h5 {
   .contacto-bg::before {
     position: absolute;
     content: "";
-    background-image: url(assets/dot-bg.png);
+    background-image: url(/assets/dot-bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -4325,7 +4325,7 @@ h5 {
   .hab-bg:before {
     position: absolute;
     content: "";
-    background-image: url(assets/square-bg.png);
+    background-image: url(/assets/square-bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -4604,7 +4604,7 @@ h5 {
   .contacto-bg::before {
     position: absolute;
     content: "";
-    background-image: url(assets/dot-bg.png);
+    background-image: url(/assets/dot-bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -5125,7 +5125,7 @@ h5 {
   .hab-bg:before {
     position: absolute;
     content: "";
-    background-image: url(assets/square-bg.png);
+    background-image: url(/assets/square-bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -5404,7 +5404,7 @@ h5 {
   .contacto-bg::before {
     position: absolute;
     content: "";
-    background-image: url(assets/dot-bg.png);
+    background-image: url(/assets/dot-bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -5926,7 +5926,7 @@ h5 {
   .hab-bg:before {
     position: absolute;
     content: "";
-    background-image: url(assets/square-bg.png);
+    background-image: url(/assets/square-bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -6205,7 +6205,7 @@ h5 {
   .contacto-bg::before {
     position: absolute;
     content: "";
-    background-image: url(assets/dot-bg.png);
+    background-image: url(/assets/dot-bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
