@@ -16,6 +16,7 @@ export default function LogoSlider() {
         <div className="screen-lights">
           <div className="logo-slider" style={sliderStyle}>
             <img src="/assets/react-3.svg" alt="" />
+            <img src="/assets/firebase.png" alt="" />
             <img src="/assets/js-logo.png" alt="" />
             <img src="/assets/tail-logo.png" alt="" />
             <img src="/assets/html-5.png" alt="" />
@@ -26,6 +27,7 @@ export default function LogoSlider() {
           </div>
           <div className="logo-slider" style={sliderStyle}>
             <img src="/assets/react-3.svg" alt="" />
+            <img src="/assets/firebase.png" alt="" />
             <img src="/assets/js-logo.png" alt="" />
             <img src="/assets/tail-logo.png" alt="" />
             <img src="/assets/html-logo.png" alt="" />
