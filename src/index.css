@@ -5955,7 +5955,7 @@ h5 {
     font-size: 14px;
   }
 
-  .section-title{
+  .section-title {
     text-align: center;
     font-size: 70px;
   }
@@ -6349,4 +6349,14 @@ h5 {
   .call-action div p {
     margin-left: 1rem;
   }
+}
+.review-container {
+  display: flex;
+  flex-direction: column;
+}
+.review-container p {
+  text-align: center;
+}
+.review-title {
+  text-align: center;
 }
