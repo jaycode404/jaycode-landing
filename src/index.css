@@ -250,7 +250,7 @@ h5 {
     position: absolute;
     width: 8rem;
     height: 5rem;
-    left: -70%;
+    left: -50%;
     z-index: -2;
     background-position: center;
     background-repeat: no-repeat;
@@ -273,10 +273,10 @@ h5 {
   }
   .hero-img {
     place-self: center;
-    width: 10rem;
-    height: 22rem;
+    width: 13rem;
+    height: 18rem;
     scale: 80%;
-    background-image: url(/assets/foto.png);
+    background-image: url(/assets/avatar.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1035,7 +1035,7 @@ h5 {
     width: 10rem;
     height: 24rem;
     scale: 80%;
-    background-image: url(/assets/foto.png);
+    background-image: url(/assets/avatar.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1804,7 +1804,7 @@ h5 {
     width: 14rem;
     height: 30rem;
     scale: 80%;
-    background-image: url(/assets/foto.png);
+    background-image: url(/assets/avatar.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2539,6 +2539,7 @@ h5 {
       "header-info";
   }
   .hero-img {
+
     grid-area: hero-img;
   }
   .header-info {
@@ -2592,7 +2593,7 @@ h5 {
     width: 14rem;
     height: 28rem;
     scale: 80%;
-    background-image: url(/assets/foto.png);
+    background-image: url(/assets/avatar.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -3369,7 +3370,7 @@ h5 {
     width: 20rem;
     height: 24rem;
     scale: 80%;
-    background-image: url(/assets/foto.png);
+    background-image: url(/assets/avatar.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -4170,7 +4171,7 @@ h5 {
     width: 20rem;
     height: 24rem;
     scale: 80%;
-    background-image: url(/assets/foto.png);
+    background-image: url(/assets/avatar.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -4970,7 +4971,7 @@ h5 {
     width: 20rem;
     height: 24rem;
     scale: 80%;
-    background-image: url(/assets/foto.png);
+    background-image: url(/assets/avatar.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -5773,7 +5774,7 @@ h5 {
     width: 20rem;
     height: 24rem;
     scale: 80%;
-    background-image: url(/assets/foto.png);
+    background-image: url(/assets/avatar.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -42,7 +42,7 @@ export default function PictureRoll() {
           </p>
           <p>lmao ya quiero chambear</p>
         </div> */}
-      <img className="model" src="/assets/foto.png" alt="" />
+      <img className="model" src="/assets/avatar.png" alt="" />
       {/* </div> */}
     </div>
   );
