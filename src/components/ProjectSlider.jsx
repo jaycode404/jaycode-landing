@@ -84,9 +84,9 @@ export const data = [
     rowSpan: 5,
   },
   {
-    id: 9,
+    id: 10,
     title: "Propiedades",
-    desc: "Una de las apps de ejercicios más comunes para el manejo de strings, en esta etapa practicaba el dominio de los scripts para manejar elementos del DOM",
+    desc: "Aplicacion FullStack para cliente, administra propiedades de bienes raices, sube imagenes a servidor, elimina, crea edita. Diseñada  y programada por mí desde Front Hasta el Back.",
     imageLink: "/assets/screenshot-9.png",
     siteLink: "https://admin-propiedades.vercel.app/",
     tecnologias: ["HTML", "javascript", "CSS"],
