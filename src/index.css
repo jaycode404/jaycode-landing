@@ -994,7 +994,7 @@ h5 {
     position: absolute;
     width: 6rem;
     height: 5rem;
-    left: 110%;
+    left: 100%;
     top: 17rem;
     z-index: -1;
     background-position: center;
@@ -1009,7 +1009,7 @@ h5 {
     position: absolute;
     width: 8rem;
     height: 5rem;
-    left: -90%;
+    left: -30%;
     z-index: -2;
     background-position: center;
     background-repeat: no-repeat;
@@ -1032,10 +1032,11 @@ h5 {
   }
   .hero-img {
     place-self: center;
-    width: 10rem;
+    width: 18rem;
     height: 24rem;
-    scale: 80%;
+    scale: 70%;
     background-image: url(/assets/avatar.png);
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1778,7 +1779,7 @@ h5 {
     position: absolute;
     width: 10rem;
     height: 5rem;
-    left: -80%;
+    left: -40%;
     z-index: -2;
     background-position: center;
     background-repeat: no-repeat;
@@ -1801,7 +1802,7 @@ h5 {
   }
   .hero-img {
     place-self: center;
-    width: 14rem;
+    width: 22rem;
     height: 30rem;
     scale: 80%;
     background-image: url(/assets/avatar.png);
@@ -2539,7 +2540,6 @@ h5 {
       "header-info";
   }
   .hero-img {
-
     grid-area: hero-img;
   }
   .header-info {
@@ -2552,7 +2552,7 @@ h5 {
     position: absolute;
     width: 8rem;
     height: 5rem;
-    left: 110%;
+    left: 100%;
     top: 17rem;
     z-index: -1;
     background-position: center;
@@ -2567,7 +2567,7 @@ h5 {
     position: absolute;
     width: 10rem;
     height: 5rem;
-    left: -100%;
+    left: -30%;
     z-index: -2;
     background-position: center;
     background-repeat: no-repeat;
@@ -2590,7 +2590,7 @@ h5 {
   }
   .hero-img {
     place-self: center;
-    width: 14rem;
+    width: 22rem;
     height: 28rem;
     scale: 80%;
     background-image: url(/assets/avatar.png);
@@ -3329,7 +3329,7 @@ h5 {
     position: absolute;
     width: 8rem;
     height: 5rem;
-    left: 80%;
+    left: 90%;
     top: 17rem;
     z-index: -1;
     background-position: center;
@@ -3369,7 +3369,7 @@ h5 {
     place-self: center;
     width: 20rem;
     height: 24rem;
-    scale: 80%;
+    scale: 70%;
     background-image: url(/assets/avatar.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -4130,7 +4130,7 @@ h5 {
     position: absolute;
     width: 8rem;
     height: 5rem;
-    left: 80%;
+    left: 90%;
     top: 17rem;
     z-index: -1;
     background-position: center;
@@ -4170,7 +4170,7 @@ h5 {
     place-self: center;
     width: 20rem;
     height: 24rem;
-    scale: 80%;
+    scale: 70%;
     background-image: url(/assets/avatar.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -4930,7 +4930,7 @@ h5 {
     position: absolute;
     width: 8rem;
     height: 5rem;
-    left: 80%;
+    left: 85%;
     top: 17rem;
     z-index: -1;
     background-position: center;
@@ -4970,7 +4970,7 @@ h5 {
     place-self: center;
     width: 20rem;
     height: 24rem;
-    scale: 80%;
+    scale: 75%;
     background-image: url(/assets/avatar.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -5733,7 +5733,7 @@ h5 {
     position: absolute;
     width: 8rem;
     height: 5rem;
-    left: 80%;
+    left: 90%;
     top: 17rem;
     z-index: -1;
     background-position: center;
@@ -5773,7 +5773,7 @@ h5 {
     place-self: center;
     width: 20rem;
     height: 24rem;
-    scale: 80%;
+    scale: 70%;
     background-image: url(/assets/avatar.png);
     background-position: center;
     background-repeat: no-repeat;

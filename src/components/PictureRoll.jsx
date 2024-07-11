@@ -9,28 +9,28 @@ export default function PictureRoll() {
     <div className="banner">
       <div className="roll" style={{ "--quantity": 8 }}>
         <div className="picture" style={{ "--position": "1" }}>
-          <img src="/assets/pokemon.jpg" alt="" />
+          <img src="/assets/roll-2.jpeg" alt="" />
         </div>
         <div className="picture" style={{ "--position": "2" }}>
-          <img src="/assets/pokemon.jpg" alt="" />
+          <img src="/assets/roll-1.jpeg" alt="" />
         </div>
         <div className="picture" style={{ "--position": "3" }}>
-          <img src="/assets/pokemon.jpg" alt="" />
+          <img src="/assets/roll-3.jpeg" alt="" />
         </div>
         <div className="picture" style={{ "--position": "4" }}>
-          <img src="/assets/pokemon.jpg" alt="" />
+          <img src="/assets/roll-1.jpeg" alt="" />
         </div>
         <div className="picture" style={{ "--position": "5" }}>
-          <img src="/assets/pokemon.jpg" alt="" />
+          <img src="/assets/roll-2.jpeg" alt="" />
         </div>
         <div className="picture" style={{ "--position": "6" }}>
-          <img src="/assets/pokemon.jpg" alt="" />
+          <img src="/assets/roll-3.jpeg" alt="" />
         </div>
         <div className="picture" style={{ "--position": "7" }}>
-          <img src="/assets/pokemon.jpg" alt="" />
+          <img src="/assets/roll-1.jpeg" alt="" />
         </div>
         <div className="picture" style={{ "--position": "8" }}>
-          <img src="/assets/pokemon.jpg" alt="" />
+          <img src="/assets/roll-2.jpeg" alt="" />
         </div>
       </div>
       {/* <div className="content"> */}
