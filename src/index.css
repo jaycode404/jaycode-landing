@@ -3690,7 +3690,39 @@ h5 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-
+  .mysql {
+    background: linear-gradient(
+      to right,
+      #06b6d4,
+      /* Cyan */ #3b82f6,
+      /* Blue */ #a855f7,
+      /* Purple */ #ec4899,
+      /* Pink */ #f43f5e /* Red */
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .css {
+    background: linear-gradient(
+      to right,
+      #0000ff,
+      /* Blue */ #00ff00,
+      /* Green */ #ffa500,
+      /* Orange */ #ff0000,
+      /* Red */ #800080 /* Purple */
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .nodejs {
+    background: linear-gradient(
+      to right,
+      #68c500,
+      /* Node.js Green */ #6cc24a /* Node.js Light Green */
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   /* LOGOS ------------------ */
   @keyframes slide {
     from {

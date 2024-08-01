@@ -27,7 +27,8 @@ const urls = [
   "https://burger-landing-ten.vercel.app/",
   "https://apaloosa.vercel.app/",
   "https://encriptador-javascript.vercel.app/",
-  "https://admin-propiedades.vercel.app/"
+  "https://admin-propiedades.vercel.app/",
+  "https://www.salonapp.lat/"
 ];
 
 urls.forEach(async (url, index) => {
