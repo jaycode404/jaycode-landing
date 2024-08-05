@@ -11,7 +11,10 @@ export default function CallToAction() {
       </div>
       <div className="cta-socials">
         <h3 className="firebase">Contáctame:</h3>
-        <Socials gap={"1rem"} />
+        {/* <Socials gap={"1rem"} /> */}
+        <a href="#contacto" className="button">
+          Enviar Mensaje
+        </a>
       </div>
     </section>
   );
