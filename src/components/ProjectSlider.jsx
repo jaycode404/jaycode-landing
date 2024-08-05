@@ -66,7 +66,7 @@ export const data = [
   {
     id: 8,
     title: "Veterinaria",
-    desc: "Este proyecto es una landing page de servicios veterinarios creada para un cliente que buscaba una página funcional y atractiva. Incluye un diseño profesional que refleja la calidad de los servicios, con colores y elementos visuales personalizados. La página presenta reseñas de Google para generar confianza, widgets de contacto rápido como un globo de WhatsApp, y un formulario de contacto fácil de usar. Ofrece una descripción detallada de los servicios, fotos de alta calidad, y llamadas a la acción estratégicas, todo adaptado a las necesidades específicas del cliente para una experiencia de usuario eficiente..",
+    desc: "Este proyecto es una landing page de servicios veterinarios creada para un cliente que buscaba una página funcional y atractiva. Incluye un diseño profesional que refleja la calidad de los servicios, con colores y elementos visuales personalizados. La página presenta reseñas de Google para generar confianza, widgets de contacto rápido como un globo de WhatsApp, y un formulario de contacto fácil de usar. Ofrece una descripción detallada de los servicios, fotos de alta calidad, y llamadas a la acción estratégicas, todo adaptado a las necesidades específicas del cliente para una experiencia de usuario eficiente.",
     imageLink: "/assets/screenshot-7.png",
     siteLink: "https://apaloosa.vercel.app/",
     tecnologias: ["react", "javascript", "css", "html"],
