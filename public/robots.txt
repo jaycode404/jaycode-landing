@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jaycode-404.com/sitemap.xml
