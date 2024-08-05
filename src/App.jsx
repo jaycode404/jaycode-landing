@@ -8,7 +8,7 @@ import Contacto from "./components/Contacto";
 import BentoGrid from "./components/Grid";
 import { NavList, NavbarSimple } from "./components/Navbar";
 import Footer from "./components/Footer";
-import { Router, Routes, Route } from "react-router";
+import { Router, Routes, Route, Navigate } from "react-router";
 import ProyectosAll from "./components/ProyectosAll";
 import ProyectSpace from "./components/ProyectSpace";
 import Interactive from "./components/Interactive";
@@ -58,6 +58,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/proyectosall" element={<ProyectosAll />} />
         <Route path="/proyectosall/:id" element={<ProyectSpace />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <div className="bg-black footer">
         <Footer />
