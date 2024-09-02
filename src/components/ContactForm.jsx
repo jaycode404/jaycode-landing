@@ -34,35 +34,38 @@ export default function ContactForm() {
   return (
     <div className="card-form">
       <form className="contact-form" ref={form} onSubmit={sendEmail}>
-        <div >
+        <div>
           <label htmlFor="name" className="">
             Nombre:
           </label>
           <input
             type="text"
+            required
             id="name"
             name="to_name"
             placeholder="Arnold"
             className="input-style"
           />
         </div>
-        <div >
+        <div>
           <label htmlFor="email" className="">
             E-mail:
           </label>
           <input
             type="email"
+            required
             id="email"
             name="from_name"
             placeholder="arnold@gmail.com"
             className="input-style"
           />
         </div>
-        <div >
+        <div>
           <label htmlFor="message" className="text-black">
             Mensaje:
           </label>
           <textarea
+            required
             id="message"
             name="message"
             className=""
