@@ -13,13 +13,10 @@ export default function Proyectos() {
           Proyectos<span className="dot">.</span>
         </h2>
         <p>
-          Aquí, un catalogo de los proyectos que he creado para mí y para
-          clientes reales.
+          Aquí, un catalogo de los proyectos que he creado para diferentes industrias.
         </p>
         <p>
-          Usualmente me gusta discutir sobre el objetivo de la aplicación a
-          desarrollar y simplificar el codigo para llegar al objetivo más
-          eficiente, escalable o ambas.
+          En belleza, veterinaria, restaurants y diversos mercados he trabajado como consultora para brindar mejoras a las empresas.
         </p>
         <a className="button" href="/proyectosall">
           Ver todos

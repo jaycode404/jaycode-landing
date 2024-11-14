@@ -81,7 +81,7 @@ export function Home() {
         <div className="contacto-bg">
           <Habilidades />
         </div>
-        <Reviews />
+        {/* <Reviews /> */}
         <div className="contacto-bg">
         <Section />
         </div>

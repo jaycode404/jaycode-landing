@@ -53,9 +53,8 @@ export default function Header() {
           <p className="side-border">
             <i>
               {/* hay que pomeer este texto em italica */}
-              Programador web <span className="tailwind"> full-stack</span>{" "}
-              inclinado al diseño UX / UI con gusto por la creación y resolución
-              de problemas mediante el código.
+              Programador web <span className="tailwind"> FullStack</span>{" "}
+              diseñando y creando soluciones, innovando productos existentes.
             </i>
           </p>
 
